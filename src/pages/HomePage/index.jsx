@@ -2,13 +2,6 @@ import React, { useEffect, useState } from 'react'
 import WebsiteLayout from '../../components/Layout'
 import Slider from "react-slick";
 
-import logo1 from "../../assets/Images/logo1.png";
-import logo2 from "../../assets/Images/logo2.png";
-import logo3 from "../../assets/Images/logo1.png";
-import logo4 from "../../assets/Images/logo1.png";
-import logo5 from "../../assets/Images/logo2.png";
-import logo6 from "../../assets/Images/logo2.png";
-import logo7 from "../../assets/Images/logo2.png";
 import heroImg from '../../assets/Images/img.png'
 import blog1 from '../../assets/Images/blog1.png'
 import platfrom1 from '../../assets/Images/platform1.webp'
@@ -21,6 +14,9 @@ import { FaPlay } from "react-icons/fa";
 import { MdEnergySavingsLeaf } from "react-icons/md";
 import { MdElectricMeter } from "react-icons/md";
 import { IoIosCalculator } from "react-icons/io";
+import HeroBannerSection from '../../components/Home/HeroBannerSection';
+import CompaniesSlider from '../../components/Home/CompaniesSlider';
+import CalculatorSection from '../../components/Home/calculatorSection';
 
 // import EnergyDashboard from './EnergyDashboard';
 
@@ -199,7 +195,23 @@ const tabData = [
 ];
 
 
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
+const homepageContent = {
+  heading1: "SPT AI Energy Lab:",
+  heading2: "Revolutionizing Energy Management with Intelligent AI",
+  subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power plant.",
+  img: heroImg,
+  btn: "Get a Free Consultation",
+  showplay: true,
+  showtop: false,
+};
+
+const calculatorContent = {
+  heading1: "Easily manage your finite resources with",
+  heading2: "EnergyCAP",
+  btn: "Contact Sales",
+};
+
+const showtop = true
 
 
 const HomePage = () => {
@@ -228,41 +240,8 @@ const HomePage = () => {
   return (
     <WebsiteLayout>
       {/* hero banner section */}
-      <section className="relative overflow-hidden bgbackgroundimg">
-        <div className="max-w-7xl mx-auto sm:px-25 sm:py-40 px-5 py-24 flex flex-col lg:flex-row items-center justify-between gap-10">
-          {/* Left Text Content */}
-          <div className="max-w-xl">
-            <h1 className="text-2xl sm:text-4xl font-bold leading-tight">
-              SPT AI Energy Lab:
-              <br />Revolutionizing Energy Management with Intelligent AI.
+      <HeroBannerSection homepageContent={homepageContent} />
 
-
-            </h1>
-            <p className="mt-6 lg:text-lg">
-              Experience unparalleled efficiency, savings, and reliability for your home, business, or power plant.            </p>
-
-            <div className="mt-8 flex flex-row sm:flex-row items-start sm:items-center gap-4">
-              <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
-                Get a Free Consultation
-              </button>
-              <button className="flex items-center gap-2 text-[#0f172a] hover:underline font-semibold">
-                <FaPlay className="text-white bg-[#0f172a] rounded-full p-2 cursor-pointer w-9 h-9" />
-                What is EMS?
-              </button>
-            </div>
-          </div>
-
-          {/* Right Image Content */}
-          <div className="relative w-full max-w-3xl">
-            <img
-              src={heroImg}
-              alt="Energy Dashboard Preview"
-              className="w-full h-90 object-contain"
-              priority
-            />
-          </div>
-        </div>
-      </section>
 
       {/* maximize efficiency section  */}
       <section className="font-arimo py-16">
@@ -289,26 +268,7 @@ const HomePage = () => {
       </section>
 
       {/* partner company section  */}
-      <section className="py-8">
-        <div className="text-center text-primary text-lg md:text-lg px-4 mb-8 max-w-3xl m-auto">
-          For over 40 years, EnergyCAP has empowered energy and sustainability
-          leaders at some of the largest corporations, governments and
-          institutions.
-        </div>
-
-        <div className="overflow-hidden whitespace-nowrap relative">
-          <div className="animate-slide inline-block">
-            {logos.concat(logos).map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt={`logo-${index}`}
-                className="inline-block h-16 mx-8 grayscale hover:grayscale-0 transition duration-300"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <CompaniesSlider showtop={showtop} />
 
       {/* <Single platform /> */}
       <section className="px-6 py-16">
@@ -465,24 +425,7 @@ const HomePage = () => {
       </div>
 
       {/* calculator  section  */}
-      <section className="py-20 px-4 text-center relative">
-        {/* Icons */}
-        <div className="flex justify-center items-center gap-2 mb-8">
-          <MdEnergySavingsLeaf size={60} color='#0f172a' />
-          <MdElectricMeter size={60} color='#0f172a' />
-          <IoIosCalculator size={60} color='#0f172a' />
-        </div>
-
-        {/* Heading */}
-        <h2 className="text-2xl md:text-4xl font-bold mb-10 leading-tight">
-          Easily manage your finite resources with <br className="hidden md:block" /> EnergyCAP
-        </h2>
-
-        {/* Button */}
-        <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
-          Contact Sales
-        </button>
-      </section>
+      <CalculatorSection calculatorContent={calculatorContent}/>
 
       {/* blog  section  */}
       <section className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] px-6 py-12 text-white">

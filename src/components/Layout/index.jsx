@@ -41,12 +41,13 @@ const WebsiteLayout = ({ children }) => {
                     Help Center
                 </div>
                 {/* Navbar */}
-                <header className={`relative transition-all duration-300 ${isScrolled ? 'bg-white shadow-2xl' : 'bg-transparent'}`}>
-                    <div className="max-w-screen-xl mx-auto flex justify-between items-center py-4 px-4 md:px-8">
+                
 
+                <header className={`relative transition-all duration-100 ${isScrolled ? 'bg-white shadow-2xl border-b border-[0f172a]' : 'bg-transparent'}`}>
+                    <div className="max-w-screen-xl mx-auto flex justify-between items-center py-1 px-4 md:px-8">
                         {/* Logo */}
-                        {/* <div className="text-3xl font-extrabold tracking-wide ">SPT</div> */}
-                        <img className="w-30 h-15 font-extrabold tracking-wide " src={Logo} alt="SPT_logo" />
+                        <img className="w-30 h-15 font-extrabold tracking-wide" src={Logo} alt="SPT_logo" />
+
                         {/* Mobile Menu Toggle */}
                         <button
                             data-menu-toggle
@@ -58,13 +59,22 @@ const WebsiteLayout = ({ children }) => {
 
                         {/* Desktop Nav Items */}
                         <nav className="hidden md:flex space-x-8 font-bold text-sm">
-                            <a href="#" className="hover:underline hover:text-[#0e121b] transition duration-200">Home</a>
-                            <a
-                                href="#"
-                                onClick={() => setShowSolutionsDropdown(!showSolutionsDropdown)}
-                                className=" hover:underline hover:text-[#0e121b] transition duration-200"
+                            {/* Home */}
+                            <div
+                                className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                onClick={() => navigate('/')}
                             >
-                                Solutions
+                                Home
+                            </div>
+
+                            {/* Solutions */}
+                            <div className="">
+                                <div
+                                    className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/solution') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    onClick={() => setShowSolutionsDropdown(!showSolutionsDropdown)}
+                                >
+                                    Solutions
+                                </div>
                                 {showSolutionsDropdown && (
                                     <div
                                         onMouseEnter={() => setShowSolutionsDropdown(true)}
@@ -72,69 +82,206 @@ const WebsiteLayout = ({ children }) => {
                                         className="absolute top-full left-2 right-2 shadow-xl bg-white grid grid-cols-4 gap-4 border border-[#0f172a] z-50"
                                     >
                                         {/** Card 1 */}
-                                        <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={()=>navigate('/solution/utility-mangement')}>
+                                        <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
                                             <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
                                             <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                             <div className="flex flex-col gap-2 mt-5">
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Overview</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Features</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Bill CAPture Services</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Pricing</a>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/overview');
+                                                    }}
+                                                >
+                                                    Overview
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/features');
+                                                    }}
+                                                >
+                                                    Features
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                    }}
+                                                >
+                                                    Bill CAPture Services
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/pricing');
+                                                    }}
+                                                >
+                                                    Pricing
+                                                </div>
                                             </div>
                                         </div>
-
                                         {/** Card 2 */}
-                                        <div className="border-r px-4 py-6 flex flex-col justify-between">
+                                        <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
                                             <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
                                             <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                             <div className="flex flex-col gap-2 mt-5">
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Overview</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Features</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Bill CAPture Services</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Pricing</a>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/overview');
+                                                    }}
+                                                >
+                                                    Overview
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/features');
+                                                    }}
+                                                >
+                                                    Features
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                    }}
+                                                >
+                                                    Bill CAPture Services
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/pricing');
+                                                    }}
+                                                >
+                                                    Pricing
+                                                </div>
                                             </div>
                                         </div>
-
                                         {/** Card 3 */}
-                                        <div className="border-r px-4 py-6 flex flex-col justify-between">
+                                        <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
                                             <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
                                             <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                             <div className="flex flex-col gap-2 mt-5">
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Overview</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Features</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Bill CAPture Services</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Pricing</a>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/overview');
+                                                    }}
+                                                >
+                                                    Overview
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/features');
+                                                    }}
+                                                >
+                                                    Features
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                    }}
+                                                >
+                                                    Bill CAPture Services
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/pricing');
+                                                    }}
+                                                >
+                                                    Pricing
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/** Card 4 */}
+                                        <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
+                                            <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
+                                            <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
+                                            <div className="flex flex-col gap-2 mt-5">
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/overview');
+                                                    }}
+                                                >
+                                                    Overview
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/features');
+                                                    }}
+                                                >
+                                                    Features
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                    }}
+                                                >
+                                                    Bill CAPture Services
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/solution/utility-mangement/pricing');
+                                                    }}
+                                                >
+                                                    Pricing
+                                                </div>
                                             </div>
                                         </div>
 
-                                        {/** Card 4 */}
-                                        <div className="border-r px-4 py-6 flex flex-col justify-between">
-                                            <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
-                                            <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
-                                            <div className="flex flex-col gap-2 mt-5">
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Overview</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Features</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Bill CAPture Services</a>
-                                                <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Pricing</a>
-                                            </div>
-                                        </div>
+                                        {/* Repeat similar structure for other cards */}
+                                        {/* Card 2, 3, 4 would follow the same pattern */}
                                     </div>
                                 )}
-                            </a>
+                            </div>
 
-                            <a href="#" className="hover:underline hover:text-[#0e121b] transition duration-200">About Us</a>
-                            <a
-                                href="#"
-                                onClick={() => setShowSolutionsDropdown1(!showSolutionsDropdown1)}
-                                className="hover:underline hover:text-[#0e121b] transition duration-200">
-                                Resources
+                            {/* About Us */}
+                            <div
+                                className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/about' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                onClick={() => navigate('/about')}
+                            >
+                                About Us
+                            </div>
+
+                            {/* Resources */}
+                            <div className="relative">
+                                <div
+                                    className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/resources') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    onClick={() => setShowSolutionsDropdown1(!showSolutionsDropdown1)}
+                                >
+                                    Resources
+                                </div>
                                 {showSolutionsDropdown1 && (
                                     <div
                                         onMouseEnter={() => setShowSolutionsDropdown1(true)}
                                         onMouseLeave={() => setShowSolutionsDropdown1(false)}
                                         className="absolute top-full left-2 right-2 flex items-center justify-center z-50"
                                     >
-                                        {/** Card 1 */}
                                         <div className=" border border-[#0f172a] w-[30%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
                                             <h4 className="font-bold text-lg mb-4">Resources</h4>
                                             <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
@@ -152,19 +299,33 @@ const WebsiteLayout = ({ children }) => {
                                             </div>
 
                                         </div>
-
+                                        {/* Resources dropdown content */}
                                     </div>
                                 )}
-                            </a>
-                            <a href="#" className="hover:underline hover:text-[#0e121b] transition duration-200">Support</a>
-                            <a href="#" className="hover:underline hover:text-[#0e121b] transition duration-200">Contact Us</a>
+                            </div>
 
+                            {/* Support */}
+                            <div
+                                className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/support' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                onClick={() => navigate('/support')}
+                            >
+                                Support
+                            </div>
+
+                            {/* Contact Us */}
+                            <div
+                                className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/contact' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                                onClick={() => navigate('/contact')}
+                            >
+                                Contact Us
+                            </div>
                         </nav>
 
                         {/* Request Demo Button */}
                         <div className="hidden md:block">
                             <div
                                 className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300"
+                                onClick={() => navigate('/request-demo')}
                             >
                                 Request a Demo
                             </div>
@@ -190,7 +351,6 @@ const WebsiteLayout = ({ children }) => {
                         </div>
                     )}
                 </header>
-
             </div>
 
 
@@ -202,7 +362,7 @@ const WebsiteLayout = ({ children }) => {
             {/* Footer */}
             <footer className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] text-white py-12 px-6 md:px-16">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-                    <div className="col-span-1 md:col-span-2">
+                    <div className="col-span-1 md:col-span-1">
                         <img className="w-30 h-15 font-extrabold tracking-wide " src={Logo} alt="SPT_logo" />
 
                         <div className="flex space-x-3 mb-6 text-[#7498ed] text-xl">
@@ -217,7 +377,11 @@ const WebsiteLayout = ({ children }) => {
                             </div>
                             <div>
                                 <h4 className="font-semibold">Phone Number</h4>
-                                <p>SPT AI Energy Lab / Stored Power Technology Inc.<br />2990 Myers St, Riverside, CA 92503</p>
+                                <p>800-677-5014</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold">Email</h4>
+                                <p>sales@sptus.com</p>
                             </div>
                         </div>
                     </div>

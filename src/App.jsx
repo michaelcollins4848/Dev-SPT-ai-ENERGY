@@ -22,7 +22,7 @@ export default function App() {
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/solution/utility-mangement" element={<UtilityMangement />} />
+          <Route path="/solution/utility-mangement/overview" element={<UtilityMangement />} />
         </Routes>
       </Suspense>
     </Router>
