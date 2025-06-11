@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+:root {
+    --color-primary: #0f172a;
+    --color-secondary: #6e8cd1;
+    --color-text-primary: #FAF9F6;
+    --color-charcoal: #2F2F2F;
+    --color-text-black: #2F2F2F;
+    --font-arimo: 'Arimo', sans-serif;
+}
+
+body {
+    font-family: var(--font-arimo);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #ffffff, #bad8fe);
+    color: #0f172a;
+}
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+
+
+.bg-charocal {
+    background-color: var(--color-charcoal);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+
+
+.font-arimo {
+    font-family: var(--font-arimo);
+}
+
+.bgbackgroundimg {
+    background-image: url('./assets/Images/SPTs-energy.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-slide {
+    animation: slide 30s linear infinite;
+}
+
+
+.shadow-gradient-custom{
+    box-shadow: 0 4px 20px rgba(25, 110, 223, 0.5);
+}
+
+/* Custom slick dots */
+.slick-dots {
+  bottom: -40px !important; /* Adjust vertical position */
+  display: flex !important;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  color: #0f172a !important; /* Your dot color */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0f172a !important;
+  opacity: 1 !important;
+}
