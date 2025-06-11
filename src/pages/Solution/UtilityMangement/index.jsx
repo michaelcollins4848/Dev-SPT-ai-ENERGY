@@ -7,7 +7,7 @@ import CompaniesSlider from '../../../components/Home/CompaniesSlider';
 import GoodbyeSpreadsheets from '../../../components/Solution Components/GoodbyeSpreadsheets';
 import UtilityBillDataExcellence from '../../../components/Solution Components/UtilityBillDataExcellence';
 import ManageUtilityData from '../../../components/Solution Components/ManageUtilityData';
-import CalculatorSection from '../../../components/Home/calculatorSection';
+import CalculatorSection from '../../../components/Home/CalculatorSection';
 
 const homepageContent = {
     heading1: "Save 10% or more*",
