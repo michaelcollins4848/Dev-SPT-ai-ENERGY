@@ -11,12 +11,10 @@ import platfrom3 from '../../assets/Images/platform3.webp'
 
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
-import { MdEnergySavingsLeaf } from "react-icons/md";
-import { MdElectricMeter } from "react-icons/md";
-import { IoIosCalculator } from "react-icons/io";
+
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
 import CompaniesSlider from '../../components/Home/CompaniesSlider';
-import CalculatorSection from '../../components/Home/calculatorSection';
+import CalculatorSection from '../../components/Home/CalculatorSection';
 
 // import EnergyDashboard from './EnergyDashboard';
 
