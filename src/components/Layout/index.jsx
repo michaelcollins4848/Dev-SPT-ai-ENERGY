@@ -5,8 +5,6 @@ import Logo from "../../assets/Images/SPT_logo.png"
 import solution1 from "../../assets/Images/solution.webp"
 import { useNavigate } from "react-router-dom";
 
-
-
 const WebsiteLayout = ({ children }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
