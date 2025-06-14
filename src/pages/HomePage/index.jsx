@@ -15,6 +15,8 @@ import { FaPlay } from "react-icons/fa";
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
 import CompaniesSlider from '../../components/Home/CompaniesSlider';
 import CalculatorSection from '../../components/Home/CalculatorSection';
+import TestimoninalCarousel from '../../components/Home/TestimoninalCarousel';
+import BlogSection from '../../components/Home/BlogSection';
 
 // import EnergyDashboard from './EnergyDashboard';
 
@@ -150,23 +152,7 @@ const blogs = [
   }
 ];
 
-const settings = {
-  centerMode: true,
-  centerPadding: '10%', // Adjust this based on design
-  slidesToShow: 1,
-  arrows: false,
-  dots: true,
-  infinite: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        centerPadding: '0px',
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
+
 
 const tabData = [
   {
@@ -209,31 +195,17 @@ const calculatorContent = {
   btn: "Contact Sales",
 };
 
+const blogContent = {
+  btn: "Resources & Insights",
+  showprogress: true,
+  showbttombtn: true,
+};
+
 const showtop = true
 
 
 const HomePage = () => {
-
-  const [activeIndex, setActiveIndex] = useState(0);
   const [activeIndex1, setActiveIndex1] = useState(1);
-
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (progress >= 100) {
-        setProgress(0);
-        setActiveIndex((prevIndex) => (prevIndex + 1) % tabs.length);
-      } else {
-        setProgress((prev) => prev + 1);
-      }
-    }, 50);
-
-    return () => clearInterval(interval);
-  }, [progress, tabs.length]);
-
-
-
 
   return (
     <WebsiteLayout>
@@ -266,7 +238,9 @@ const HomePage = () => {
       </section>
 
       {/* partner company section  */}
-      <CompaniesSlider showtop={showtop} />
+      <CompaniesSlider showtop={showtop} heading="For over 40 years, EnergyCAP has empowered energy and sustainability
+                    leaders at some of the largest corporations, governments and
+                    institutions."/>
 
       {/* <Single platform /> */}
       <section className="px-6 py-16">
@@ -378,113 +352,13 @@ const HomePage = () => {
       </section>
 
       {/* Testimoninal  section  */}
-      <div className="py-12 px-4 max-w-7xl mx-auto">
-        <Slider {...settings}>
-          {testimonials?.map((item, index) => (
-            <div key={index} className="px-4">
-              <div className="md:h-90 shadow-gradient-custom flex flex-col md:flex-row items-center gap-8 bg-white border border-[#0f172a] p-6 shadow-lg">
-                {/* Avatar + Play Button */}
-                <div className="relative shrink-0 sm:w-sm flex items-center justify-center">
-                  <div className={`w-50 h-50 rounded-full overflow-hidden relative ${item.bgColor}`}>
-                    <img
-                      src={item.videoThumbnail}
-                      alt="avatar"
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                    <button className="absolute inset-0 flex items-center justify-center text-white bg-[#0f172a]/80 rounded-full">
-                      <FaPlay size={24} />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Quote and Info */}
-                <div className="text-center md:text-left flex-1">
-                  {item.companyLogo && (
-                    <img
-                      src={item.companyLogo}
-                      alt="company logo"
-                      className="h-6 mb-2 mx-auto md:mx-0"
-                    />
-                  )}
-                  <p className="text-xl md:text-3xl font-medium mb-4 leading-tight">
-                    “{item.quote}”
-                  </p>
-                  <p className="text-slate-700 font-semibold">
-                    {item.name}
-                    {item.title && (
-                      <span className="font-normal"> // {item.title}</span>
-                    )}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <TestimoninalCarousel testimonials={testimonials} />
 
       {/* calculator  section  */}
-      <CalculatorSection calculatorContent={calculatorContent}/>
+      <CalculatorSection calculatorContent={calculatorContent} />
 
       {/* blog  section  */}
-      <section className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] px-6 py-12 text-white">
-        <div className='h-70'>
-          <h2 className="text-white border-2 px-4 py-2 inline-block border-white text-lg font-bold mb-8">
-            Resources & Insights
-          </h2>
-          <h3 className="md:text-4xl text-2xl font-extrabold leading-tight max-w-3xl cursor-pointer hover:text-[#6e8cd1] transition duration-300 ">
-            {tabs[activeIndex].title}
-          </h3>
-          <p className="font-semibold mt-8 hover:underline cursor-pointer hover:text-[#6e8cd1] transition duration-300">Learn More</p>
-
-        </div>
-
-        {/* Tab Selectors */}
-        <div className="mt-10 flex gap-8 text-sm font-semibold">
-          {tabs.map((tab, index) => (
-            <div
-              key={tab.id}
-              className={`cursor-pointer transition-all relative pt-4 border-t-[2px] md:text-lg text-md ${activeIndex === index ? "text-white border-white" : "text-gray-500 border-gray-500"
-                }`}
-              onClick={() => {
-                setActiveIndex(index);
-                setProgress(0);
-              }}
-            >
-              {tab.label}
-              {activeIndex === index && (
-                <div className="absolute left-0 -top-0.5 h-[3px] bg-[#6e8cd1] transition-all duration-300 ease-linear" style={{ width: `${progress}%` }}></div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-14 flex gap-8">
-          {blogs.map((blog) => (
-            <div key={blog.id} className="border border-white bg-transparent flex flex-col justify-between cursor-pointer ">
-              <div>
-                <img
-                  src={blog.img}
-                  alt="thumbnail"
-                  className="w-full h-32 object-contain  bg-white p-2"
-                />
-                <div className='group hover:bg-[#0f172a] transition-all p-8'>
-                  <p className="text-white text-md italic mb-2 group-hover:text-gray-300">Blogs</p>
-                  <h4 className="text-white font-bold md:text-2xl text-xl leading-snug mb-25 group-hover:text-gray-300 group-hover:underline underline-offset-2 transition duration-300">I{blog.title}</h4>
-                  <p className="font-semibold text-[#3686fd] group-hover:text-gray-300 transition duration-300 underline underline-offset-2 cursor-pointer">
-                    Read more
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-8 text-center">
-          <button className="bg-transparent cursor-pointer text-white font-bold rounded border border-white px-4 py-2 text-sm hover:bg-white hover:text-[#0f172a] hover:underline">
-            See All Resources
-          </button>
-        </div>
-      </section>
+      <BlogSection tabs={tabs} blogs={blogs} blogContent={blogContent}/>
     </WebsiteLayout>
   )
 }

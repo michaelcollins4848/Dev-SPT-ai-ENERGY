@@ -5,7 +5,7 @@ import { IoIosCalculator } from "react-icons/io";
 
 const CalculatorSection = ({ calculatorContent }) => {
     return (
-        <section className="py-20 px-4 text-center relative">
+        <section className="py-20 px-4 text-center bgbackgroundimg">
             {/* Icons */}
             <div className="flex justify-center items-center gap-2 mb-8">
                 <MdEnergySavingsLeaf size={60} color='#0f172a' />
@@ -14,7 +14,7 @@ const CalculatorSection = ({ calculatorContent }) => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-4xl font-bold mb-10 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-bold mb-10 leading-snug">
                {calculatorContent.heading1} <br className="hidden md:block" /> {calculatorContent.heading2}
             </h2>
 

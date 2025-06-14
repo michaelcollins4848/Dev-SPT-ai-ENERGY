@@ -3,15 +3,17 @@ import heroImg from '../../assets/Images/img.png';
 import { FaPlay } from 'react-icons/fa';
 
 import img from '../../assets/Images/solution.webp'
+import { useNavigate } from 'react-router-dom';
 
 
 const HeroBannerSection = ({ homepageContent }) => {
+    const navigate = useNavigate()
     return (
         <section className="relative overflow-hidden bgbackgroundimg">
             <div className='max-w-7xl mx-auto sm:px-10 sm:py-30 px-5 py-24'>
                 {homepageContent.showtop &&
                     <div className=''>
-                        <h6 className='text-sm font-[400] italic '>Home / EnergyCAP UtilityManagement</h6>
+                        <h6 className='text-sm font-[400] italic '> <span className='cursor-pointer'onClick={()=>navigate('/')} >Home</span> / {homepageContent.navigation}</h6>
                         <img src={img} alt="" className='w-50 h-10 mt-5' />
                     </div>
                 }

@@ -1,6 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UtilityMangement from './pages/Solution/UtilityMangement';
+import UtilityMangementFeature from './pages/Solution/UtilityMangement/Features';
+import UtilityMangementPricing from './pages/Solution/UtilityMangement/Pricing';
+import UtilityMangementBillCAPtureServices from './pages/Solution/UtilityMangement/BillCAPtureServices';
+import Aboutus from './pages/About Us';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 
@@ -23,6 +27,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/solution/utility-mangement/overview" element={<UtilityMangement />} />
+          <Route path="/solution/utility-mangement/feature" element={<UtilityMangementFeature />} />
+          <Route path="/solution/utility-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/solution/utility-mangement/pricing" element={<UtilityMangementPricing />} />
+          <Route path="/about" element={<Aboutus />} />
         </Routes>
       </Suspense>
     </Router>

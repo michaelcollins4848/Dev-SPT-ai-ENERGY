@@ -95,6 +95,17 @@ const Header = () => {
         }
     };
 
+
+    const showSolutionsDropdown1 = ()=>{
+        setShowSolutionsDropdown(!showSolutionsDropdown)
+        setShowResourcesDropdown(false)
+    }
+
+    const showResourcesDropdown1 = ()=>{
+        setShowResourcesDropdown(!showResourcesDropdown)
+        setShowSolutionsDropdown(false)
+    }
+
     return (
         <header className={`relative transition-all duration-300 
     bg-white shadow-2xl border-b border-[#0f172a] 
@@ -163,8 +174,7 @@ const Header = () => {
                     <div className="">
                         <div
                             className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/solution') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                            onClick={() => setShowSolutionsDropdown(!showSolutionsDropdown)}
-                            onMouseEnter={() => setShowSolutionsDropdown(true)}
+                            onClick={() => showSolutionsDropdown1()}
                         >
                             Solutions
                         </div>
@@ -191,7 +201,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/features');
+                                                navigate('/solution/utility-mangement/feature');
                                             }}
                                         >
                                             Features
@@ -364,8 +374,7 @@ const Header = () => {
                     <div className="">
                         <div
                             className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/resources') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                            onClick={() => setShowResourcesDropdown(!showResourcesDropdown)}
-                            onMouseEnter={() => setShowResourcesDropdown(true)}
+                            onClick={() => showResourcesDropdown1()}
                         >
                             Resources
                         </div>

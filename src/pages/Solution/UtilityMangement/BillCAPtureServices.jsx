@@ -40,7 +40,7 @@ const homepageContent = {
     btn: "Read the ROI of EnergyCAP UtilityManagement eBook",
     showplay: false,
     showtop: true,
-    navigation: 'UtilityManagement',
+    navigation: 'UtilityManagement / Bill CAPture Services',
 };
 
 const showtop = false
@@ -283,7 +283,7 @@ const features1 = [
     },
 ];
 
-const UtilityMangement = () => {
+const UtilityMangementBillCAPtureServices = () => {
     return (
         <WebsiteLayout>
             <HeroBannerSection homepageContent={homepageContent} />
@@ -299,4 +299,4 @@ const UtilityMangement = () => {
     )
 }
 
-export default UtilityMangement
+export default UtilityMangementBillCAPtureServices
