@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 
-import img from '../../assets/Images/office.svg'
+import img from '../../assets/Images/Office.svg'
 import { useNavigate } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
