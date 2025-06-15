@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import { useLocation } from "react-router-dom";
-import { FaFacebookSquare, FaLinkedin, FaYoutube } from "react-icons/fa";
-import Logo from "../../assets/Images/SPT_logo.png"
+import { FaLinkedin, FaYoutube, FaInstagram, FaXTwitter } from "react-icons/fa6"; 
+import { FaFacebookSquare } from "react-icons/fa";
+
+import Logo from "../../assets/Images/SPT_logo.png";
+import Ai from "../../assets/Images/ai-management.png";
 import solution1 from "../../assets/Images/solution.webp"
 import { useNavigate } from "react-router-dom";
 import Header from "./Navbar";
@@ -43,7 +46,7 @@ const WebsiteLayout = ({ children }) => {
                 </div>
                 {/* Navbar */}
 
-                <Header/>
+                <Header />
             </div>
 
 
@@ -53,16 +56,19 @@ const WebsiteLayout = ({ children }) => {
             </main>
 
             {/* Footer */}
-            <footer className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] text-white py-12 px-6 md:px-16">
-                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+            <footer className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] text-white py-12 px-6">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:px-10">
+                    {/* Logo + Contact */}
                     <div className="col-span-1 md:col-span-1">
-                        <img className="w-30 h-15 font-extrabold tracking-wide " src={Logo} alt="SPT_logo" />
-
+                        <img className="w-30 h-15 mb-4" src={Logo} alt="SPT_logo" />
                         <div className="flex space-x-3 mb-6 text-[#7498ed] text-xl">
-                            <FaFacebookSquare />
-                            <FaLinkedin />
-                            <FaYoutube />
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookSquare  /></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
                         </div>
+
                         <div className="text-sm space-y-4">
                             <div>
                                 <h4 className="font-semibold">Address</h4>
@@ -79,50 +85,66 @@ const WebsiteLayout = ({ children }) => {
                         </div>
                     </div>
 
+                    {/* Who we serve */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Who we serve</h4>
-                        <p>Energy Managers</p>
-                        <p>Sustainability Leaders</p>
-                        <p>Finance Leaders</p>
-
+                        <p className=" cursor-pointer hover:underline">Energy Managers</p>
+                        <p className=" cursor-pointer hover:underline">Sustainability Leaders</p>
+                        <p className=" cursor-pointer hover:underline">Finance Leaders</p>
                         <h4 className="mt-4 font-semibold">Industries</h4>
-                        <p>Higher Education</p>
-                        <p>Commercial Campuses</p>
-                        <p>Government</p>
-                        <p>K-12</p>
-                        <p>Utility Vendors</p>
-                        <p>Food & Beverage</p>
-                        <p>Automotive</p>
-                        <p>Retail</p>
+                        <p className=" cursor-pointer hover:underline">Higher Education</p>
+                        <p className=" cursor-pointer hover:underline">Commercial Campuses</p>
+                        <p className=" cursor-pointer hover:underline">Government</p>
+                        <p className=" cursor-pointer hover:underline">K-12</p>
+                        <p className=" cursor-pointer hover:underline">Utility Vendors</p>
+                        <p className=" cursor-pointer hover:underline">Food & Beverage</p>
+                        <p className=" cursor-pointer hover:underline">Automotive</p>
+                        <p className=" cursor-pointer hover:underline">Retail</p>
                     </div>
 
+                    {/* Solutions */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Solutions Overview</h4>
-                        <p>Utility Management</p>
-                        <p>SmartAnalytics</p>
-                        <p>CarbonHub</p>
-                        <p>Utility Company Platform</p>
-                        <p>Bill CAPture</p>
+                        <p className=" cursor-pointer hover:underline">Utility Management</p>
+                        <p className=" cursor-pointer hover:underline">SmartAnalytics</p>
+                        <p className=" cursor-pointer hover:underline">CarbonHub</p>
+                        <p className=" cursor-pointer hover:underline">Utility Company Platform</p>
+                        <p className=" cursor-pointer hover:underline">Bill CAPture</p>
                         <h4 className="mt-4 font-semibold">Success Stories</h4>
                     </div>
 
+                    {/* Company */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Company</h4>
-                        <p>Careers</p>
-                        <p>Contact Sales</p>
-                        <p>Pricing</p>
-                        <p>Services</p>
+                        <p className=" cursor-pointer hover:underline">Careers</p>
+                        <p className=" cursor-pointer hover:underline">Contact Sales</p>
+                        <p className=" cursor-pointer hover:underline">Pricing</p>
+                        <p className=" cursor-pointer hover:underline">Services</p>
                     </div>
 
+                    {/* Resources */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Resources</h4>
-                        <p>eBooks</p>
-                        <p>Blogs</p>
-                        <p>Webinars</p>
-                        <p>Press</p>
-                        <p>Product features</p>
-                        <p>Downloads</p>
-                        <p>Sitemap</p>
+                        <p className=" cursor-pointer hover:underline">eBooks</p>
+                        <p className=" cursor-pointer hover:underline">Blogs</p>
+                        <p className=" cursor-pointer hover:underline">Webinars</p>
+                        <p className=" cursor-pointer hover:underline">Press</p>
+                        <p className=" cursor-pointer hover:underline">Product features</p>
+                        <p className=" cursor-pointer hover:underline">Downloads</p>
+                        <p className=" cursor-pointer hover:underline">Sitemap</p>
+                    </div>
+                </div>
+
+                {/* Divider */}
+                <div className="border-t border-gray-500 mt-10 mb-6 mx-10" />
+
+                {/* Bottom */}
+                <div className="max-w-screen-xl mx-auto px-6 md:px-10 text-sm flex flex-col md:flex-row justify-between items-center gap-4 text-gray-300">
+                    <p>&copy; 2025 SPT AI Energy Lab. All rights reserved.</p>
+                    <div className="flex space-x-5">
+                        <a href="#" className="hover:text-white cursor-pointer hover:underline">Privacy Policy</a>
+                        <a href="#" className="hover:text-white cursor-pointer hover:underline">Terms of Service</a>
+                        <a href="#" className="hover:text-white cursor-pointer hover:underline">Sitemap</a>
                     </div>
                 </div>
             </footer>

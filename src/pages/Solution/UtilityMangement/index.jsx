@@ -282,6 +282,12 @@ const features1 = [
             "Whether you are new to EnergyCAP or if you just need a refresher course, we are committed to helping you and your team maximize the value from the software. We offer online or in person customized training to meet your specific needs.",
     },
 ];
+const ManageUtilityDataContent = {
+  heading1: "A simpler way to manage utility data",
+  subheding: "Whether you manage a handful of buildings or thousands of properties across the globe, our ERP for utilities is a flexible, accurate, and reliable platform that helps you make sense of your energy and sustainability data and streamlines your team’s workflows.",
+  showsubheading: true,
+};
+
 
 const UtilityMangement = () => {
     return (
@@ -290,7 +296,7 @@ const UtilityMangement = () => {
             <CompaniesSlider showtop={showtop} />
             <GoodbyeSpreadsheets />
             <UtilityBillDataExcellence features={features} UtilityBillDataExcellenceContent={UtilityBillDataExcellenceContent} />
-            <ManageUtilityData data={data} />
+            <ManageUtilityData data={data} ManageUtilityDataContent={ManageUtilityDataContent} />
             <CompanyReviewsSlider dataCompany={dataCompany} />
             <UtilityBillDataExcellence features={features1} UtilityBillDataExcellenceContent={UtilityBillDataExcellenceContent1} />
             <CalculatorSection calculatorContent={calculatorContent} />

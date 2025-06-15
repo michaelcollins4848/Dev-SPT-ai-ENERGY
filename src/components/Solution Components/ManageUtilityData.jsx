@@ -6,15 +6,17 @@ import { FaPlay } from 'react-icons/fa';
 
 
 
-const ManageUtilityData = ({data}) => {
+const ManageUtilityData = ({ data, ManageUtilityDataContent }) => {
     return (
         <section className="px-6 py-12 max-w-7xl mx-auto">
             <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight text-center">
-                A simpler way to manage utility data
+                {ManageUtilityDataContent.heading1}
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-center">
-                Whether you manage a handful of buildings or thousands of properties across the globe, our ERP for utilities is a flexible, accurate, and reliable platform that helps you make sense of your energy and sustainability data and streamlines your team’s workflows.
-            </p>
+            {ManageUtilityDataContent.showsubheading &&
+                <p className="mt-4 max-w-2xl mx-auto text-gray-700 text-center">
+                    {ManageUtilityDataContent.subheding}
+                </p>
+            }
             <div>
                 {data.map((i, index) => (
                     <div key={index} className="w-full px-2 mt-20 mb-10">
@@ -50,6 +52,11 @@ const ManageUtilityData = ({data}) => {
                                         </div>
                                     ))}
                                 </div>
+                                {i.showbtn &&
+                                    <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
+                                        {i?.btn}
+                                    </button>
+                                }
                             </div>
                         </div>
                     </div>

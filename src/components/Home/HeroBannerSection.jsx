@@ -36,7 +36,7 @@ const HeroBannerSection = ({ homepageContent }) => {
                             {homepageContent.showplay &&
                                 <button className="flex items-center gap-2 text-[#0f172a] hover:underline font-semibold">
                                     <FaPlay className="text-white bg-[#0f172a] rounded-full p-2 cursor-pointer w-9 h-9" />
-                                    What is EMS?
+                                    {homepageContent?.playbtn}
                                 </button>
                             }
                         </div>

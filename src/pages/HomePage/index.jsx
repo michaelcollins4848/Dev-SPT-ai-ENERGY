@@ -4,9 +4,9 @@ import Slider from "react-slick";
 
 import heroImg from '../../assets/Images/img.png'
 import blog1 from '../../assets/Images/blog1.png'
-import platfrom1 from '../../assets/Images/platform1.webp'
-import platfrom2 from '../../assets/Images/platform2.webp'
-import platfrom3 from '../../assets/Images/platform3.webp'
+import platfrom1 from '../../assets/Images/Energy Insight.png'
+import platfrom2 from '../../assets/Images/EMS intelligently.png'
+import platfrom3 from '../../assets/Images/Power Assurance.png'
 
 
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
@@ -157,25 +157,32 @@ const blogs = [
 const tabData = [
   {
     index: 0,
-    title: "Energy Managers",
-    content: `From a high-level portfolio overview to detailed data analysis, operate from one single source of truth with accurate and reliable data. EnergyCAP removes data complexity and helps you create, validate, and visualize the energy program you need now.`,
-    link: "Explore our energy management solution",
+    title: "Energy Insight",
+    content: `Our AI Energy Management System (EMS) provides clear, real-time visualizations of your energy generation, storage, usage, and savings. Gain transparent insights without compromising your data privacy. `,
+    link: "Explore our ai energy management system ",
     image: platfrom1,
   },
   {
     index: 1,
-    title: "Sustainability Leaders",
-    content: `You need access to your organization’s energy and commodity information for accurate sustainability reporting. Imagine a world where your consumption data automatically converts into greenhouse gas emissions and provides a holistic view of sustainability performance across your organization. With EnergyCAP, you can achieve your sustainability goals faster and focus your time on projects that matter.`,
-    link: "Explore our sustainability solution",
+    title: "Energy Efficiency",
+    content: `The AI within our EMS intelligently learns your energy habits and local pricing to automatically optimize energy sources – solar, battery, or grid – ensuring you reduce electricity bills and reliance on the grid effortlessly. `,
+    link: "Explore our EMS intelligently ",
     image: platfrom2,
   },
   {
     index: 2,
-    title: "Finance Leaders",
-    content: `Energy and utility bill accounting is complex. Finance teams need a tool to simplify the capture of data, automatically identify billing anomalies, and streamline approval and auditing processes. With EnergyCAP, you gain a partner that enhances your already-predictable system.`,
-    link: "Explore our energy accounting solution",
+    title: "Power Assurance",
+    content: `From predicting maintenance needs to monitoring weather hazards, grid stability, and equipment anomalies, our EMS provides early warnings and takes immediate action to ensure 24/7 power for critical needs. `,
+    link: "Explore our predicting maintenance",
     image: platfrom3,
   },
+  {
+    index: 3,
+    title: "Power Assurance",
+    content: `From predicting maintenance needs to monitoring weather hazards, grid stability, and equipment anomalies, our EMS provides early warnings and takes immediate action to ensure 24/7 power for critical needs. `,
+    link: "Explore our predicting maintenance",
+    image: platfrom3,
+  }
 ];
 
 
@@ -185,6 +192,7 @@ const homepageContent = {
   subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power plant.",
   img: heroImg,
   btn: "Get a Free Consultation",
+  playbtn: "What is EMS?",
   showplay: true,
   showtop: false,
 };
@@ -217,9 +225,8 @@ const HomePage = () => {
       <section className="font-arimo py-16">
         <div className="text-center px-4 md:px-0">
           <h2 className="text-xl md:text-4xl font-bold mb-12 leading-tight">
-            Maximize efficiency, unlock savings, <br />
-            and accelerate decarbonization with <br />
-            EnergyCAP.
+        
+            Achieve peak efficiency, cost savings,<br /> and sustainable energy transformation with <br/>SPT’s intelligent AI-powered EMS
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto bg-white/60 p-8 rounded-lg shadow-md border border-[#0f172a]">
@@ -238,17 +245,15 @@ const HomePage = () => {
       </section>
 
       {/* partner company section  */}
-      <CompaniesSlider showtop={showtop} heading="For over 40 years, EnergyCAP has empowered energy and sustainability
-                    leaders at some of the largest corporations, governments and
-                    institutions."/>
+      <CompaniesSlider showtop={showtop} heading="SPT AI Energy Lab partners with corporations, governments, and institutions to deliver intelligent energy solutions that drive efficiency, savings, and sustainable transformation."/>
 
       {/* <Single platform /> */}
       <section className="px-6 py-16">
         <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight text-center">
-          A single platform for the entire team
+       Unified energy tools for every role
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-center">
-          Our energy and sustainability software brings cross-functional teams together, in a single platform, to drive cost-effective and responsible utilization of finite resources.
+         SPT’s intelligent EMS brings together cross-functional teams on a single platform, enabling seamless collaboration to maximize efficiency, control costs, and drive sustainable energy outcomes.
         </p>
         <div className="w-full px-4 mt-20 mb-10">
           <div className="flex flex-col lg:flex-row gap-8">

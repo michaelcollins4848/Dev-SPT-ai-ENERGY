@@ -9,7 +9,7 @@
     --color-secondary: #6e8cd1;
     --color-text-primary: #FAF9F6;
     --color-charcoal: #2F2F2F;
-    --color-text-black: #2F2F2F;
+    --color-text-black: #001f3f;
     --font-arimo: 'Arimo', sans-serif;
 }
 
@@ -69,6 +69,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.bgbackgroundimg1 {
+    background-image: linear-gradient(rgba(0, 15, 31, 0.8), rgba(0, 15, 31, 0.8)), url('./assets/Images/bgimgage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @keyframes slide {
     0% {
         transform: translateX(0%);
@@ -84,30 +91,32 @@ body {
 }
 
 
-.shadow-gradient-custom{
+.shadow-gradient-custom {
     box-shadow: 0 4px 20px rgba(25, 110, 223, 0.5);
 }
 
 /* Custom slick dots */
 .slick-dots {
-  bottom: -40px !important; /* Adjust vertical position */
-  display: flex !important;
-  justify-content: center;
-  gap: 0.5rem;
+    bottom: -40px !important;
+    /* Adjust vertical position */
+    display: flex !important;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .slick-dots li {
-  margin: 0;
+    margin: 0;
 }
 
 .slick-dots li button:before {
-  font-size: 15px !important;
-  color: #0f172a !important; /* Your dot color */
-  opacity: 0.5;
-  transition: all 0.3s ease;
+    font-size: 15px !important;
+    color: #0f172a !important;
+    /* Your dot color */
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #0f172a !important;
-  opacity: 1 !important;
+    color: #0f172a !important;
+    opacity: 1 !important;
 }

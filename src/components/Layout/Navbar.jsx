@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from "../../assets/Images/SPT_logo.png"
-import solution1 from "../../assets/Images/solution.webp"
+import solution1 from "../../assets/Images/solution.webp";
+import Ai from "../../assets/Images/ai-management.png";
+import Smart from "../../assets/Images/smart-analysis.png"
+import Product from "../../assets/Images/our-product.png";
+import Platfrom from "../../assets/Images/unity-platform.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
@@ -18,6 +22,7 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [showSolutionsDropdown, setShowSolutionsDropdown] = useState(false);
     const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
+    const [showAboutusDropdown, setShowAboutusDropdown] = useState(false);
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
     const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
 
@@ -96,14 +101,20 @@ const Header = () => {
     };
 
 
-    const showSolutionsDropdown1 = ()=>{
+    const showSolutionsDropdown1 = () => {
         setShowSolutionsDropdown(!showSolutionsDropdown)
         setShowResourcesDropdown(false)
     }
 
-    const showResourcesDropdown1 = ()=>{
+    const showResourcesDropdown1 = () => {
         setShowResourcesDropdown(!showResourcesDropdown)
         setShowSolutionsDropdown(false)
+    }
+
+    const showAboutusDropdown1 = () => {
+        setShowAboutusDropdown(!showAboutusDropdown)
+        setShowSolutionsDropdown(false)
+        setShowResourcesDropdown(false)
     }
 
     return (
@@ -185,7 +196,7 @@ const Header = () => {
                             >
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
+                                    <img src={Ai} alt="Utility" className="mb-2 w-40 h-10" />
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -228,7 +239,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
+                                    <img src={Smart} alt="Utility" className="mb-2 w-40 h-10" />
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -271,7 +282,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
+                                    <img src={Product} alt="Utility" className="mb-2 w-40 h-10" />
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -314,7 +325,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 4 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={solution1} alt="Utility" className="mb-2 w-40 h-10" />
+                                    <img src={Platfrom} alt="Utility" className="mb-2 w-40 h-10" />
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -360,14 +371,53 @@ const Header = () => {
                     </div>
 
                     {/* About Us */}
-                    <div
-                        className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/about' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                        onClick={() => {
-                            navigate('/about');
-                            closeAllDropdowns();
-                        }}
-                    >
-                        About Us
+                    <div className="">
+                        <div
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/about-us') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            onClick={() => showAboutusDropdown1()}
+                        >
+                            About Us
+                        </div>
+                        {showAboutusDropdown && (
+                            <div
+                                onMouseLeave={() => setShowAboutusDropdown(false)}
+                                className="absolute top-full left-0 right-0 flex items-center justify-center z-50"
+                            >
+                                <div className="border border-[#0f172a] w-[30%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
+                                    <h4 className="font-bold text-lg mb-4">About Us</h4>
+                                    <p className="font-[400] text-sm mb-2 text-gray-700">Empowering energy and sustainability leaders with actionable data.</p>
+                                    <div className="flex flex-col gap-3 mt-2">
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/about-us/company-overview');
+                                            }}
+                                        >
+                                            Company Overview
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/about-us/our-technology');
+                                            }}
+                                        >
+                                            Our Technology
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/about-us/careers');
+                                            }}
+                                        >
+                                           Careers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Resources */}

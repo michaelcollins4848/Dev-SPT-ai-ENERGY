@@ -30,7 +30,7 @@ export default function App() {
           <Route path="/solution/utility-mangement/feature" element={<UtilityMangementFeature />} />
           <Route path="/solution/utility-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
           <Route path="/solution/utility-mangement/pricing" element={<UtilityMangementPricing />} />
-          <Route path="/about" element={<Aboutus />} />
+          <Route path="/about-us/company-overview" element={<Aboutus />} />
         </Routes>
       </Suspense>
     </Router>
