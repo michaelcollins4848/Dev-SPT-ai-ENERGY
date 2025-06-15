@@ -2,7 +2,7 @@ import React from 'react'
 import WebsiteLayout from '../../components/Layout'
 import CalculatorSection from '../../components/Home/CalculatorSection';
 
-import video from '../../assets/Videos/aboutus.mp4'
+import video from '../../assets/Videos/aboutus.MP4'
 
 
 import img1 from '../../assets/Images/icon14.svg'
