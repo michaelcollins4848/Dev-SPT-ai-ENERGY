@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import WebsiteLayout from '../../components/Layout'
-import Slider from "react-slick";
 import ems from "../../assets/Images/ems.png";
 
 import heroImg from '../../assets/Images/img.png'
@@ -8,10 +7,11 @@ import blog1 from '../../assets/Images/blog1.png'
 import platfrom1 from '../../assets/Images/Energy Insight.png'
 import platfrom2 from '../../assets/Images/EMS intelligently.png'
 import platfrom3 from '../../assets/Images/Power Assurance.png'
-import platfrom4 from '../../assets/Images/trusted-intelligence.png'
+
+
+import platfrom4 from '../../assets/Images/trusted-Intelligence.png'
 
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
-import { FaPlay } from "react-icons/fa";
 
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
 import CompaniesSlider from '../../components/Home/CompaniesSlider';
