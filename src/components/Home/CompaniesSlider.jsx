@@ -9,13 +9,13 @@ import logo7 from "../../assets/logo/gotion.png";
 import logo8 from "../../assets/logo/mosaic.png";
 import logo9 from "../../assets/logo/rosewood.png";
 import logo10 from "../../assets/logo/seia.png";
-import sps from "../../assets/logo/Starcharge.png";
-// import startcharge from "../../assets/logo/starcharge.png";
+// import sps from "../../assets/logo/Starcharge.png";
+import startcharge from "../../assets/logo/starcharge.png";
 import UWest from "../../assets/logo/UW.png";
 import voltronic from "../../assets/logo/VP.png"
 // import ibm from "../../assets/logo/logo1.png"
 
-const logos = [logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,sps,UWest,voltronic];
+const logos = [logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,startcharge,UWest,voltronic];
 
 
 const CompaniesSlider = ({ showtop, heading }) => {
