@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import WebsiteLayout from '../../components/Layout'
 import Slider from "react-slick";
+import ems from "../../assets/Images/ems.png";
 
 import heroImg from '../../assets/Images/img.png'
 import blog1 from '../../assets/Images/blog1.png'
 import platfrom1 from '../../assets/Images/Energy Insight.png'
 import platfrom2 from '../../assets/Images/EMS intelligently.png'
 import platfrom3 from '../../assets/Images/Power Assurance.png'
-
+import platfrom4 from '../../assets/Images/trusted-intelligence.png'
 
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
@@ -43,44 +44,42 @@ const stats = [
 
 const solutions = [
   {
-    icon: "/assets/utility-icon.png",
-    title: "ENERGYCAP UtilityManagement®",
+    icon: ems,
+    title: "UtilityManagement®",
     description:
-      "Get best-in-class portfolio-level energy and sustainability reporting. Get accurate and reliable energy and utility data across your entire portfolio and streamline energy and accounting workflows.",
+      "Whether you're managing a single facility or a power plant, SPT enables utility teams to reduce costs, forecast demand, and ensure compliance through AI-powered insights.",
     features: [
-      "Accurate utility bill data, always",
-      "Easy facility benchmarking",
-      "Chargebacks and tenant billing",
-      "Integrate with ENERGY STAR",
-      "Measurement and verification",
+      "Detailed analytics to track usage, costs, and savings",
+      "Multi-zone energy management",
+      "Compliance support for regulatory requirements",
+      "Peak demand shaving to reduce utility charges",
+      "Grid-scale optimization with predictive control",
     ],
     link: "#",
   },
   {
-    icon: "/assets/smartanalytics-icon.png",
-    title: "ENERGYCAP SmartAnalytics®",
+    icon: ems,
+    title: "SmartAnalytics®",
     description:
-      "Get real-time energy and sustainability analytics. Dive deep into real-time performance of assets, devices, and sensors. Make quick, data-driven decisions for high-performance, net-zero buildings.",
+      " AI-powered analytics that turn real-time system performance into actionable insights—from homes to grid-scale facilities.Powered by IBM Maximo and WatsonX, SmartAnalytics taps into best-in-class AI agents for fault detection, predictive degradation, and decision support.",
     features: [
-      "Analyze consumption trends",
-      "Machine learning behavior modeling",
-      "Customizable alerts and alarms",
-      "Formula-based calculations",
-      "Tariff analytics",
+      "Enterprise-Grade AI via IBM Partnership",
+      "Tariff-Aware Optimization",
+      "Live Anomaly Detection & Alerts",
+      "Device-Aware Consumption Insights",
+      "Predictive Peak Demand Management",
     ],
     link: "#",
   },
   {
-    icon: "/assets/carbonhub-icon.png",
-    title: "ENERGYCAP CarbonHub®",
+    icon: ems,
+    title: "SPT Products®",
     description:
-      "Get a holistic view of financial-grade scope 1, 2, and 3 carbon emissions data across your entire business with automatically applied factors to meet your ESG reporting needs.",
+      "SPT offers industry-leading energy storage hardware—fully integrated with the SPT EMS—to deliver robust, reliable power for homes, businesses, and enterprises.",
     features: [
-      "Auto GHG conversion",
-      "Market-based emissions factors",
-      "Track progress toward goals",
-      "Sharable reports, charts, and dashboards",
-      "BI tool integration",
+      " SPT-3800 Series (Residential)",
+      " SPT-6800 Series (Commercial/Industrial)",
+
     ],
     link: "#",
   },
@@ -89,27 +88,27 @@ const solutions = [
 const testimonials = [
   {
     quote:
-      "With EnergyCAP, we’ve been able to accomplish energy savings across the institution as a whole.",
-    name: "Sean Finegan",
-    title: "Business Operations Manager",
-    companyLogo: "/assets/utmb-logo.png",
+      "We cut our monthly energy costs by nearly 30% within the first quarter of using SPT’s EMS. The AI does the work—analyzing patterns, optimizing our energy sources, and keeping everything running smoothly without manual intervention.",
+    name: "Jenna Thompson",
+    title: "Facilities Manager",
+    companyLogo: "GreenTech Corp (Austin, TX)",
     videoThumbnail: "/assets/woman1.png",
     bgColor: "bg-blue-300",
   },
   {
     quote:
-      "We finally went from paper that had sprocket on both sides to a data-driven database.",
-    name: "Executive Director of Energy",
-    title: "",
+      "With SPT’s predictive maintenance and energy usage optimization, our commercial campus avoided two major outages last year. Their system not only saves money—it gives peace of mind.",
+    name: "David Lee",
+    title: "Director of Sustainability",
     companyLogo: "/assets/other-logo.png",
     videoThumbnail: "/assets/woman2.png",
     bgColor: "bg-green-300",
   },
   {
     quote:
-      "We finally went from paper that had sprocket on both sides to a data-driven database.",
-    name: "Executive Director of Energy",
-    title: "",
+      "SPT’s real-time data dashboards and local AI analysis have completely transformed how we manage energy at our municipal buildings. We now have full visibility and can make decisions backed by clear, actionable insights.",
+    name: "Lucci Dev",
+    title: "VP Operations",
     companyLogo: "/assets/other-logo.png",
     videoThumbnail: "/assets/woman2.png",
     bgColor: "bg-green-300",
@@ -119,7 +118,7 @@ const testimonials = [
 const tabs = [
   {
     id: 0,
-    title: "Don't Count ENERGY STAR Out Just Yet",
+    title: "STORED POWER TECHNOLOGY INC (SPT)",
     label: "Don’t Count ENERGY STAR Out Just Yet",
   },
   {
@@ -178,10 +177,10 @@ const tabData = [
   },
   {
     index: 3,
-    title: "Power Assurance",
-    content: `From predicting maintenance needs to monitoring weather hazards, grid stability, and equipment anomalies, our EMS provides early warnings and takes immediate action to ensure 24/7 power for critical needs. `,
-    link: "Explore our predicting maintenance",
-    image: platfrom3,
+    title: "Trusted Intelligence",
+    content: `Our strategic partnership with IBM integrates powerful platforms like IBM Maximo and WatsonX, leveraging advanced AI agents and robust IBM Cloud for unparalleled reliability and scalability. Your core server infrastructure on AWS ensures speed and security. `,
+    link: "Explore our strategic partnership",
+    image: platfrom4,
   }
 ];
 
@@ -198,8 +197,8 @@ const homepageContent = {
 };
 
 const calculatorContent = {
-  heading1: "Easily manage your finite resources with",
-  heading2: "EnergyCAP",
+  heading1: "Effortlessly manage your energy resources with intelligent control",
+  heading2: "SPT AI Energy Lab",
   btn: "Contact Sales",
 };
 
@@ -225,8 +224,8 @@ const HomePage = () => {
       <section className="font-arimo py-16">
         <div className="text-center px-4 md:px-0">
           <h2 className="text-xl md:text-4xl font-bold mb-12 leading-tight">
-        
-            Achieve peak efficiency, cost savings,<br /> and sustainable energy transformation with <br/>SPT’s intelligent AI-powered EMS
+
+            Achieve peak efficiency, cost savings,<br /> and sustainable energy transformation with <br />SPT’s intelligent AI-powered EMS
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto bg-white/60 p-8 rounded-lg shadow-md border border-[#0f172a]">
@@ -245,15 +244,15 @@ const HomePage = () => {
       </section>
 
       {/* partner company section  */}
-      <CompaniesSlider showtop={showtop} heading="SPT AI Energy Lab partners with corporations, governments, and institutions to deliver intelligent energy solutions that drive efficiency, savings, and sustainable transformation."/>
+      <CompaniesSlider showtop={showtop} heading="SPT AI Energy Lab partners with corporations, governments, and institutions to deliver intelligent energy solutions that drive efficiency, savings, and sustainable transformation." />
 
       {/* <Single platform /> */}
       <section className="px-6 py-16">
         <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight text-center">
-       Unified energy tools for every role
+          Unified energy tools for every role
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-center">
-         SPT’s intelligent EMS brings together cross-functional teams on a single platform, enabling seamless collaboration to maximize efficiency, control costs, and drive sustainable energy outcomes.
+          SPT’s intelligent EMS brings together cross-functional teams on a single platform, enabling seamless collaboration to maximize efficiency, control costs, and drive sustainable energy outcomes.
         </p>
         <div className="w-full px-4 mt-20 mb-10">
           <div className="flex flex-col lg:flex-row gap-8">
@@ -305,12 +304,10 @@ const HomePage = () => {
       {/* solution empower section  */}
       <section className="px-6 py-12 text-center">
         <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight">
-          Solutions to empower your energy and sustainability data journey
+          Solutions to Power Your Energy and Sustainability Journey
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-gray-700">
-          Seamlessly bundle or choose à la carte from EnergyCAP’s array of energy and sustainability solutions.
-          Whether you’re starting small or expanding big, we’ve got you covered.
-          Empower your data-driven transformation, anywhere you are.
+          Choose the tools you need—whether starting small or scaling enterprise-wide. With SPT AI Energy Lab, you can seamlessly deploy intelligent energy and sustainability solutions tailored to your goals. Empower data-driven transformation with real-time insights, predictive AI, and total system control—wherever you are.
         </p>
 
         <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
@@ -347,11 +344,10 @@ const HomePage = () => {
         </div>
 
         <div className="mt-12 text-center max-w-4xl mx-auto text-[#0f172a]">
-          <h4 className="font-bold  text-xl mb-3">Elevate your data quality through our managed services</h4>
+          <h4 className="font-bold  text-xl mb-3">Seamless Data Integration, Expertly Managed</h4>
           <p className='text-gray-700'>
-            Our comprehensive <span className="font-semibold underline text-[#0f172a]">data capture and managed services</span> are here to seamlessly integrate your data
-            into our platforms—accurately and on time. Leave the complexities to us, so you can concentrate on what
-            truly counts: driving energy efficiency, reducing costs, and making impactful decisions.
+            Boost the accuracy and impact of your energy data with<span className="font-semibold underline text-[#0f172a]">SPT’s managed services.</span>
+            Our end-to-end data capture and integration solutions ensure your information flows into the SPT platform precisely and on time. Let us handle the technical complexities—so you can stay focused on what matters most: improving efficiency, cutting costs, and making smarter, data-driven energy decisions.
           </p>
         </div>
       </section>
@@ -363,7 +359,7 @@ const HomePage = () => {
       <CalculatorSection calculatorContent={calculatorContent} />
 
       {/* blog  section  */}
-      <BlogSection tabs={tabs} blogs={blogs} blogContent={blogContent}/>
+      <BlogSection tabs={tabs} blogs={blogs} blogContent={blogContent} />
     </WebsiteLayout>
   )
 }

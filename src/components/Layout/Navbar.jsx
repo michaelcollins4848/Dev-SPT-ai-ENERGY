@@ -23,6 +23,9 @@ const Header = () => {
     const [showSolutionsDropdown, setShowSolutionsDropdown] = useState(false);
     const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
     const [showAboutusDropdown, setShowAboutusDropdown] = useState(false);
+    const [showSupportDropdown, setShowSupportDropdown] = useState(false);
+    const [showContactDropdown, setShowContactDropdown] = useState(false);
+
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
     const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
 
@@ -115,6 +118,20 @@ const Header = () => {
         setShowAboutusDropdown(!showAboutusDropdown)
         setShowSolutionsDropdown(false)
         setShowResourcesDropdown(false)
+    }
+    const showSupportDropdown1 = () => {
+        setShowSupportDropdown(!showSupportDropdown)
+        setShowSolutionsDropdown(false)
+        setShowResourcesDropdown(false)
+        setShowAboutusDropdown(false)
+    }
+
+     const showContactDropdown1 = () => {
+        setShowContactDropdown(!showContactDropdown)
+        setShowSolutionsDropdown(false)
+        setShowResourcesDropdown(false)
+        setShowAboutusDropdown(false)
+        setShowSupportDropdown(false)
     }
 
     return (
@@ -412,7 +429,7 @@ const Header = () => {
                                                 navigate('/about-us/careers');
                                             }}
                                         >
-                                           Careers
+                                            Careers
                                         </div>
                                     </div>
                                 </div>
@@ -454,25 +471,103 @@ const Header = () => {
                     </div>
 
                     {/* Support */}
-                    <div
-                        className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/support' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                        onClick={() => {
-                            navigate('/support');
-                            closeAllDropdowns();
-                        }}
-                    >
-                        Support
+                    <div className="">
+                        <div
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/support' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            onClick={() => showSupportDropdown1()}
+                        >
+                            Support
+                        </div>
+                        {showSupportDropdown && (
+                            <div
+                                onMouseLeave={() => setShowSupportDropdown(false)}
+                                className="absolute top-full left-50 right-0 flex items-center justify-center z-50"
+                            >
+                                <div className="border border-[#0f172a] w-[20%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
+                                    <h4 className="font-bold text-lg mb-4">Support</h4>
+                                    <p className="font-[400] text-sm mb-2 text-gray-700">Empowering energy and sustainability leaders with actionable data.</p>
+                                    <div className="flex flex-col gap-3 mt-2">
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/support/faqs');
+                                            }}
+                                        >
+                                            FAQs
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/support/troubleshooting');
+                                            }}
+                                        >
+                                            Troubleshooting
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/support/contact-support');
+                                            }}
+                                        >
+                                            Contact Support
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Contact Us */}
-                    <div
-                        className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/contact' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                        onClick={() => {
-                            navigate('/contact');
-                            closeAllDropdowns();
-                        }}
-                    >
-                        Contact Us
+                    <div className="">
+                        <div
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/contact' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            onClick={() => showContactDropdown1()}
+                        >
+                            Contact Us
+                        </div>
+                        {showContactDropdown && (
+                            <div
+                                onMouseLeave={() => setShowContactDropdown(false)}
+                                className="absolute top-full left-50 right-0 flex items-center justify-center z-50"
+                            >
+                                <div className="border border-[#0f172a] w-[20%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
+                                    <h4 className="font-bold text-lg mb-4">Contact Us</h4>
+                                    <p className="font-[400] text-sm mb-2 text-gray-700">Empowering energy and sustainability leaders with actionable data.</p>
+                                    <div className="flex flex-col gap-3 mt-2">
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us/contact-sales');
+                                            }}
+                                        >
+                                            Contact Sales
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us/general-inquiry');
+                                            }}
+                                        >
+                                            General Inquiry
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us/pricing-information');
+                                            }}
+                                        >
+                                            Pricing Information
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </nav>
 

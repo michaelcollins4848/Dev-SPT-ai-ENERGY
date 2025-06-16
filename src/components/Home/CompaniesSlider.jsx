@@ -1,21 +1,21 @@
 import React from 'react';
-import logo1 from "../../assets/logo/american-quartz-thumbnail-logo.png";
-import logo2 from "../../assets/logo/california-ssa.png";
-import logo3 from "../../assets/logo/choicehotels.jpeg";
+// import logo1 from "../../assets/logo/american-quartz-thumbnail-logo.png";
+import logo2 from "../../assets/logo/caoliforinia.png";
+import logo3 from "../../assets/logo/ch.png";
 import logo4 from "../../assets/logo/dividend.png";
-import logo5 from "../../assets/logo/EW-Bank.png";
-import logo6 from "../../assets/logo/goodlead.png";
-import logo7 from "../../assets/logo/gotion.jpeg";
+import logo5 from "../../assets/logo/eastwestbank.png";
+import logo6 from "../../assets/logo/goodleap.png";
+import logo7 from "../../assets/logo/gotion.png";
 import logo8 from "../../assets/logo/mosaic.png";
-import logo9 from "../../assets/logo/rosewood_Logo.png";
-import logo10 from "../../assets/logo/seia-logo.webp";
-import sps from "../../assets/logo/sps.png";
+import logo9 from "../../assets/logo/rosewood.png";
+import logo10 from "../../assets/logo/seia.png";
+import sps from "../../assets/logo/Starcharge.png";
 import startcharge from "../../assets/logo/starcharge.png";
-import UWest from "../../assets/logo/UWest.png";
-import voltronic from "../../assets/logo/voltronic.webp"
-import ibm from "../../assets/logo/logo1.png"
+import UWest from "../../assets/logo/UW.png";
+import voltronic from "../../assets/logo/VP.png"
+// import ibm from "../../assets/logo/logo1.png"
 
-const logos = [logo1,ibm, logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,sps,startcharge,UWest,voltronic];
+const logos = [logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,sps,startcharge,UWest,voltronic];
 
 
 const CompaniesSlider = ({ showtop, heading }) => {

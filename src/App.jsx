@@ -5,6 +5,14 @@ import UtilityMangementFeature from './pages/Solution/UtilityMangement/Features'
 import UtilityMangementPricing from './pages/Solution/UtilityMangement/Pricing';
 import UtilityMangementBillCAPtureServices from './pages/Solution/UtilityMangement/BillCAPtureServices';
 import Aboutus from './pages/About Us';
+import Careers from './pages/Careers';
+import ContactSales from './pages/Contact Us/ContactSales';
+import PricingInformation from './pages/Contact Us/PricingInformation';
+import GeneralInquiry from './pages/Contact Us/GeneralInquiry';
+import ContactSupport from './pages/Support/ContactSupport';
+import FAQs from './pages/Support/FAQs';
+import Troubleshooting from './pages/Support/Troubleshooting';
+import { ScrollToTop } from './utils/utils';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 
@@ -24,6 +32,7 @@ export default function App() {
   return (
     <Router>
       <Suspense fallback={<LoadingFallback />}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/solution/utility-mangement/overview" element={<UtilityMangement />} />
@@ -31,6 +40,13 @@ export default function App() {
           <Route path="/solution/utility-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
           <Route path="/solution/utility-mangement/pricing" element={<UtilityMangementPricing />} />
           <Route path="/about-us/company-overview" element={<Aboutus />} />
+          <Route path="/about-us/careers" element={<Careers />} />
+          <Route path="/contact-us/contact-sales" element={<ContactSales />} />
+          <Route path="/contact-us/general-inquiry" element={<GeneralInquiry />} />
+          <Route path="/contact-us/pricing-information" element={<PricingInformation />} />
+          <Route path="/support/contact-support" element={<ContactSupport />} />
+          <Route path="/support/faqs" element={<FAQs />} />
+          <Route path="/support/troubleshooting" element={<Troubleshooting />} />
         </Routes>
       </Suspense>
     </Router>

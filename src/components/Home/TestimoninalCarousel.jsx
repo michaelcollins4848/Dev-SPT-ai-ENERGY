@@ -54,7 +54,7 @@ const TestimoninalCarousel = ({ testimonials }) => {
                                         className="h-6 mb-2 mx-auto md:mx-0"
                                     />
                                 )}
-                                <p className="text-xl md:text-3xl font-medium mb-4 leading-tight">
+                                <p className="text-xl md:text-2xl font-medium mb-4 leading-tight">
                                     “{item.quote}”
                                 </p>
                                 <p className="text-slate-700 font-semibold">
