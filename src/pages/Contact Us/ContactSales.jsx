@@ -7,15 +7,15 @@ const ContactSales = () => {
         <WebsiteLayout>
             <div className="min-h-screen px-5 py-12 sm:px-10 sm:py-20 lg:py-24">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col items-center lg:flex-row lg:justify-between gap-12">
-                        {/* Left Column - Form */}
-                        <div className="flex-1 lg:max-w-2xl">
-                            <h2 className="text-3xl font-bold mb-4">Contact Sales</h2>
-                            <p className="text-sm text-gray-700 mb-8 max-w-xl">
-                                EnergyCAP is the only energy & sustainability ERP that empowers energy, sustainability, and finance teams with full control and understanding of energy data points to manage consumption, reduce their carbon footprint, and drive savings.
-                            </p>
 
-                            <form className="bg-white p-6 sm:p-8 md:p-10 border shadow-md rounded-lg space-y-6">
+                    {/* Left Column - Form */}
+                    <div className="">
+                        <h2 className="text-3xl font-bold mb-4">Contact Sales</h2>
+                        <p className="text-sm text-gray-700 mb-8 max-w-xl">
+                            EnergyCAP is the only energy & sustainability ERP that empowers energy, sustainability, and finance teams with full control and understanding of energy data points to manage consumption, reduce their carbon footprint, and drive savings.
+                        </p>
+                        <div className="flex flex-col lg:flex-row lg:justify-between gap-12">
+                            <form className="bg-white p-6 sm:p-8 md:p-10 border shadow-md rounded-lg space-y-6 flex-1 lg:max-w-2xl">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="firstName" className='block text-sm font-bold mb-2'>First Name*</label>
@@ -67,73 +67,55 @@ const ContactSales = () => {
                                     </button>
                                 </div>
                             </form>
-                        </div>
+                            <div className='flex-1 lg:max-w-md xl:max-w-lg'>
+                                <h3 className="text-2xl font-semibold mb-6">Offices</h3>
 
-                        {/* Right Column - Offices */}
-                        <div className='flex-1 lg:max-w-md xl:max-w-lg lg:mt-15'>
-                            <h3 className="text-2xl font-semibold mb-6">Offices</h3>
-
-                            <div className="space-y-8">
-                                {/* Headquarters */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Headquarters</h3>
-                                    <p className="text-gray-700">EnergyCAP, LLC</p>
-                                    <p className="text-gray-700">360 Discovery Drive</p>
-                                    <p className="text-gray-700">Boalsburg, PA 16827</p>
-                                    <p className="mt-3 text-gray-700">
-                                        <span className="font-semibold">Phone:</span> 877.327.3702
-                                    </p>
-                                    <p className="text-gray-700">
-                                        <span className="font-semibold">Fax:</span> 719.623.0577
-                                    </p>
-                                </div>
-
-                                {/* Denver */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Denver, CO</h3>
-                                    <p className="text-gray-700">EnergyCAP, LLC</p>
-                                    <p className="text-gray-700">Suite 500</p>
-                                    <p className="text-gray-700">5445 DTC Parkway</p>
-                                    <p className="text-gray-700">Greenwood Village, CO 80111</p>
-                                </div>
-
-                                {/* Online */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Online</h3>
-                                    <p className="text-gray-700">Follow us:</p>
-                                    <div className="flex gap-3 mt-3">
-                                        <a
-                                            href="#"
-                                            className="p-2.5 bg-[#0f172a] text-white rounded hover:bg-[#1e3a8a] transition"
-                                            aria-label="Facebook"
-                                        >
-                                            <FaFacebookF />
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="p-2.5 bg-[#0f172a] text-white rounded hover:bg-[#1e3a8a] transition"
-                                            aria-label="LinkedIn"
-                                        >
-                                            <FaLinkedinIn />
-                                        </a>
+                                <div className="space-y-8">
+                                    {/* Headquarters */}
+                                    <div>
+                                        <h3 className="text-xl font-semibold mb-3">Headquarters</h3>
+                                        <p className="text-gray-700">SPT AI Energy Lab / Stored Power Technology Inc.</p>
+                                        <p className="text-gray-700">2990 Myers St</p>
+                                        <p className="text-gray-700">Riverside, CA 92503</p>
+                                        <p className="mt-3 text-gray-700">
+                                            <span className="font-semibold">Phone:</span> 800-677-5014
+                                        </p>
+                                        <p className="mt-3 text-gray-700">
+                                            <span className="font-semibold">Email:</span> sales@sptus.com
+                                        </p>
                                     </div>
-                                </div>
 
-                                {/* Dublin */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Dublin, Ireland</h3>
-                                    <p className="text-gray-700">EnergyCAP Software International Limited</p>
-                                    <p className="text-gray-700">Unit F, The Digital Court, Rainsford Street,</p>
-                                    <p className="text-gray-700">Dublin 8, D08 R2YP, Ireland</p>
-                                    <p className="mt-3 text-gray-700">Company number: 499770</p>
-                                    <p className="text-gray-700">VAT number: IE9793521K</p>
+
+
+                                    {/* Online */}
+                                    <div>
+                                        <h3 className="text-xl font-semibold mb-3">Online</h3>
+                                        <p className="text-gray-700">Follow us:</p>
+                                        <div className="flex gap-3 mt-3">
+                                            <a
+                                                href="#"
+                                                className="p-2.5 bg-[#0f172a] text-white rounded hover:bg-[#1e3a8a] transition"
+                                                aria-label="Facebook"
+                                            >
+                                                <FaFacebookF />
+                                            </a>
+                                            <a
+                                                href="#"
+                                                className="p-2.5 bg-[#0f172a] text-white rounded hover:bg-[#1e3a8a] transition"
+                                                aria-label="LinkedIn"
+                                            >
+                                                <FaLinkedinIn />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </WebsiteLayout>
+
+        </WebsiteLayout >
     )
 }
 

@@ -118,16 +118,16 @@ const Troubleshooting = () => {
                                 {/* Office Address */}
                                 <div>
                                     <h4 className="text-lg font-bold mb-2">Support Office</h4>
-                                    <p>EnergyCAP, LLC</p>
-                                    <p>360 Discovery Drive</p>
-                                    <p>Boalsburg, PA 16827, USA</p>
+                                    <p>SPT AI Energy Lab / Stored Power Technology Inc.</p>
+                                    <p>2990 Myers St</p>
+                                    <p>Riverside, CA 92503</p>
                                     <p className="mt-2">
-                                        <span className="font-semibold">Phone:</span> 877-327-3702
+                                        <span className="font-semibold">Phone:</span> 800-677-5014
                                     </p>
                                     <p>
                                         <span className="font-semibold">Support Email:</span>{" "}
                                         <a href="mailto:support@energycap.com" className="text-blue-600 underline">
-                                            support@energycap.com
+                                            sales@sptus.com
                                         </a>
                                     </p>
                                 </div>

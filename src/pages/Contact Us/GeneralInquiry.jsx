@@ -109,25 +109,18 @@ const GeneralInquiry = () => {
                                 {/* Headquarters */}
                                 <div>
                                     <h3 className="text-xl font-semibold mb-3">Headquarters</h3>
-                                    <p className="text-gray-700">EnergyCAP, LLC</p>
-                                    <p className="text-gray-700">360 Discovery Drive</p>
-                                    <p className="text-gray-700">Boalsburg, PA 16827</p>
+                                    <p className="text-gray-700">SPT AI Energy Lab / Stored Power Technology Inc.</p>
+                                    <p className="text-gray-700">2990 Myers St</p>
+                                    <p className="text-gray-700">Riverside, CA 92503</p>
                                     <p className="mt-3 text-gray-700">
-                                        <span className="font-semibold">Phone:</span> 877.327.3702
+                                        <span className="font-semibold">Phone:</span> 800-677-5014
                                     </p>
-                                    <p className="text-gray-700">
-                                        <span className="font-semibold">Fax:</span> 719.623.0577
+                                    <p className="mt-3 text-gray-700">
+                                        <span className="font-semibold">Email:</span> sales@sptus.com
                                     </p>
                                 </div>
 
-                                {/* Denver */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Denver, CO</h3>
-                                    <p className="text-gray-700">EnergyCAP, LLC</p>
-                                    <p className="text-gray-700">Suite 500</p>
-                                    <p className="text-gray-700">5445 DTC Parkway</p>
-                                    <p className="text-gray-700">Greenwood Village, CO 80111</p>
-                                </div>
+
 
                                 {/* Online */}
                                 <div>
@@ -149,16 +142,6 @@ const GeneralInquiry = () => {
                                             <FaLinkedinIn />
                                         </a>
                                     </div>
-                                </div>
-
-                                {/* Dublin */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-3">Dublin, Ireland</h3>
-                                    <p className="text-gray-700">EnergyCAP Software International Limited</p>
-                                    <p className="text-gray-700">Unit F, The Digital Court, Rainsford Street,</p>
-                                    <p className="text-gray-700">Dublin 8, D08 R2YP, Ireland</p>
-                                    <p className="mt-3 text-gray-700">Company number: 499770</p>
-                                    <p className="text-gray-700">VAT number: IE9793521K</p>
                                 </div>
                             </div>
                         </div>

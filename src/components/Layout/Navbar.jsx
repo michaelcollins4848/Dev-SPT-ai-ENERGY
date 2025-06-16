@@ -28,6 +28,7 @@ const Header = () => {
 
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
     const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
+    const [mobileAboutusOpen, setMobileAboutusOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -107,26 +108,35 @@ const Header = () => {
     const showSolutionsDropdown1 = () => {
         setShowSolutionsDropdown(!showSolutionsDropdown)
         setShowResourcesDropdown(false)
+        setShowAboutusDropdown(false)
+        setShowContactDropdown(false)
+        setShowSupportDropdown(false)
     }
 
     const showResourcesDropdown1 = () => {
         setShowResourcesDropdown(!showResourcesDropdown)
         setShowSolutionsDropdown(false)
+        setShowAboutusDropdown(false)
+        setShowContactDropdown(false)
+        setShowSupportDropdown(false)
     }
 
     const showAboutusDropdown1 = () => {
         setShowAboutusDropdown(!showAboutusDropdown)
         setShowSolutionsDropdown(false)
         setShowResourcesDropdown(false)
+        setShowContactDropdown(false)
+        setShowSupportDropdown(false)
     }
     const showSupportDropdown1 = () => {
         setShowSupportDropdown(!showSupportDropdown)
         setShowSolutionsDropdown(false)
         setShowResourcesDropdown(false)
         setShowAboutusDropdown(false)
+        setShowContactDropdown(false)
     }
 
-     const showContactDropdown1 = () => {
+    const showContactDropdown1 = () => {
         setShowContactDropdown(!showContactDropdown)
         setShowSolutionsDropdown(false)
         setShowResourcesDropdown(false)

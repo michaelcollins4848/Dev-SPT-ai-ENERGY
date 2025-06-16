@@ -35,6 +35,7 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/solution/utility-mangement" element={<UtilityMangement />} />
           <Route path="/solution/utility-mangement/overview" element={<UtilityMangement />} />
           <Route path="/solution/utility-mangement/feature" element={<UtilityMangementFeature />} />
           <Route path="/solution/utility-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
