@@ -3,34 +3,46 @@ import { motion } from "framer-motion";
 
 const allMilestones = [
     {
-        year: "2023",
-        title: "Expands offering to include financial-grade carbon accounting",
+        year: "2020",
+        title: "STORED POWER TECHNOLOGY INC. is Founded in California",
         description:
-            "EnergyCAP’s newest solution, CarbonHub, serves as the central repository of carbon emission-related data, enabling reporting, modeling, and integration with financial accounting systems.",
+            "With a mission to redefine energy storage, SPT is established to serve residential and commercial markets with sustainable, cutting-edge solutions.",
+    },
+    {
+        year: "2021",
+        title: "Launch of First Residential Battery Line",
+        description:
+            "Our first generation of energy storage batteries enters the market, designed for homes seeking energy independence and reliability.",
     },
     {
         year: "2022",
-        title: "EnergyCAP acquires global leader in energy monitoring software",
+        title: "Expansion into Commercial Energy Storage",
         description:
-            "EnergyCAP expands its platform capabilities by acquiring Wattics, a global leader in Energy Management Analytics & Monitoring Software.",
+            "SPT begins delivering large-scale energy storage systems for commercial clients, providing tailored solutions for diverse industry needs.",
     },
     {
-        year: "2020",
-        title: "Optimization of intelligence and security",
+        year: "2023",
+        title: "SPT AI Energy Lab is Launched",
         description:
-            "Continued focus on intelligence was supported by new reporting features including insights from Weather Data, building attributes, Tags, Faults, and Microsoft Add-ons.",
+            "The SPT AI Energy Lab is established to drive AI-powered innovation in energy management, with a strong focus on intelligent automation and cost optimization.",
     },
     {
-        year: "2018",
-        title: "Launch of intuitive new UI",
+        year: "2024",
+        title: "Energy Management System (EMS) Released",
         description:
-            "A major redesign brings fresh modern UI/UX with enhanced reporting and dashboarding capabilities.",
+            "Our EMS platform launches, acting as the intelligent brain of the energy ecosystem. It connects all hardware and software components to optimize energy performance in real time.",
     },
     {
-        year: "2015",
-        title: "Introduced cloud-based SaaS model",
+        year: "2025",
+        title: "Global Logistics Network & Financing Partners Added",
         description:
-            "EnergyCAP moves to a cloud-first SaaS offering, improving reliability and scalability for enterprise customers.",
+            "SPT establishes logistics hubs and shipping capabilities across key regions, while also partnering with major financial institutions to offer consumer and commercial project financing.",
+    },
+    {
+        year: "Future",
+        title: "Smart Energy for All",
+        description:
+            "SPT remains committed to leading the global transition to smart, secure, and ethical energy through relentless innovation, data privacy leadership, and AI excellence.",
     },
 ];
 

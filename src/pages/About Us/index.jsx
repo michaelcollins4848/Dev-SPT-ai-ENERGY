@@ -27,9 +27,9 @@ import Offices from '../../components/About Us Components/Offices';
 
 
 const aboutusContent = {
-    heading1: "Empowering energy",
-    heading2: "and sustainability leaders with actionable data.",
-    subheding: "EnergyCAP helps customers easily manage finite resources for a more sustainable world. For over forty years, the company has empowered energy, sustainability, and finance leaders with full control and understanding of all data points necessary to manage consumption, reduce their carbon footprint, and drive savings.",
+    heading1: "Pioneering the Future of Smart,",
+    heading2: "Sustainable Energy.",
+    subheding: "At SPT, we're not just offering energy solutions; we're actively shaping the future of intelligent and sustainable energy management. Our cutting-edge AI Energy Lab is dedicated to developing technologies that make energy smarter, more efficient, and incredibly reliable for everyone. We believe in empowering our users to optimize energy flow intelligently and ethically.",
     video: video,
 };
 

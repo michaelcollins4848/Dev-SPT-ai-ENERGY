@@ -2,15 +2,18 @@ import React from 'react';
 import { MdEnergySavingsLeaf } from "react-icons/md";
 import { MdElectricMeter } from "react-icons/md";
 import { IoIosCalculator } from "react-icons/io";
+import icons from "../../assets/Images/iconss.png"
 
 const CalculatorSection = ({ calculatorContent }) => {
     return (
         <section className="py-20 px-4 text-center bgbackgroundimg">
             {/* Icons */}
             <div className="flex justify-center items-center gap-2 mb-8">
-                <MdEnergySavingsLeaf size={60} color='#0f172a' />
+                {/* <MdEnergySavingsLeaf size={60} color='#0f172a' />
                 <MdElectricMeter size={60} color='#0f172a' />
-                <IoIosCalculator size={60} color='#0f172a' />
+                <IoIosCalculator size={60} color='#0f172a' /> */}
+              <img src={icons} alt="icons" className="w-120 h-60" />
+
             </div>
 
             {/* Heading */}
