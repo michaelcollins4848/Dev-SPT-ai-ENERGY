@@ -187,8 +187,8 @@ const tabData = [
 
 const homepageContent = {
   heading1: "SPT AI Energy Lab:",
-  heading2: "Revolutionizing Energy Management with Intelligent AI",
-  subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power plant.",
+  heading2: "Revolutionizing Energy Management with AI",
+  subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power grids.",
   img: heroImg,
   btn: "Get a Free Consultation",
   playbtn: "What is EMS?",
@@ -225,7 +225,7 @@ const HomePage = () => {
         <div className="text-center px-4 md:px-0">
           <h2 className="text-xl md:text-4xl font-bold mb-12 leading-tight">
 
-            Achieve peak efficiency, cost savings,<br /> and sustainable energy transformation with <br />SPT’s intelligent AI-powered EMS
+            Achieve peak efficiency, cost savings,<br /> and sustainable energy transformation with <br />SPT’s AI-powered EMS
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto bg-white/60 p-8 rounded-lg shadow-md border border-[#0f172a]">
@@ -359,7 +359,7 @@ const HomePage = () => {
       <CalculatorSection calculatorContent={calculatorContent} />
 
       {/* blog  section  */}
-      <BlogSection tabs={tabs} blogs={blogs} blogContent={blogContent} />
+      {/* <BlogSection tabs={tabs} blogs={blogs} blogContent={blogContent} /> */}
     </WebsiteLayout>
   )
 }

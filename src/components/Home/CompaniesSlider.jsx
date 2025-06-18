@@ -1,5 +1,7 @@
 import React from 'react';
-// import logo1 from "../../assets/logo/american-quartz-thumbnail-logo.png";
+
+import ibm from "../../assets/logo/blue-ibm.png"
+import ucr from "../../assets/logo/old/UC_Riverside_logo.svg.png"
 import logo2 from "../../assets/logo/caoliforinia.png";
 import logo3 from "../../assets/logo/ch.png";
 import logo4 from "../../assets/logo/dividend.png";
@@ -13,10 +15,8 @@ import logo10 from "../../assets/logo/seia.png";
 import startcharge from "../../assets/logo/starcharge.png";
 import UWest from "../../assets/logo/UW.png";
 import voltronic from "../../assets/logo/VP.png"
-// import ibm from "../../assets/logo/logo1.png"
 
-const logos = [logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,startcharge,UWest,voltronic];
-
+const logos = [ucr,ibm,logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,startcharge,UWest,voltronic];
 
 const CompaniesSlider = ({ showtop, heading }) => {
     return (

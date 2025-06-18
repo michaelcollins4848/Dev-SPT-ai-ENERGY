@@ -219,11 +219,12 @@ const Header = () => {
                         {showSolutionsDropdown && (
                             <div
                                 onMouseLeave={() => setShowSolutionsDropdown(false)}
-                                className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-4 gap-4 border border-[#0f172a] z-50"
+                                className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-3 gap-4 border border-[#0f172a] z-50"
                             >
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Ai} alt="Utility" className="mb-2 w-40 h-10" />
+                                    {/* <img src={Ai} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <p>Energy Management</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -266,7 +267,8 @@ const Header = () => {
                                 </div>
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Smart} alt="Utility" className="mb-2 w-40 h-10" />
+                                    {/* <img src={Smart} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <p>Energy Exchange</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -309,7 +311,8 @@ const Header = () => {
                                 </div>
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Product} alt="Utility" className="mb-2 w-40 h-10" />
+                                    {/* <img src={Product} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <p>Energy AI</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -351,7 +354,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 4 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
+                                {/* <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
                                     <img src={Platfrom} alt="Utility" className="mb-2 w-40 h-10" />
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -392,7 +395,7 @@ const Header = () => {
                                             Pricing
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         )}
                     </div>
@@ -465,14 +468,14 @@ const Header = () => {
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
                                     <div className="flex justify-between w-[80%]">
                                         <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">eBooks</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Blogs</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Press Releases</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Training</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Documentation</a>
                                         </div>
                                         <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Webinars</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Downloads</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Media Reporting</a>
+                                            {/* <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Downloads</a> */}
                                         </div>
                                     </div>
                                 </div>
