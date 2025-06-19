@@ -144,6 +144,45 @@ const Header = () => {
         setShowSupportDropdown(false)
     }
 
+
+    const showMobileSolutionOpen = () => {
+        setMobileSolutionsOpen(!mobileSolutionsOpen)
+        setMobileResourcesOpen(false)
+        setMobileAboutusOpen(false)
+        setMobileSupportOpen(false)
+        setMobileContactOpen(false)
+    }
+
+    const showMobileResourceOpen = () => {
+        setMobileResourcesOpen(!mobileResourcesOpen)
+        setMobileSolutionsOpen(false)
+        setMobileAboutusOpen(false)
+        setMobileSupportOpen(false)
+        setMobileContactOpen(false)
+    }
+    const showMobileAboutusOpen = () => {
+        setMobileAboutusOpen(!mobileAboutusOpen)
+        setMobileResourcesOpen(false)
+        setMobileSolutionsOpen(false)
+        setMobileSupportOpen(false)
+        setMobileContactOpen(false)
+    }
+    const showMobileSupportOpen = () => {
+        setMobileSupportOpen(!mobileSupportOpen)
+        setMobileResourcesOpen(false)
+        setMobileAboutusOpen(false)
+        setMobileSolutionsOpen(false)
+        setMobileContactOpen(false)
+    }
+
+    const showMobileContactOpen = () => {
+        setMobileContactOpen(!mobileSolutionsOpen)
+        setMobileResourcesOpen(false)
+        setMobileAboutusOpen(false)
+        setMobileSupportOpen(false)
+        setMobileSolutionsOpen(false)
+    }
+
     return (
         <header className={`relative transition-all duration-300 
     bg-white shadow-2xl border-b border-[#0f172a] 
@@ -222,16 +261,16 @@ const Header = () => {
                                 className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-3 gap-4 border border-[#0f172a] z-50"
                             >
                                 {/** Card 1 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Ai} alt="Utility" className="mb-2 w-40 h-25"/>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-mangement')}>
+                                    <img src={Management} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy Management</p>
-                                    <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
-                                    <div className="flex flex-col gap-2 mt-5">
+                                    <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
+                                    <div className="flex flex-col gap-2">
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/overview');
+                                                navigate('/solution/energy-mangement/overview');
                                             }}
                                         >
                                             Overview
@@ -240,7 +279,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/feature');
+                                                navigate('/solution/energy-mangement/feature');
                                             }}
                                         >
                                             Features
@@ -249,7 +288,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/bill-capture');
+                                                navigate('/solution/energy-mangement/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -258,7 +297,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/pricing');
+                                                navigate('/solution/energy-mangement/pricing');
                                             }}
                                         >
                                             Pricing
@@ -266,8 +305,8 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 2 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Exchange} alt="Utility" className="mb-2 w-40 h-25" />
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-exchange')}>
+                                    <img src={Exchange} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy Exchange</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -275,7 +314,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/overview');
+                                                navigate('/solution/energy-exchange/overview');
                                             }}
                                         >
                                             Overview
@@ -284,7 +323,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/features');
+                                                navigate('/solution/energy-exchange/feature');
                                             }}
                                         >
                                             Features
@@ -293,7 +332,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/bill-capture');
+                                                navigate('/solution/energy-exchange/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -302,7 +341,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/pricing');
+                                                navigate('/solution/energy-exchange/pricing');
                                             }}
                                         >
                                             Pricing
@@ -310,8 +349,8 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 3 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    <img src={Management} alt="Utility" className="mb-2 w-40 h-25"/>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-ai')}>
+                                    <img src={Ai} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy AI</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -319,7 +358,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/overview');
+                                                navigate('/solution/energy-ai/overview');
                                             }}
                                         >
                                             Overview
@@ -328,7 +367,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/features');
+                                                navigate('/solution/energy-ai/feature');
                                             }}
                                         >
                                             Features
@@ -337,7 +376,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/bill-capture');
+                                                navigate('/solution/energy-ai/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -346,7 +385,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/utility-mangement/pricing');
+                                                navigate('/solution/energy-ai/pricing');
                                             }}
                                         >
                                             Pricing
@@ -606,7 +645,7 @@ const Header = () => {
                         animate="visible"
                         exit="exit"
                         variants={mobileMenuVariants}
-                        className="md:hidden bg-white shadow-md w-full fixed top-[100px] left-0 right-0 z-40 h-[calc(50vh-72px)] overflow-y-auto"
+                        className="md:hidden bg-white shadow-md w-full fixed top-[100px] left-0 right-0 z-40 h-[calc(55vh-72px)] overflow-y-auto"
                     >
                         <nav className="flex flex-col px-6 py-4 text-sm font-bold">
                             <div
@@ -622,7 +661,7 @@ const Header = () => {
                             <div className="py-3">
                                 <div
                                     className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/solution') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
-                                    onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
+                                    onClick={() => showMobileSolutionOpen()}
                                 >
                                     <span>Solutions</span>
                                     <span>{mobileSolutionsOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
@@ -631,50 +670,50 @@ const Header = () => {
                                     <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
                                         <div className="">
                                             <div
-                                                className="font-semibold mb-2 text-[18px]"
+                                                className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/utility-mangement');
+                                                    navigate('/solution/energy-mangement');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
-                                                Utility Management
+                                                Energy Management
                                             </div>
                                             <div className="ml-2 space-y-2 text-sm">
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/overview');
+                                                        navigate('/solution/energy-mangement/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Overview
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/features');
+                                                        navigate('/solution/energy-mangement/feature');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Features
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                        navigate('/solution/energy-mangement/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Bill CAPture Services
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/pricing');
+                                                        navigate('/solution/energy-mangement/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -684,50 +723,50 @@ const Header = () => {
                                         </div>
                                         <div className="">
                                             <div
-                                                className="font-semibold mb-2 text-[18px]"
+                                                className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/utility-mangement');
+                                                    navigate('/solution/energy-exchange');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
-                                                Utility Management
+                                                Energy Exchange
                                             </div>
                                             <div className="ml-2 space-y-2 text-sm">
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/overview');
+                                                        navigate('/solution/energy-exchange/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Overview
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/features');
+                                                        navigate('/solution/energy-exchange/feature');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Features
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                        navigate('/solution/energy-exchange/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Bill CAPture Services
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/pricing');
+                                                        navigate('/solution/energy-exchange/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -737,103 +776,50 @@ const Header = () => {
                                         </div>
                                         <div className="">
                                             <div
-                                                className="font-semibold mb-2 text-[18px]"
+                                                className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/utility-mangement');
+                                                    navigate('/solution/energy-ai');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
-                                                Utility Management
+                                                Energy AI
                                             </div>
                                             <div className="ml-2 space-y-2 text-sm">
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/overview');
+                                                        navigate('/solution/energy-ai/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Overview
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/features');
+                                                        navigate('/solution/energy-ai/features');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Features
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/bill-capture');
+                                                        navigate('/solution/energy-ai/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Bill CAPture Services
                                                 </div>
                                                 <div
-                                                    className="text-[#0f172a] underline"
+                                                    className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/pricing');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Pricing
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="">
-                                            <div
-                                                className="font-semibold mb-2 text-[18px]"
-                                                onClick={() => {
-                                                    navigate('/solution/utility-mangement');
-                                                    setIsMobileMenuOpen(false);
-                                                }}
-                                            >
-                                                Utility Management
-                                            </div>
-                                            <div className="ml-2 space-y-2 text-sm">
-                                                <div
-                                                    className="text-[#0f172a] underline"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/overview');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Overview
-                                                </div>
-                                                <div
-                                                    className="text-[#0f172a] underline"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/features');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Features
-                                                </div>
-                                                <div
-                                                    className="text-[#0f172a] underline"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/bill-capture');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Bill CAPture Services
-                                                </div>
-                                                <div
-                                                    className="text-[#0f172a] underline"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/solution/utility-mangement/pricing');
+                                                        navigate('/solution/energy-ai/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -845,20 +831,61 @@ const Header = () => {
                                 )}
                             </div>
 
-                            <div
-                                className={`py-3  cursor-pointer ${location.pathname === '/about' ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
-                                onClick={() => {
-                                    navigate('/about');
-                                    setIsMobileMenuOpen(false);
-                                }}
-                            >
-                                About Us
+                            <div className="py-3">
+                                <div
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/about-us') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    onClick={() => showMobileAboutusOpen()}
+                                >
+                                    <span>About Us</span>
+                                    <span>{mobileAboutusOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
+                                </div>
+                                {mobileAboutusOpen && (
+                                    <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
+                                        <div className="">
+                                            <div className="font-semibold mb-2 text-[18px] cursor-pointer">
+                                                About Us
+                                            </div>
+                                            <div className="flex flex-col gap-3 mt-2">
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/about-us/company-overview');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Company Overview
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/about-us/our-technology');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Our Technology
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/about-us/careers');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Careers
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
 
                             <div className="py-3">
                                 <div
                                     className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/resources') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
-                                    onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
+                                    onClick={() => showMobileResourceOpen()}
                                 >
                                     <span>Resources</span>
                                     <span>{mobileResourcesOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
@@ -866,25 +893,17 @@ const Header = () => {
                                 {mobileResourcesOpen && (
                                     <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
                                         <div className="">
-                                            <div
-                                                className="font-semibold mb-2 text-[18px]"
-                                                onClick={() => {
-                                                    navigate('/solution/utility-mangement');
-                                                    setIsMobileMenuOpen(false);
-                                                }}
-                                            >
+                                            <div className="font-semibold mb-2 text-[18px] cursor-pointer">
                                                 Resources
                                             </div>
                                             <div className="grid grid-cols-2 gap-2">
                                                 <div className="flex flex-col space-y-1">
-                                                    <a href="#" className="text-[#3686fd] hover:underline">eBooks</a>
-                                                    <a href="#" className="text-[#3686fd] hover:underline">Blogs</a>
-                                                    <a href="#" className="text-[#3686fd] hover:underline">Press Releases</a>
+                                                    <a href="#" className="text-[#3686fd] hover:underline">Case Studies</a>
+                                                    <a href="#" className="text-[#3686fd] hover:underline">Training</a>
+                                                    <a href="#" className="text-[#3686fd] hover:underline">Documentation</a>
                                                 </div>
                                                 <div className="flex flex-col space-y-1">
-                                                    <a href="#" className="text-[#3686fd] hover:underline">Webinars</a>
-                                                    <a href="#" className="text-[#3686fd] hover:underline">Case Studies</a>
-                                                    <a href="#" className="text-[#3686fd] hover:underline">Downloads</a>
+                                                    <a href="#" className="text-[#3686fd] hover:underline">Media Reporting</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -892,24 +911,106 @@ const Header = () => {
                                 )}
                             </div>
 
-                            <div
-                                className={`py-3  cursor-pointer ${location.pathname === '/support' ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
-                                onClick={() => {
-                                    navigate('/support');
-                                    setIsMobileMenuOpen(false);
-                                }}
-                            >
-                                Support
+                            <div className="py-3">
+                                <div
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/support') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    onClick={() => showMobileSupportOpen()}
+                                >
+                                    <span>Support</span>
+                                    <span>{mobileSupportOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
+                                </div>
+                                {mobileSupportOpen && (
+                                    <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
+                                        <div className="">
+                                            <div className="font-semibold mb-2 text-[18px] cursor-pointer">
+                                                Support
+                                            </div>
+                                            <div className="flex flex-col gap-3 mt-2">
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/support/faqs');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    FAQs
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/support/troubleshooting');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Troubleshooting
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/support/contact-support');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Contact Support
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
 
-                            <div
-                                className={`py-3  cursor-pointer ${location.pathname === '/contact' ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]    '}`}
-                                onClick={() => {
-                                    navigate('/contact');
-                                    setIsMobileMenuOpen(false);
-                                }}
-                            >
-                                Contact Us
+                            <div className="py-3">
+                                <div
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/contact') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    onClick={() => showMobileContactOpen()}
+                                >
+                                    <span>Contact Us</span>
+                                    <span>{mobileContactOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
+                                </div>
+                                {mobileContactOpen && (
+                                    <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
+                                        <div className="">
+                                            <div className="font-semibold mb-2 text-[18px] cursor-pointer">
+                                                Contact Us
+                                            </div>
+                                            <div className="flex flex-col gap-3 mt-2">
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us/contact-sales');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Contact Sales
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us/general-inquiry');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    General Inquiry
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us/pricing-information');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Pricing Information
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
 
                             <div

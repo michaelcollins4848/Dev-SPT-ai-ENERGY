@@ -35,16 +35,39 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/solution/utility-mangement" element={<UtilityMangement />} />
-          <Route path="/solution/utility-mangement/overview" element={<UtilityMangement />} />
-          <Route path="/solution/utility-mangement/feature" element={<UtilityMangementFeature />} />
-          <Route path="/solution/utility-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
-          <Route path="/solution/utility-mangement/pricing" element={<UtilityMangementPricing />} />
+          {/* Energy Management */}
+          <Route path="/solution/energy-mangement" element={<UtilityMangement />} />
+          <Route path="/solution/energy-mangement/overview" element={<UtilityMangement />} />
+          <Route path="/solution/energy-mangement/feature" element={<UtilityMangementFeature />} />
+          <Route path="/solution/energy-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/solution/energy-mangement/pricing" element={<UtilityMangementPricing />} />
+
+          {/* Energy Exchange */}
+          <Route path="/solution/energy-exchange" element={<UtilityMangement />} />
+          <Route path="/solution/energy-exchange/overview" element={<UtilityMangement />} />
+          <Route path="/solution/energy-exchange/feature" element={<UtilityMangementFeature />} />
+          <Route path="/solution/energy-exchange/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/solution/energy-exchange/pricing" element={<UtilityMangementPricing />} />
+
+          {/* Energy AI */}
+          <Route path="/solution/energy-ai" element={<UtilityMangement />} />
+          <Route path="/solution/energy-ai/overview" element={<UtilityMangement />} />
+          <Route path="/solution/energy-ai/feature" element={<UtilityMangementFeature />} />
+          <Route path="/solution/energy-ai/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/solution/energy-ai/pricing" element={<UtilityMangementPricing />} />
+
+          {/* About Us */}
+
           <Route path="/about-us/company-overview" element={<Aboutus />} />
           <Route path="/about-us/careers" element={<Careers />} />
+
+          {/* Contact Us */}
           <Route path="/contact-us/contact-sales" element={<ContactSales />} />
           <Route path="/contact-us/general-inquiry" element={<GeneralInquiry />} />
           <Route path="/contact-us/pricing-information" element={<PricingInformation />} />
+
+          {/* Support */}
+
           <Route path="/support/contact-support" element={<ContactSupport />} />
           <Route path="/support/faqs" element={<FAQs />} />
           <Route path="/support/troubleshooting" element={<Troubleshooting />} />
