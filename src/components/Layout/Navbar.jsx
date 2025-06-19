@@ -1,17 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from "../../assets/Images/SPT_logo.png"
-import solution1 from "../../assets/Images/solution.webp";
-import Ai from "../../assets/Images/ai-management.png";
-import Smart from "../../assets/Images/smart-analysis.png"
-import Product from "../../assets/Images/our-product.png";
-import Platfrom from "../../assets/Images/unity-platform.png";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
 import { RiSubtractLine } from "react-icons/ri";
 import { motion, AnimatePresence } from 'framer-motion';
-
+import Management from "../../assets/Images/emanagement.png";
+import Exchange from "../../assets/Images/eExchange.png";
+import Ai from "../../assets/Images/e-Ai.png"
 
 
 const Header = () => {
@@ -29,6 +27,8 @@ const Header = () => {
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
     const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
     const [mobileAboutusOpen, setMobileAboutusOpen] = useState(false);
+    const [mobileSupportOpen, setMobileSupportOpen] = useState(false);
+    const [mobileContactOpen, setMobileContactOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -223,7 +223,7 @@ const Header = () => {
                             >
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    {/* <img src={Ai} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <img src={Ai} alt="Utility" className="mb-2 w-40 h-25"/>
                                     <p>Energy Management</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -267,7 +267,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    {/* <img src={Smart} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <img src={Exchange} alt="Utility" className="mb-2 w-40 h-25" />
                                     <p>Energy Exchange</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -311,7 +311,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/utility-mangement')}>
-                                    {/* <img src={Product} alt="Utility" className="mb-2 w-40 h-10" /> */}
+                                    <img src={Management} alt="Utility" className="mb-2 w-40 h-25"/>
                                     <p>Energy AI</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">

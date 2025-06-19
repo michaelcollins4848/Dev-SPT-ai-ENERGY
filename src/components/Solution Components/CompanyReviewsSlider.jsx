@@ -26,7 +26,7 @@ const settings = {
 const CompanyReviewsSlider = ({ dataCompany }) => {
     const navigate = useNavigate()
     return (
-        <div className="py-12 px-4 max-w-7xl mx-auto">
+        <div className="py-12 px-4">
             <Slider {...settings}>
                 {dataCompany?.map((item, index) => (
                     <div key={index} className="px-4">

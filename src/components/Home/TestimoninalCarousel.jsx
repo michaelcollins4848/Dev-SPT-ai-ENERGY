@@ -26,7 +26,7 @@ const settings = {
 const TestimoninalCarousel = ({ testimonials }) => {
     const navigate = useNavigate()
     return (
-        <div className="py-12 px-4 max-w-7xl mx-auto">
+        <div className="py-12 px-4 mx-auto">
             <Slider {...settings}>
                 {testimonials?.map((item, index) => (
                     <div key={index} className="px-4">

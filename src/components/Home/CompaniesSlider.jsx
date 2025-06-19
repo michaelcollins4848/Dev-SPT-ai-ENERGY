@@ -1,20 +1,20 @@
 import React from 'react';
 
-import ibm from "../../assets/logo/blue-ibm.png"
-import ucr from "../../assets/logo/old/UC_Riverside_logo.svg.png"
-import logo2 from "../../assets/logo/caoliforinia.png";
-import logo3 from "../../assets/logo/ch.png";
-import logo4 from "../../assets/logo/dividend.png";
-import logo5 from "../../assets/logo/eastwestbank.png";
-import logo6 from "../../assets/logo/goodleap.png";
-import logo7 from "../../assets/logo/gotion.png";
-import logo8 from "../../assets/logo/mosaic.png";
-import logo9 from "../../assets/logo/rosewood.png";
-import logo10 from "../../assets/logo/seia.png";
+import ibm from "../../assets/logo/old/1.png"
+import ucr from "../../assets/logo/old/2.png"
+import logo2 from "../../assets/logo/old/3.png"; 
+import logo3 from "../../assets/logo/old/4.png";
+import logo4 from "../../assets/logo/old/5.png";
+import logo5 from "../../assets/logo/old/6.png";
+import logo6 from "../../assets/logo/old/7.png";
+import logo7 from "../../assets/logo/old/8.png";
+import logo8 from "../../assets/logo/old/9.png";
+import logo9 from "../../assets/logo/old/10.png";
+import logo10 from "../../assets/logo/old/11.png";
 // import sps from "../../assets/logo/Starcharge.png";
-import startcharge from "../../assets/logo/starcharge.png";
-import UWest from "../../assets/logo/UW.png";
-import voltronic from "../../assets/logo/VP.png"
+import startcharge from "../../assets/logo/old/12.png";
+import UWest from "../../assets/logo/old/13.png";
+import voltronic from "../../assets/logo/old/15.png"
 
 const logos = [ucr,ibm,logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,startcharge,UWest,voltronic];
 
@@ -33,7 +33,7 @@ const CompaniesSlider = ({ showtop, heading }) => {
                             key={index}
                             src={logo}
                             alt={`logo-${index}`}
-                            className="inline-block h-16 mx-8 grayscale hover:grayscale-0 transition duration-300"
+                            className="inline-block h-40 mx-8 grayscale hover:grayscale-0 transition duration-300"
                         />
                     ))}
                 </div>
