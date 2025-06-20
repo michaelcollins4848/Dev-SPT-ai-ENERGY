@@ -45,45 +45,49 @@ const stats = [
 const solutions = [
   {
     icon: ems,
-    title: "UtilityManagement®",
+    title: "Energy Management",
     description:
-      "Whether you're managing a single facility or a power plant, SPT enables utility teams to reduce costs, forecast demand, and ensure compliance through AI-powered insights.",
+      "SPT’s AI-powered Energy Management System (EMS) serves as the intelligent brain of your energy ecosystem. Designed for homes, businesses, and power plants, it ensures real-time optimization of energy flow—improving efficiency, reducing costs, and enhancing system reliability.",
     features: [
-      "Detailed analytics to track usage, costs, and savings",
-      "Multi-zone energy management",
-      "Compliance support for regulatory requirements",
-      "Peak demand shaving to reduce utility charges",
-      "Grid-scale optimization with predictive control",
+      "Intelligent dashboards for transparent energy usage and savings",
+      "Predictive control for solar, battery, and grid usage",
+      "Anomaly and risk detection including weather and grid hazards",
+      "Local AI processing for data privacy and compliance",
+      "Uninterrupted power supply for critical systems like hospitals",
     ],
     link: "#",
   },
   {
     icon: ems,
-    title: "SmartAnalytics®",
+    title: "Energy Exchange",
     description:
-      " AI-powered analytics that turn real-time system performance into actionable insights—from homes to grid-scale facilities.Powered by IBM Maximo and WatsonX, SmartAnalytics taps into best-in-class AI agents for fault detection, predictive degradation, and decision support.",
+      "Energy Exchange is the fundamental principle that governs all our interactions. It's the unseen current of giving and receiving that flows between us, shaping our relationships, well-being, and personal growth. We believe that understanding and honoring this flow is the key to a balanced, authentic life.",
     features: [
-      "Enterprise-Grade AI via IBM Partnership",
-      "Tariff-Aware Optimization",
-      "Live Anomaly Detection & Alerts",
-      "Device-Aware Consumption Insights",
-      "Predictive Peak Demand Management",
+      "The conscious practice of reciprocal giving and receiving.",
+      "Recognizing that your time, attention, and skills are valuable forms of energy.",
+      "Creating healthy boundaries to protect and honor your personal energy.",
+      "Building relationships based on mutual respect and balanced energetic investment.",
+      "The belief that for every output of energy, there should be an inflow to maintain equilibrium and prevent burnout.",
     ],
     link: "#",
   },
   {
     icon: ems,
-    title: "SPT Products®",
+    title: "Energy AI",
     description:
-      "SPT offers industry-leading energy storage hardware—fully integrated with the SPT EMS—to deliver robust, reliable power for homes, businesses, and enterprises.",
-    features: [
-      " SPT-3800 Series (Residential)",
-      " SPT-6800 Series (Commercial/Industrial)",
+      "Our Energy AI creates intelligent, self-optimizing energy networks. We apply advanced machine learning to transform complex data into actionable insights—boosting grid reliability, seamlessly integrating renewables, and increasing overall efficiency for a cleaner, more resilient future.",
+   features: [
+  "Predictive Grid Management: Forecast demand and reroute power to avoid outages.",
+  "Renewable Forecasting: Improve solar/wind reliability with accurate generation data.",
+  "Asset Maintenance: Detect issues early and prevent costly equipment failures.",
+  "Demand & Storage Optimization: Balance peak loads and battery use in real-time.",
+  "AI Market Trading: Analyze trends and boost returns with smart trading decisions.",
+],
 
-    ],
     link: "#",
   },
 ];
+
 
 const testimonials = [
   {
