@@ -1,29 +1,29 @@
 import React from 'react'
-import WebsiteLayout from '../../components/Layout'
-import CalculatorSection from '../../components/Home/CalculatorSection';
+import WebsiteLayout from '../../../components/Layout'
+import CalculatorSection from '../../../components/Home/CalculatorSection';
 
-import video from '../../assets/Videos/aboutus.MP4'
-
-
-import img1 from '../../assets/Images/icon14.svg'
-import img2 from '../../assets/Images/icon15.svg'
-import img3 from '../../assets/Images/icon16.svg'
-import img4 from '../../assets/Images/icon17.svg'
-import img5 from '../../assets/Images/icon18.svg'
-
-import img from '../../assets/Images/aboutusimg.webp'
+import video from '../../../assets/Videos/aboutus.MP4'
 
 
-import awardimg from '../../assets/Images/award2.webp'
+import img1 from '../../../assets/Images/icon14.svg'
+import img2 from '../../../assets/Images/icon15.svg'
+import img3 from '../../../assets/Images/icon16.svg'
+import img4 from '../../../assets/Images/icon17.svg'
+import img5 from '../../../assets/Images/icon18.svg'
+
+import img from '../../../assets/Images/aboutusimg.webp'
 
 
-import HeroSection from '../../components/About Us Components/HeroSection';
-import HistorySecction from '../../components/About Us Components/HistorySecction';
-import EmpowerUsSection from '../../components/About Us Components/EmpowerUsSection';
-import SustainableFutureSection from '../../components/About Us Components/SustainableFutureSection';
-import Awards from '../../components/About Us Components/Awards';
-import TeamMembers from '../../components/About Us Components/TeamMembers';
-import Offices from '../../components/About Us Components/Offices';
+import awardimg from '../../../assets/Images/award2.webp'
+
+
+import HeroSection from '../../../components/About Us Components/HeroSection';
+import HistorySecction from '../../../components/About Us Components/HistorySecction';
+import EmpowerUsSection from '../../../components/About Us Components/EmpowerUsSection';
+import SustainableFutureSection from '../../../components/About Us Components/SustainableFutureSection';
+import Awards from '../../../components/About Us Components/Awards';
+import TeamMembers from '../../../components/About Us Components/TeamMembers';
+import Offices from '../../../components/About Us Components/Offices';
 
 
 const aboutusContent = {

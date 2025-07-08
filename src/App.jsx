@@ -1,10 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UtilityMangement from './pages/Product and Solutions/UtilityMangement';
-import UtilityMangementFeature from './pages/Product and Solutions/UtilityMangement/Features';
-import UtilityMangementPricing from './pages/Product and Solutions/UtilityMangement/Pricing';
-import UtilityMangementBillCAPtureServices from './pages/Product and Solutions/UtilityMangement/BillCAPtureServices';
-import Aboutus from './pages/About Us';
+import UtilityMangement from './pages/Product and Solutions/HydrogenManagementSystem';
+import UtilityMangementFeature from './pages/Product and Solutions/HydrogenManagementSystem/Features';
+import UtilityMangementPricing from './pages/Product and Solutions/HydrogenManagementSystem/Pricing';
+import UtilityMangementBillCAPtureServices from './pages/Product and Solutions/HydrogenManagementSystem/BillCAPtureServices';
+import Aboutus from './pages/About Us/CompanyOverview';
 import Careers from './pages/About Us/Careers';
 import ContactSales from './pages/Contact Us and Support/ContactSales';
 import PricingInformation from './pages/Contact Us and Support/PricingInformation';

@@ -241,7 +241,7 @@ const Header = () => {
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement')}>
                                     <img src={Management} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
-                                    <p>Energy Management</p>
+                                    <p>AI Energy Management System</p>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2">
                                         <div
@@ -266,15 +266,6 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement/bill-capture');
-                                            }}
-                                        >
-                                            Bill CAPture Services
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
                                                 navigate('/product-and-solutions/energy-mangement/pricing');
                                             }}
                                         >
@@ -285,7 +276,7 @@ const Header = () => {
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-exchange')}>
                                     <img src={Exchange} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
-                                    <p>Energy Exchange</p>
+                                    <p>AI Market Intelligence System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -310,15 +301,6 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-exchange/bill-capture');
-                                            }}
-                                        >
-                                            Bill CAPture Services
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
                                                 navigate('/product-and-solutions/energy-exchange/pricing');
                                             }}
                                         >
@@ -329,7 +311,7 @@ const Header = () => {
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-ai')}>
                                     <img src={Ai} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
-                                    <p>Energy AI</p>
+                                    <p>Hydrogen Station Smart Management System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -435,14 +417,9 @@ const Header = () => {
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
                                     <div className="flex justify-between w-[80%]">
                                         <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Training</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Documentation</a>
-                                        </div>
-                                        <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Media Reporting</a>
-                                            {/* <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Downloads</a> */}
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Milestones</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Newsroom</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Events and Engagement</a>
                                         </div>
                                     </div>
                                 </div>
@@ -480,10 +457,20 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
+                                                //fix this link
                                                 navigate('/about-us/our-technology');
                                             }}
                                         >
-                                            Our Technology
+                                            Partners and Affiliations
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/about-us/meet-our-team');
+                                            }}
+                                        >
+                                            Meet Our Team
                                         </div>
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
