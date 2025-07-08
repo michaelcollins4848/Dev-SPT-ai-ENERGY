@@ -1,25 +1,25 @@
 import React from 'react'
-import WebsiteLayout from '../../../components/Layout'
-import HeroBannerSection from '../../../components/Home/HeroBannerSection';
-import CompaniesSlider from '../../../components/Home/CompaniesSlider';
-import ManageUtilityData from '../../../components/Solution Components/ManageUtilityData';
-import CalculatorSection from '../../../components/Home/CalculatorSection';
+import WebsiteLayout from '../../components/Layout'
+import HeroBannerSection from '../../components/Home/HeroBannerSection';
+import CompaniesSlider from '../../components/Home/CompaniesSlider';
+import ManageUtilityData from '../../components/Product and Solutions Components/ManageUtilityData';
+import CalculatorSection from '../../components/Home/CalculatorSection';
 
-import img from '../../../assets/Images/heroimg1.webp'
+import img from '../../assets/Images/heroimg1.webp'
 
 
-import img1 from '../../../assets/Images/icon10.webp'
-import img2 from '../../../assets/Images/icon11.webp'
-import img3 from '../../../assets/Images/icon12.png'
-import img4 from '../../../assets/Images/icon13.svg'
-import img5 from '../../../assets/Images/icon14.webp'
-import img6 from '../../../assets/Images/icon15.webp'
+import img1 from '../../assets/Images/icon10.webp'
+import img2 from '../../assets/Images/icon11.webp'
+import img3 from '../../assets/Images/icon12.png'
+import img4 from '../../assets/Images/icon13.svg'
+import img5 from '../../assets/Images/icon14.webp'
+import img6 from '../../assets/Images/icon15.webp'
 
-import platfrom1 from '../../../assets/Images/platform11.webp'
-import UtilitymanagementLevelUP from '../../../components/Solution Components/UtilitymanagementLevelUP';
-import UtilityManagementBuildSave from '../../../components/Solution Components/UtilityManagementBuildSave';
+import platfrom1 from '../../assets/Images/platform11.webp'
+import UtilitymanagementLevelUP from '../../components/Product and Solutions Components/UtilitymanagementLevelUP';
+import UtilityManagementBuildSave from '../../components/Product and Solutions Components/UtilityManagementBuildSave';
 
-import platfrom2 from '../../../assets/Images/platform12.webp'
+import platfrom2 from '../../assets/Images/platform12.webp'
 
 const homepageContent = {
     heading1: "Your energy, your way:",
@@ -28,7 +28,7 @@ const homepageContent = {
     img: img,
     btn: "Talk to sales",
     showplay: false,
-    showtop: true,
+    showtop: false,
     navigation: 'UtilityManagement / Pricing',
 };
 
@@ -210,7 +210,7 @@ const packages1 = [
 ];
 
 
-const UtilityMangementPricing = () => {
+const PricingInformation = () => {
     return (
         <WebsiteLayout>
             <HeroBannerSection homepageContent={homepageContent} />
@@ -227,4 +227,4 @@ const UtilityMangementPricing = () => {
     )
 }
 
-export default UtilityMangementPricing
+export default PricingInformation

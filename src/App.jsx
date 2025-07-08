@@ -1,17 +1,17 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UtilityMangement from './pages/Solution/UtilityMangement';
-import UtilityMangementFeature from './pages/Solution/UtilityMangement/Features';
-import UtilityMangementPricing from './pages/Solution/UtilityMangement/Pricing';
-import UtilityMangementBillCAPtureServices from './pages/Solution/UtilityMangement/BillCAPtureServices';
+import UtilityMangement from './pages/Product and Solutions/UtilityMangement';
+import UtilityMangementFeature from './pages/Product and Solutions/UtilityMangement/Features';
+import UtilityMangementPricing from './pages/Product and Solutions/UtilityMangement/Pricing';
+import UtilityMangementBillCAPtureServices from './pages/Product and Solutions/UtilityMangement/BillCAPtureServices';
 import Aboutus from './pages/About Us';
-import Careers from './pages/Careers';
-import ContactSales from './pages/Contact Us/ContactSales';
-import PricingInformation from './pages/Contact Us/PricingInformation';
-import GeneralInquiry from './pages/Contact Us/GeneralInquiry';
-import ContactSupport from './pages/Support/ContactSupport';
-import FAQs from './pages/Support/FAQs';
-import Troubleshooting from './pages/Support/Troubleshooting';
+import Careers from './pages/About Us/Careers';
+import ContactSales from './pages/Contact Us and Support/ContactSales';
+import PricingInformation from './pages/Contact Us and Support/PricingInformation';
+import GeneralInquiry from './pages/Contact Us and Support/GeneralInquiry';
+import ContactSupport from './pages/Contact Us and Support/ContactSupport';
+import FAQs from './pages/Contact Us and Support/FAQs';
+import Troubleshooting from './pages/Contact Us and Support/Troubleshooting';
 import { ScrollToTop } from './utils/utils';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -36,25 +36,25 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* Energy Management */}
-          <Route path="/solution/energy-mangement" element={<UtilityMangement />} />
-          <Route path="/solution/energy-mangement/overview" element={<UtilityMangement />} />
-          <Route path="/solution/energy-mangement/feature" element={<UtilityMangementFeature />} />
-          <Route path="/solution/energy-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
-          <Route path="/solution/energy-mangement/pricing" element={<UtilityMangementPricing />} />
+          <Route path="/product-and-solutions/energy-mangement" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-mangement/overview" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-mangement/feature" element={<UtilityMangementFeature />} />
+          <Route path="/product-and-solutions/energy-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/product-and-solutions/energy-mangement/pricing" element={<UtilityMangementPricing />} />
 
           {/* Energy Exchange */}
-          <Route path="/solution/energy-exchange" element={<UtilityMangement />} />
-          <Route path="/solution/energy-exchange/overview" element={<UtilityMangement />} />
-          <Route path="/solution/energy-exchange/feature" element={<UtilityMangementFeature />} />
-          <Route path="/solution/energy-exchange/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
-          <Route path="/solution/energy-exchange/pricing" element={<UtilityMangementPricing />} />
+          <Route path="/product-and-solutions/energy-exchange" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-exchange/overview" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-exchange/feature" element={<UtilityMangementFeature />} />
+          <Route path="/product-and-solutions/energy-exchange/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/product-and-solutions/energy-exchange/pricing" element={<UtilityMangementPricing />} />
 
           {/* Energy AI */}
-          <Route path="/solution/energy-ai" element={<UtilityMangement />} />
-          <Route path="/solution/energy-ai/overview" element={<UtilityMangement />} />
-          <Route path="/solution/energy-ai/feature" element={<UtilityMangementFeature />} />
-          <Route path="/solution/energy-ai/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
-          <Route path="/solution/energy-ai/pricing" element={<UtilityMangementPricing />} />
+          <Route path="/product-and-solutions/energy-ai" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-ai/overview" element={<UtilityMangement />} />
+          <Route path="/product-and-solutions/energy-ai/feature" element={<UtilityMangementFeature />} />
+          <Route path="/product-and-solutions/energy-ai/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+          <Route path="/product-and-solutions/energy-ai/pricing" element={<UtilityMangementPricing />} />
 
           {/* About Us */}
 
@@ -62,15 +62,13 @@ export default function App() {
           <Route path="/about-us/careers" element={<Careers />} />
 
           {/* Contact Us */}
-          <Route path="/contact-us/contact-sales" element={<ContactSales />} />
-          <Route path="/contact-us/general-inquiry" element={<GeneralInquiry />} />
-          <Route path="/contact-us/pricing-information" element={<PricingInformation />} />
-
-          {/* Support */}
-
-          <Route path="/support/contact-support" element={<ContactSupport />} />
-          <Route path="/support/faqs" element={<FAQs />} />
-          <Route path="/support/troubleshooting" element={<Troubleshooting />} />
+          <Route path="/contact-us-and-support/contact-sales" element={<ContactSales />} />
+          <Route path="/contact-us-and-support/general-inquiry" element={<GeneralInquiry />} />
+          <Route path="/contact-us-and-support/pricing-information" element={<PricingInformation />} />
+          <Route path="/contact-us-and-support/contact-support" element={<ContactSupport />} />
+          <Route path="/contact-us-and-support/faqs" element={<FAQs />} />
+          <Route path="/contact-us-and-support/troubleshooting" element={<Troubleshooting />} />
+          
         </Routes>
       </Suspense>
     </Router>

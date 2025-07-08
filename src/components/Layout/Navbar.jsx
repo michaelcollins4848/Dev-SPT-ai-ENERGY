@@ -21,13 +21,11 @@ const Header = () => {
     const [showSolutionsDropdown, setShowSolutionsDropdown] = useState(false);
     const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
     const [showAboutusDropdown, setShowAboutusDropdown] = useState(false);
-    const [showSupportDropdown, setShowSupportDropdown] = useState(false);
     const [showContactDropdown, setShowContactDropdown] = useState(false);
 
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
     const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
     const [mobileAboutusOpen, setMobileAboutusOpen] = useState(false);
-    const [mobileSupportOpen, setMobileSupportOpen] = useState(false);
     const [mobileContactOpen, setMobileContactOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -110,7 +108,6 @@ const Header = () => {
         setShowResourcesDropdown(false)
         setShowAboutusDropdown(false)
         setShowContactDropdown(false)
-        setShowSupportDropdown(false)
     }
 
     const showResourcesDropdown1 = () => {
@@ -118,21 +115,12 @@ const Header = () => {
         setShowSolutionsDropdown(false)
         setShowAboutusDropdown(false)
         setShowContactDropdown(false)
-        setShowSupportDropdown(false)
     }
 
     const showAboutusDropdown1 = () => {
         setShowAboutusDropdown(!showAboutusDropdown)
         setShowSolutionsDropdown(false)
         setShowResourcesDropdown(false)
-        setShowContactDropdown(false)
-        setShowSupportDropdown(false)
-    }
-    const showSupportDropdown1 = () => {
-        setShowSupportDropdown(!showSupportDropdown)
-        setShowSolutionsDropdown(false)
-        setShowResourcesDropdown(false)
-        setShowAboutusDropdown(false)
         setShowContactDropdown(false)
     }
 
@@ -149,7 +137,6 @@ const Header = () => {
         setMobileSolutionsOpen(!mobileSolutionsOpen)
         setMobileResourcesOpen(false)
         setMobileAboutusOpen(false)
-        setMobileSupportOpen(false)
         setMobileContactOpen(false)
     }
 
@@ -157,29 +144,20 @@ const Header = () => {
         setMobileResourcesOpen(!mobileResourcesOpen)
         setMobileSolutionsOpen(false)
         setMobileAboutusOpen(false)
-        setMobileSupportOpen(false)
         setMobileContactOpen(false)
     }
     const showMobileAboutusOpen = () => {
         setMobileAboutusOpen(!mobileAboutusOpen)
         setMobileResourcesOpen(false)
         setMobileSolutionsOpen(false)
-        setMobileSupportOpen(false)
         setMobileContactOpen(false)
     }
-    const showMobileSupportOpen = () => {
-        setMobileSupportOpen(!mobileSupportOpen)
-        setMobileResourcesOpen(false)
-        setMobileAboutusOpen(false)
-        setMobileSolutionsOpen(false)
-        setMobileContactOpen(false)
-    }
+
 
     const showMobileContactOpen = () => {
         setMobileContactOpen(!mobileSolutionsOpen)
         setMobileResourcesOpen(false)
         setMobileAboutusOpen(false)
-        setMobileSupportOpen(false)
         setMobileSolutionsOpen(false)
     }
 
@@ -250,10 +228,10 @@ const Header = () => {
                     {/* Solutions */}
                     <div className="">
                         <div
-                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/solution') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/product-and-solutions') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
                             onClick={() => showSolutionsDropdown1()}
                         >
-                            Solutions
+                            Product and Solutions
                         </div>
                         {showSolutionsDropdown && (
                             <div
@@ -261,7 +239,7 @@ const Header = () => {
                                 className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-3 gap-4 border border-[#0f172a] z-50"
                             >
                                 {/** Card 1 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-mangement')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement')}>
                                     <img src={Management} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy Management</p>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -270,7 +248,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-mangement/overview');
+                                                navigate('/product-and-solutions/energy-mangement/overview');
                                             }}
                                         >
                                             Overview
@@ -279,7 +257,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-mangement/feature');
+                                                navigate('/product-and-solutions/energy-mangement/feature');
                                             }}
                                         >
                                             Features
@@ -288,7 +266,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-mangement/bill-capture');
+                                                navigate('/product-and-solutions/energy-mangement/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -297,7 +275,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-mangement/pricing');
+                                                navigate('/product-and-solutions/energy-mangement/pricing');
                                             }}
                                         >
                                             Pricing
@@ -305,7 +283,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 2 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-exchange')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-exchange')}>
                                     <img src={Exchange} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy Exchange</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -314,7 +292,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-exchange/overview');
+                                                navigate('/product-and-solutions/energy-exchange/overview');
                                             }}
                                         >
                                             Overview
@@ -323,7 +301,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-exchange/feature');
+                                                navigate('/product-and-solutions/energy-exchange/feature');
                                             }}
                                         >
                                             Features
@@ -332,7 +310,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-exchange/bill-capture');
+                                                navigate('/product-and-solutions/energy-exchange/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -341,7 +319,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-exchange/pricing');
+                                                navigate('/product-and-solutions/energy-exchange/pricing');
                                             }}
                                         >
                                             Pricing
@@ -349,7 +327,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 3 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/solution/energy-ai')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-ai')}>
                                     <img src={Ai} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
                                     <p>Energy AI</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -358,7 +336,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-ai/overview');
+                                                navigate('/product-and-solutions/energy-ai/overview');
                                             }}
                                         >
                                             Overview
@@ -367,7 +345,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-ai/feature');
+                                                navigate('/product-and-solutions/energy-ai/feature');
                                             }}
                                         >
                                             Features
@@ -376,7 +354,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-ai/bill-capture');
+                                                navigate('/product-and-solutions/energy-ai/bill-capture');
                                             }}
                                         >
                                             Bill CAPture Services
@@ -385,7 +363,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/solution/energy-ai/pricing');
+                                                navigate('/product-and-solutions/energy-ai/pricing');
                                             }}
                                         >
                                             Pricing
@@ -439,6 +417,39 @@ const Header = () => {
                         )}
                     </div>
 
+                    {/* Resources */}
+                    <div className="">
+                        <div
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/research-and-resources') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            onClick={() => showResourcesDropdown1()}
+                        >
+                            Research and Resources
+                        </div>
+                        {showResourcesDropdown && (
+                            <div
+                                onMouseLeave={() => setShowResourcesDropdown(false)}
+                                className="absolute top-full left-0 right-0 flex items-center justify-center z-50"
+                            >
+                                <div className="border border-[#0f172a] w-[30%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
+                                    <h4 className="font-bold text-lg mb-4">Research and Resources</h4>
+                                    <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
+                                    <div className="flex justify-between w-[80%]">
+                                        <div className="flex flex-col gap-2 mt-5">
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Training</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Documentation</a>
+                                        </div>
+                                        <div className="flex flex-col gap-2 mt-5">
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Media Reporting</a>
+                                            {/* <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
+                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Downloads</a> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                    
                     {/* About Us */}
                     <div className="">
                         <div
@@ -489,96 +500,13 @@ const Header = () => {
                         )}
                     </div>
 
-                    {/* Resources */}
-                    <div className="">
-                        <div
-                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname.includes('/resources') ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                            onClick={() => showResourcesDropdown1()}
-                        >
-                            Resources
-                        </div>
-                        {showResourcesDropdown && (
-                            <div
-                                onMouseLeave={() => setShowResourcesDropdown(false)}
-                                className="absolute top-full left-0 right-0 flex items-center justify-center z-50"
-                            >
-                                <div className="border border-[#0f172a] w-[30%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
-                                    <h4 className="font-bold text-lg mb-4">Resources</h4>
-                                    <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
-                                    <div className="flex justify-between w-[80%]">
-                                        <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Training</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Documentation</a>
-                                        </div>
-                                        <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Media Reporting</a>
-                                            {/* <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Case Studies</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Downloads</a> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
-                    {/* Support */}
-                    <div className="">
-                        <div
-                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/support' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
-                            onClick={() => showSupportDropdown1()}
-                        >
-                            Support
-                        </div>
-                        {showSupportDropdown && (
-                            <div
-                                onMouseLeave={() => setShowSupportDropdown(false)}
-                                className="absolute top-full left-50 right-0 flex items-center justify-center z-50"
-                            >
-                                <div className="border border-[#0f172a] w-[20%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
-                                    <h4 className="font-bold text-lg mb-4">Support</h4>
-                                    <p className="font-[400] text-sm mb-2 text-gray-700">Empowering energy and sustainability leaders with actionable data.</p>
-                                    <div className="flex flex-col gap-3 mt-2">
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/support/faqs');
-                                            }}
-                                        >
-                                            FAQs
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/support/troubleshooting');
-                                            }}
-                                        >
-                                            Troubleshooting
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/support/contact-support');
-                                            }}
-                                        >
-                                            Contact Support
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
                     {/* Contact Us */}
                     <div className="">
                         <div
-                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/contact' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
+                            className={`pb-1 cursor-pointer transition duration-200 ${location.pathname === '/contact-us-and-support' ? 'border-b-2 border-[#0f172a]' : 'hover:underline hover:text-[#0e121b]'}`}
                             onClick={() => showContactDropdown1()}
                         >
-                            Contact Us
+                            Contact Us and Support
                         </div>
                         {showContactDropdown && (
                             <div
@@ -586,14 +514,14 @@ const Header = () => {
                                 className="absolute top-full left-50 right-0 flex items-center justify-center z-50"
                             >
                                 <div className="border border-[#0f172a] w-[20%] flex flex-col justify-between bg-white px-4 py-6 shadow-xl">
-                                    <h4 className="font-bold text-lg mb-4">Contact Us</h4>
+                                    <h4 className="font-bold text-lg mb-4">Contact Us and Support</h4>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Empowering energy and sustainability leaders with actionable data.</p>
                                     <div className="flex flex-col gap-3 mt-2">
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/contact-us/contact-sales');
+                                                navigate('/contact-us-and-support/contact-sales');
                                             }}
                                         >
                                             Contact Sales
@@ -602,7 +530,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/contact-us/general-inquiry');
+                                                navigate('/contact-us-and-support/general-inquiry');
                                             }}
                                         >
                                             General Inquiry
@@ -611,10 +539,37 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/contact-us/pricing-information');
+                                                navigate('/contact-us-and-support/pricing-information');
                                             }}
                                         >
                                             Pricing Information
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us-and-support/faqs');
+                                            }}
+                                        >
+                                            FAQs
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us-and-support/troubleshooting');
+                                            }}
+                                        >
+                                            Troubleshooting
+                                        </div>
+                                        <div
+                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate('/contact-us-and-support/contact-support');
+                                            }}
+                                        >
+                                            Contact Support
                                         </div>
                                     </div>
                                 </div>
@@ -660,10 +615,10 @@ const Header = () => {
 
                             <div className="py-3">
                                 <div
-                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/solution') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/product-and-solutions') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
                                     onClick={() => showMobileSolutionOpen()}
                                 >
-                                    <span>Solutions</span>
+                                    <span>Product and Solutions</span>
                                     <span>{mobileSolutionsOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
                                 </div>
                                 {mobileSolutionsOpen && (
@@ -672,7 +627,7 @@ const Header = () => {
                                             <div
                                                 className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/energy-mangement');
+                                                    navigate('/product-and-solutions/energy-mangement');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
@@ -683,7 +638,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-mangement/overview');
+                                                        navigate('/product-and-solutions/energy-mangement/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -693,7 +648,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-mangement/feature');
+                                                        navigate('/product-and-solutions/energy-mangement/feature');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -703,7 +658,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-mangement/bill-capture');
+                                                        navigate('/product-and-solutions/energy-mangement/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -713,7 +668,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-mangement/pricing');
+                                                        navigate('/product-and-solutions/energy-mangement/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -725,7 +680,7 @@ const Header = () => {
                                             <div
                                                 className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/energy-exchange');
+                                                    navigate('/product-and-solutions/energy-exchange');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
@@ -736,7 +691,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-exchange/overview');
+                                                        navigate('/product-and-solutions/energy-exchange/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -746,7 +701,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-exchange/feature');
+                                                        navigate('/product-and-solutions/energy-exchange/feature');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -756,7 +711,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-exchange/bill-capture');
+                                                        navigate('/product-and-solutions/energy-exchange/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -766,7 +721,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-exchange/pricing');
+                                                        navigate('/product-and-solutions/energy-exchange/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -778,7 +733,7 @@ const Header = () => {
                                             <div
                                                 className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/solution/energy-ai');
+                                                    navigate('/product-and-solutions/energy-ai');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
@@ -789,7 +744,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-ai/overview');
+                                                        navigate('/product-and-solutions/energy-ai/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -799,7 +754,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-ai/features');
+                                                        navigate('/product-and-solutions/energy-ai/features');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -809,7 +764,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-ai/bill-capture');
+                                                        navigate('/product-and-solutions/energy-ai/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -819,7 +774,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/solution/energy-ai/pricing');
+                                                        navigate('/product-and-solutions/energy-ai/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -884,17 +839,17 @@ const Header = () => {
 
                             <div className="py-3">
                                 <div
-                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/resources') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/research-and-resources') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
                                     onClick={() => showMobileResourceOpen()}
                                 >
-                                    <span>Resources</span>
+                                    <span>Research and Resources</span>
                                     <span>{mobileResourcesOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
                                 </div>
                                 {mobileResourcesOpen && (
                                     <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
                                         <div className="">
                                             <div className="font-semibold mb-2 text-[18px] cursor-pointer">
-                                                Resources
+                                                Research and Resources
                                             </div>
                                             <div className="grid grid-cols-2 gap-2">
                                                 <div className="flex flex-col space-y-1">
@@ -911,77 +866,27 @@ const Header = () => {
                                 )}
                             </div>
 
-                            <div className="py-3">
-                                <div
-                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/support') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
-                                    onClick={() => showMobileSupportOpen()}
-                                >
-                                    <span>Support</span>
-                                    <span>{mobileSupportOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
-                                </div>
-                                {mobileSupportOpen && (
-                                    <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
-                                        <div className="">
-                                            <div className="font-semibold mb-2 text-[18px] cursor-pointer">
-                                                Support
-                                            </div>
-                                            <div className="flex flex-col gap-3 mt-2">
-                                                <div
-                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/support/faqs');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    FAQs
-                                                </div>
-                                                <div
-                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/support/troubleshooting');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Troubleshooting
-                                                </div>
-                                                <div
-                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        navigate('/support/contact-support');
-                                                        setIsMobileMenuOpen(false);
-                                                    }}
-                                                >
-                                                    Contact Support
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
 
                             <div className="py-3">
                                 <div
-                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/contact') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
+                                    className={`flex justify-between items-center cursor-pointer ${location.pathname.includes('/contact-us-and-support') ? 'border-b-2 border-[#0f172a] pb-2' : 'hover:underline hover:text-[#0e121b]'}`}
                                     onClick={() => showMobileContactOpen()}
                                 >
-                                    <span>Contact Us</span>
+                                    <span>Contact Us and Support</span>
                                     <span>{mobileContactOpen ? <RiSubtractLine color='#0f172a' size={20} /> : <FiPlus color='#0f172a' size={20} />}</span>
                                 </div>
                                 {mobileContactOpen && (
                                     <div className="mt-2 space-y-3 px-4 py-2 border border-[#0f172a]">
                                         <div className="">
                                             <div className="font-semibold mb-2 text-[18px] cursor-pointer">
-                                                Contact Us
+                                                Contact Us and Support
                                             </div>
                                             <div className="flex flex-col gap-3 mt-2">
                                                 <div
                                                     className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/contact-us/contact-sales');
+                                                        navigate('/contact-us-and-support/contact-sales');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -991,7 +896,7 @@ const Header = () => {
                                                     className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/contact-us/general-inquiry');
+                                                        navigate('/contact-us-and-support/general-inquiry');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -1001,11 +906,41 @@ const Header = () => {
                                                     className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/contact-us/pricing-information');
+                                                        navigate('/contact-us-and-support/pricing-information');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
                                                     Pricing Information
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us-and-support/faqs');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    FAQs
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us-and-support/troubleshooting');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Troubleshooting
+                                                </div>
+                                                <div
+                                                    className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        navigate('/contact-us-and-support/contact-support');
+                                                        setIsMobileMenuOpen(false);
+                                                    }}
+                                                >
+                                                    Contact Support
                                                 </div>
                                             </div>
                                         </div>

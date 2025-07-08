@@ -1,6 +1,6 @@
 import { FaPlay } from 'react-icons/fa';
 
-import img from '../../assets/Images/solution.webp'
+import img from '../../../assets/Images/solution.webp'
 import { useNavigate } from 'react-router-dom';
 
 

@@ -2,11 +2,11 @@ import React from 'react'
 import WebsiteLayout from '../../../components/Layout'
 import HeroBannerSection from '../../../components/Home/HeroBannerSection';
 import CompaniesSlider from '../../../components/Home/CompaniesSlider';
-import GoodbyeSpreadsheets from '../../../components/Solution Components/GoodbyeSpreadsheets';
-import UtilityBillDataExcellence from '../../../components/Solution Components/UtilityBillDataExcellence';
-import ManageUtilityData from '../../../components/Solution Components/ManageUtilityData';
+import GoodbyeSpreadsheets from '../../../components/Product and Solutions Components/GoodbyeSpreadsheets';
+import UtilityBillDataExcellence from '../../../components/Product and Solutions Components/UtilityBillDataExcellence';
+import ManageUtilityData from '../../../components/Product and Solutions Components/ManageUtilityData';
 import CalculatorSection from '../../../components/Home/CalculatorSection';
-import CompanyReviewsSlider from '../../../components/Solution Components/CompanyReviewsSlider';
+import CompanyReviewsSlider from '../../../components/Product and Solutions Components/CompanyReviewsSlider';
 
 import img from '../../../assets/Images/heroimg3.webp'
 
