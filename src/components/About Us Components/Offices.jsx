@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 
-import img from '../../assets/Images/Office.svg'
+import sptlogo from '../../assets/Images/spt_round_logo.png'
 import { useNavigate } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
@@ -17,33 +17,38 @@ const Offices = ({ BundleandsaveContent }) => {
                         Offices
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
                         {/* Headquarters */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-2">Headquarters</h3>
-                            <p>EnergyCAP, LLC</p>
-                            <p>360 Discovery Drive</p>
-                            <p>Boalsburg, PA 16827</p>
+                            <h3 className="text-xl font-semibold mb-3">Headquarters</h3>
+                            <p>SPT HQ</p>
+                            <p>2990 Myers St</p>
+                            <p>Riverside, CA 92503</p>
                             <p className="mt-2">
-                                <span className="font-semibold">Phone:</span> 877.327.3702
+                                <span className="font-semibold">Phone:</span> 800-677-5014
                             </p>
                             <p>
-                                <span className="font-semibold">Fax:</span> 719.623.0577
+                                <span className="font-semibold">Email:</span> sales@sptus.com
                             </p>
                         </div>
 
-                        {/* Denver */}
+                        {/* AI Lab */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-2">Denver, CO</h3>
-                            <p>EnergyCAP, LLC</p>
-                            <p>Suite 500</p>
-                            <p>5445 DTC Parkway</p>
-                            <p>Greenwood Village, CO 80111</p>
+                            <h3 className="text-xl font-semibold mb-3">AI Lab</h3>
+                            <p>SPT AI Energy Lab</p>
+                            <p>2990 Myers St</p>
+                            <p>Riverside, CA 92503</p>
+                            <p className="mt-2">
+                                <span className="font-semibold">Phone:</span> 800-677-5014
+                            </p>
+                            <p>
+                                <span className="font-semibold">Email:</span> sales@sptus.com
+                            </p>
                         </div>
 
                         {/* Online */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-2">Online</h3>
+                            <h3 className="text-2xl font-semibold mb-3">Online</h3>
                             <p>Follow us:</p>
                             <div className="flex gap-3 mt-2">
                                 <a
@@ -63,23 +68,15 @@ const Offices = ({ BundleandsaveContent }) => {
                             </div>
                         </div>
 
-                        {/* Dublin */}
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2">Dublin, Ireland</h3>
-                            <p>EnergyCAP Software International Limited</p>
-                            <p>Unit F, The Digital Court, Rainsford Street,</p>
-                            <p>Dublin 8, D08 R2YP, Ireland</p>
-                            <p className="mt-2">Company number: 499770</p>
-                            <p>VAT number: IE9793521K</p>
-                        </div>
+
                     </div>
                 </div>
                 {/* Badge with Icon and Text */}
                 <div className="absolute -top-25 left-1/2 transform -translate-x-1/2 z-20">
                     <img
-                        src={img}
+                        src={sptlogo}
                         alt="Bundle Icon"
-                        className="w-54 h-54 object-contain"
+                        className="w-64 h-64 object-contain"
                     />
                 </div>
             </div>

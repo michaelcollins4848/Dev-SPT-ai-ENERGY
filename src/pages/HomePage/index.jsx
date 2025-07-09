@@ -14,10 +14,11 @@ import platfrom4 from '../../assets/Images/trusted-Intelligence.png'
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
 
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
-import CompaniesSlider from '../../components/Home/CompaniesSlider';
+import CompaniesSlider from '../../components/About Us Components/CompaniesSlider';
 import CalculatorSection from '../../components/Home/CalculatorSection';
 import TestimoninalCarousel from '../../components/Home/TestimoninalCarousel';
 import BlogSection from '../../components/Home/BlogSection';
+import HomeCarousel from '../../components/Home/HomeCarousel';
 
 // import EnergyDashboard from './EnergyDashboard';
 
@@ -194,9 +195,7 @@ const homepageContent = {
   heading2: "Revolutionizing Energy Management with AI",
   subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power grids.",
   img: heroImg,
-  btn: "Get a Free Consultation",
-  playbtn: "What is EMS?",
-  showplay: true,
+  btn: "Get a Free Consultation", 
   showtop: false,
 };
 
@@ -216,16 +215,15 @@ const showtop = true
 
 
 const HomePage = () => {
-  const [activeIndex1, setActiveIndex1] = useState(1);
+  const [activeIndex1, setActiveIndex1] = useState(0);
 
   return (
     <WebsiteLayout>
       {/* hero banner section */}
       <HeroBannerSection homepageContent={homepageContent} />
 
-
       {/* maximize efficiency section  */}
-      <section className="font-arimo py-16">
+      <section className="font-arimo pt-1 pb-16">
         <div className="text-center px-4 md:px-0">
           <h2 className="text-xl md:text-4xl font-bold mb-12 leading-tight">
 
@@ -246,16 +244,16 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* partner company section  */}
-      <CompaniesSlider showtop={showtop} heading="SPT AI Energy Lab partners with corporations, governments, and institutions to deliver intelligent energy solutions that drive efficiency, savings, and sustainable transformation." />
+      
+      {/* home carousel section */}
+      <HomeCarousel />
 
       {/* <Single platform /> */}
-      <section className="px-6 py-16">
+      <section className="px-6 pt-16">
         <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight text-center">
           Unified energy tools for every role
         </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-700 text-center">
+        <p className="mt-4 max-w-4xl text-lg mx-auto text-gray-700 text-center">
           SPT’s intelligent EMS brings together cross-functional teams on a single platform, enabling seamless collaboration to maximize efficiency, control costs, and drive sustainable energy outcomes.
         </p>
         <div className="w-full px-4 mt-20 mb-10">
@@ -306,52 +304,11 @@ const HomePage = () => {
       </section>
 
       {/* solution empower section  */}
-      <section className="px-6 py-12 text-center">
-        <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight">
-          Solutions to Power Your Energy and Sustainability Journey
-        </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-700">
-          Choose the tools you need—whether starting small or scaling enterprise-wide. With SPT AI Energy Lab, you can seamlessly deploy intelligent energy and sustainability solutions tailored to your goals. Empower data-driven transformation with real-time insights, predictive AI, and total system control—wherever you are.
-        </p>
-
-        <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
-          {solutions.map((sol, index) => (
-            <div
-              key={index}
-              className="bg-white w-full max-w-sm mx-auto border shadow-md p-6 text-left hover:shadow-lg transition-shadow flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <img src={sol.icon} alt="logo" className="w-8 h-8" />
-                  <h3 className="text-lg font-bold text-[#0f172a]">{sol.title}</h3>
-                </div>
-                <p className="text-gray-700 mb-4">{sol.description}</p>
-                <div>
-                  <h4 className="font-semibold text-[#0f172a] mb-2">Key Features</h4>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    {sol.features.map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <a
-                href={sol.link}
-                className="text-[#6e8cd1] font-semibold mt-6 inline-block hover:underline"
-              >
-                Learn more
-              </a>
-            </div>
-
-          ))}
-        </div>
-
+      <section className="px-6 pt-4 pb-12 text-center">
         <div className="mt-12 text-center max-w-4xl mx-auto text-[#0f172a]">
-          <h4 className="font-bold  text-xl mb-3">Seamless Data Integration, Expertly Managed</h4>
-          <p className='text-gray-700'>
-            Boost the accuracy and impact of your energy data with<span className="font-semibold underline text-[#0f172a]">SPT’s managed services.</span>
-            Our end-to-end data capture and integration solutions ensure your information flows into the SPT platform precisely and on time. Let us handle the technical complexities—so you can stay focused on what matters most: improving efficiency, cutting costs, and making smarter, data-driven energy decisions.
+          <h4 className="font-bold  text-4xl mb-3">Seamless Data Integration, Expertly Managed</h4>
+          <p className='text-gray-700 text-lg'>
+            Boost the accuracy and impact of your energy data with <span className="font-semibold underline text-[#0f172a]">SPT’s managed services.</span> Our end-to-end data capture and integration solutions ensure your information flows into the SPT platform precisely and on time. Let us handle the technical complexities—so you can stay focused on what matters most: improving efficiency, cutting costs, and making smarter, data-driven energy decisions.
           </p>
         </div>
       </section>

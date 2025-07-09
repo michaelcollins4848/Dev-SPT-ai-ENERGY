@@ -18,7 +18,7 @@ const HeroBannerSection = ({ homepageContent }) => {
                 videoUrl="https://www.youtube.com/embed/TLHL5sUxmM4?si=vU6JGdbNlbffIORb"
             />
             <section className="relative overflow-hidden bgbackgroundimg">
-                <div className='max-w-7xl mx-auto sm:px-10 sm:py-30 px-5 py-24'>
+                <div className='max-w-7xl mx-auto sm:px-10 pt-24 pb-8 px-3'>
                     {homepageContent.showtop &&
                         <div className=''>
                             <h6 className='text-sm font-[400] italic '> <span className='cursor-pointer' onClick={() => navigate('/')} >Home</span> / {homepageContent.navigation}</h6>

@@ -465,10 +465,10 @@ const Header = () => {
                                             onClick={(e) => {
                                                 e.stopPropagation();
                                                 //fix this link
-                                                navigate('/about-us/our-technology');
+                                                navigate('/about-us/partners-and-affiliates');
                                             }}
                                         >
-                                            Partners and Affiliations
+                                            Partners and Affiliates
                                         </div>
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"

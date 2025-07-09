@@ -14,7 +14,7 @@ import img5 from '../../../assets/Images/icon18.svg'
 import img from '../../../assets/Images/aboutusimg.webp'
 
 
-import awardimg from '../../../assets/Images/award2.webp'
+import awarding from '../../../assets/Images/award2.webp'
 
 
 import HeroSection from '../../../components/About Us Components/HeroSection';
@@ -92,62 +92,62 @@ const SustainableFutureSectionContent = {
 
 const awards = [
     {
-        icon: awardimg,
+        icon: awarding,
         title: "ENERGY STAR Partner of the Year 2024",
     },
     {
-        icon: awardimg,
+        icon: awarding,
         title: "Capterra Best of Energy Management 2024",
     },
     {
-        icon: awardimg,
+        icon: awarding,
         title: "Green Quadrant: Energy Management Software 2023",
     },
     {
-        icon: awardimg,
+        icon: awarding,
         title: "2024 Top Environmental, Social and Governance Reporting (ESG) Software Quadrant.",
     },
     {
-        icon: awardimg,
+        icon: awarding,
         title: "Summer 2024 Energy Manager Software Leaders",
     },
     {
-        icon: awardimg,
+        icon: awarding,
         title: "Major Player in the Worldwide Carbon Accounting & Management Applications 2024 Vendor Assessment",
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "ESG Reporting Data Quadrant Leader",
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "2024 Top Product of the Year by the Environment+Energy Leader Awards Program",
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "Top Climate Tech Companies to Watch in 2024",
     },
 
      {
-        icon: awardimg,
+        icon: awarding,
         title: "Best Company Perks & Benefits 2023",
         description:
             'Also awarded, was the "Best Company Work-Life Balance of 2023" title.',
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "2023 Emotional Footprint Champion",
         description:
             'Also awarded was the "2023 Environmental, Social and Governance Reporting Data Quadrant" title.',
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "Best Places to Work 2023",
         description:
             'Also awarded, was the "Best Startups in Colorado" title.',
     },
      {
-        icon: awardimg,
+        icon: awarding,
         title: "Spring 2022 Energy Management Software (Wattics)",
         description:
             "We're also a Market Leader in the Summer 2023 Energy Management Software Customer Success Report.",
@@ -159,11 +159,8 @@ const Aboutus = () => {
     return (
         <WebsiteLayout>
             <HeroSection aboutusContent={aboutusContent} />
-            <HistorySection />
             <EmpowerUsSection values={values} EmpowerUsSectionContent={EmpowerUsSectionContent} />
             <SustainableFutureSection values={values} SustainableFutureSectionContent={SustainableFutureSectionContent} />
-            <Awards awards={awards} AwardsContent={AwardsContent} />
-            <TeamMembers awards={awards} AwardsContent={AwardsContent} />
             <Offices  />
             <CalculatorSection calculatorContent={calculatorContent} />
         </WebsiteLayout>

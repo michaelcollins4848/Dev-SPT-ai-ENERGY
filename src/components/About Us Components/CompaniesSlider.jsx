@@ -11,16 +11,15 @@ import logo7 from "../../assets/logo/old/8.png";
 import logo8 from "../../assets/logo/old/9.png";
 import logo9 from "../../assets/logo/old/10.png";
 import logo10 from "../../assets/logo/old/11.png";
-// import sps from "../../assets/logo/Starcharge.png";
 import startcharge from "../../assets/logo/old/12.png";
 import UWest from "../../assets/logo/old/13.png";
 import voltronic from "../../assets/logo/old/15.png"
 
-const logos = [ucr,ibm,logo2, logo3, logo4, logo5, logo6, logo7,logo8,logo9,logo10,startcharge,UWest,voltronic];
+const logos = [ucr, ibm, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, startcharge, UWest, voltronic];
 
 const CompaniesSlider = ({ showtop, heading }) => {
     return (
-        <section className="py-8">
+        <section className="py-6 bg-white border-y-2 border-gray-200">
             {showtop &&
                 <div className="text-center text-primary text-lg md:text-lg px-4 mb-8 max-w-3xl m-auto">
                     {heading}
@@ -33,7 +32,7 @@ const CompaniesSlider = ({ showtop, heading }) => {
                             key={index}
                             src={logo}
                             alt={`logo-${index}`}
-                            className="inline-block h-40 mx-8 grayscale hover:grayscale-0 transition duration-300"
+                            className="inline-block h-40 mx-8 transition duration-300"
                         />
                     ))}
                 </div>

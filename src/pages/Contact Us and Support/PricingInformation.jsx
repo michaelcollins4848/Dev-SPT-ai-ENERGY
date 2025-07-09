@@ -1,7 +1,7 @@
 import React from 'react'
 import WebsiteLayout from '../../components/Layout'
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
-import CompaniesSlider from '../../components/Home/CompaniesSlider';
+import CompaniesSlider from '../../components/About Us Components/CompaniesSlider';
 import ManageUtilityData from '../../components/Product and Solutions Components/ManageUtilityData';
 import CalculatorSection from '../../components/Home/CalculatorSection';
 
