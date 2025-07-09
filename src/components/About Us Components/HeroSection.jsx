@@ -11,7 +11,7 @@ const HeroSection = ({ aboutusContent }) => {
                     {/* Left Text Content */}
                     <div className="max-w-xl">
                         <div className=''>
-                            <h6 className='text-xl font-[700] mb-3'>Company</h6>
+                            <h6 className='text-xl font-[700] mb-3'>SPT Artifical Intelligence Labratory</h6>
                         </div>
                         <h1 className="text-2xl sm:text-4xl font-bold leading-tight">
                             {aboutusContent.heading1}

@@ -18,7 +18,7 @@ import awardimg from '../../../assets/Images/award2.webp'
 
 
 import HeroSection from '../../../components/About Us Components/HeroSection';
-import HistorySecction from '../../../components/About Us Components/HistorySecction';
+import HistorySection from '../../../components/About Us Components/HistorySection';
 import EmpowerUsSection from '../../../components/About Us Components/EmpowerUsSection';
 import SustainableFutureSection from '../../../components/About Us Components/SustainableFutureSection';
 import Awards from '../../../components/About Us Components/Awards';
@@ -159,7 +159,7 @@ const Aboutus = () => {
     return (
         <WebsiteLayout>
             <HeroSection aboutusContent={aboutusContent} />
-            <HistorySecction />
+            <HistorySection />
             <EmpowerUsSection values={values} EmpowerUsSectionContent={EmpowerUsSectionContent} />
             <SustainableFutureSection values={values} SustainableFutureSectionContent={SustainableFutureSectionContent} />
             <Awards awards={awards} AwardsContent={AwardsContent} />

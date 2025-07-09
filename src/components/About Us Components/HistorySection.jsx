@@ -58,6 +58,7 @@ const HistorySection = () => {
         <section className="relative text-white py-20 px-4 bgbackgroundimg1">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-2xl sm:text-4xl font-semibold mb-12">
+                    <br />
                     Our history of innovation and leadership
                 </h2>
 

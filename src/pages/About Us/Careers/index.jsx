@@ -20,7 +20,7 @@ import awardimg from '../../../assets/Images/award2.webp'
 import companylogo from '../../../assets/Images/logo3.webp'
 
 import HeroSection from '../../../components/About Us Components/HeroSection';
-import HistorySecction from '../../../components/About Us Components/HistorySecction';
+import HistorySection from '../../../components/About Us Components/HistorySection';
 import EmpowerUsSection from '../../../components/About Us Components/EmpowerUsSection';
 import SustainableFutureSection from '../../../components/About Us Components/SustainableFutureSection';
 import Awards from '../../../components/About Us Components/Awards';

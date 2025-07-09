@@ -4,8 +4,9 @@ import UtilityMangement from './pages/Product and Solutions/HydrogenManagementSy
 import UtilityMangementFeature from './pages/Product and Solutions/HydrogenManagementSystem/Features';
 import UtilityMangementPricing from './pages/Product and Solutions/HydrogenManagementSystem/Pricing';
 import UtilityMangementBillCAPtureServices from './pages/Product and Solutions/HydrogenManagementSystem/BillCAPtureServices';
-import Aboutus from './pages/About Us/CompanyOverview';
+import CompanyOverview from './pages/About Us/CompanyOverview';
 import Careers from './pages/About Us/Careers';
+import Milestones from './pages/Research and Resources/Milestones';
 import ContactSales from './pages/Contact Us and Support/ContactSales';
 import PricingInformation from './pages/Contact Us and Support/PricingInformation';
 import GeneralInquiry from './pages/Contact Us and Support/GeneralInquiry';
@@ -56,9 +57,11 @@ export default function App() {
           <Route path="/product-and-solutions/energy-ai/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
           <Route path="/product-and-solutions/energy-ai/pricing" element={<UtilityMangementPricing />} />
 
-          {/* About Us */}
+          {/* Research and Resources */}
+          <Route path="/research-and-resources/milestones" element={<Milestones />} />
 
-          <Route path="/about-us/company-overview" element={<Aboutus />} />
+          {/* About Us */}
+          <Route path="/about-us/company-overview" element={<CompanyOverview />} />
           <Route path="/about-us/careers" element={<Careers />} />
 
           {/* Contact Us */}

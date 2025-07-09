@@ -7,9 +7,9 @@ import { IoMdClose } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
 import { RiSubtractLine } from "react-icons/ri";
 import { motion, AnimatePresence } from 'framer-motion';
-import Management from "../../assets/Images/emanagement.png";
-import Exchange from "../../assets/Images/eExchange.png";
-import Ai from "../../assets/Images/e-Ai.png"
+import EMSicon from "../../assets/Images/ems_icon.png";
+import marketIcon from "../../assets/Images/market_icon.png";
+import hydrogenStation from "../../assets/Images/hydrogen_icon.png"
 
 
 const Header = () => {
@@ -163,10 +163,9 @@ const Header = () => {
 
     return (
         <header className={`relative transition-all duration-300 
-    bg-white shadow-2xl border-b border-[#0f172a] 
-    md:bg-transparent md:shadow-none md:border-0 
-    ${isScrolled ? 'md:bg-white md:shadow-2xl md:border-b md:border-[#0f172a]' : ''}
-  `}>
+    bg-white/80 backdrop-blur-sm md:bg-white/80 
+    ${isScrolled ? 'shadow-2xl border-b border-[#0f172a]' : ''}
+    `}>
             <div className="max-w-screen-xl mx-auto flex justify-between items-center py-1 px-4 md:px-8">
                 {/* Logo */}
                 <img
@@ -240,7 +239,7 @@ const Header = () => {
                             >
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement')}>
-                                    <img src={Management} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
+                                    <img src={EMSicon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>AI Energy Management System</p>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2">
@@ -275,7 +274,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-exchange')}>
-                                    <img src={Exchange} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
+                                    <img src={marketIcon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>AI Market Intelligence System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -310,7 +309,7 @@ const Header = () => {
                                 </div>
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-ai')}>
-                                    <img src={Ai} alt="Utility" className="mb-2 w-50 h-15 object-cover" />
+                                    <img src={hydrogenStation} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>Hydrogen Station Smart Management System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
@@ -417,7 +416,15 @@ const Header = () => {
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Doing your research? Find everything you need to build a business case in our Resource Center.</p>
                                     <div className="flex justify-between w-[80%]">
                                         <div className="flex flex-col gap-2 mt-5">
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Milestones</a>
+                                            <div
+                                                className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    navigate('/research-and-resources/milestones');
+                                                }}
+                                            >
+                                                Milestones
+                                            </div>
                                             <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Newsroom</a>
                                             <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Events and Engagement</a>
                                         </div>
