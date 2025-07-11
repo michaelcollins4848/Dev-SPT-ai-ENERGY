@@ -1,19 +1,20 @@
   import { lazy, Suspense } from 'react';
   import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-  import UtilityMangement from './pages/Product and Solutions/HydrogenManagementSystem';
-  import UtilityMangementFeature from './pages/Product and Solutions/HydrogenManagementSystem/Features';
+  import EMSOverview from './pages/Product and Solutions/EnergyManagementSystem/Overview';
+  import MarketIntelOverview from './pages/Product and Solutions/MarketIntelligence/overview';
+  import HydrogenStationOverview from './pages/Product and Solutions/HydrogenManagementSystem/Overview';
+  import EMSFeatures from './pages/Product and Solutions/EnergyManagementSystem/Features';
+  import MarketIntelFeatures from './pages/Product and Solutions/MarketIntelligence/Features';
+  import HydrogenStationFeatures from './pages/Product and Solutions/HydrogenManagementSystem/Features';
   import UtilityMangementPricing from './pages/Product and Solutions/HydrogenManagementSystem/Pricing';
-  import UtilityMangementBillCAPtureServices from './pages/Product and Solutions/HydrogenManagementSystem/BillCAPtureServices';
   import CompanyOverview from './pages/About Us/CompanyOverview';
   import Careers from './pages/About Us/Careers';
   import Partners from './pages/About Us/Partners and Affiliates';
   import Milestones from './pages/Research and Resources/Milestones';
   import ContactSales from './pages/Contact Us and Support/ContactSales';
-  import PricingInformation from './pages/Contact Us and Support/PricingInformation';
   import GeneralInquiry from './pages/Contact Us and Support/GeneralInquiry';
   import ContactSupport from './pages/Contact Us and Support/ContactSupport';
   import FAQs from './pages/Contact Us and Support/FAQs';
-  import Troubleshooting from './pages/Contact Us and Support/Troubleshooting';
   import { ScrollToTop } from './utils/utils';
 
   const HomePage = lazy(() => import('./pages/HomePage'));
@@ -38,24 +39,21 @@
           <Routes>
             <Route path="/" element={<HomePage />} />
             {/* Energy Management */}
-            <Route path="/product-and-solutions/energy-mangement" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-mangement/overview" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-mangement/feature" element={<UtilityMangementFeature />} />
-            <Route path="/product-and-solutions/energy-mangement/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+            <Route path="/product-and-solutions/energy-mangement-system" element={<EMSOverview />} />
+            <Route path="/product-and-solutions/energy-mangement-system/overview" element={<EMSOverview />} />
+            <Route path="/product-and-solutions/energy-mangement-system/features" element={<EMSFeatures />} />
             <Route path="/product-and-solutions/energy-mangement/pricing" element={<UtilityMangementPricing />} />
 
-            {/* Energy Exchange */}
-            <Route path="/product-and-solutions/energy-exchange" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-exchange/overview" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-exchange/feature" element={<UtilityMangementFeature />} />
-            <Route path="/product-and-solutions/energy-exchange/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+            {/*Market Intelligence AI*/}
+            <Route path="/product-and-solutions/market-intelligence" element={<MarketIntelOverview />} />
+            <Route path="/product-and-solutions/market-intelligence/overview" element={<MarketIntelOverview />} />
+            <Route path="/product-and-solutions/market-intelligence/features" element={<MarketIntelFeatures />} />
             <Route path="/product-and-solutions/energy-exchange/pricing" element={<UtilityMangementPricing />} />
 
-            {/* Energy AI */}
-            <Route path="/product-and-solutions/energy-ai" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-ai/overview" element={<UtilityMangement />} />
-            <Route path="/product-and-solutions/energy-ai/feature" element={<UtilityMangementFeature />} />
-            <Route path="/product-and-solutions/energy-ai/bill-capture" element={<UtilityMangementBillCAPtureServices />} />
+            {/*Hydrogen Station Management*/}
+            <Route path="/product-and-solutions/hydrogen-management-system" element={<HydrogenStationOverview />} />
+            <Route path="/product-and-solutions/hydrogen-management-system/overview" element={<HydrogenStationOverview />} />
+            <Route path="/product-and-solutions/hydrogen-management-system/features" element={<HydrogenStationFeatures />} />
             <Route path="/product-and-solutions/energy-ai/pricing" element={<UtilityMangementPricing />} />
 
             {/* Research and Resources */}
@@ -69,10 +67,8 @@
             {/* Contact Us */}
             <Route path="/contact-us-and-support/contact-sales" element={<ContactSales />} />
             <Route path="/contact-us-and-support/general-inquiry" element={<GeneralInquiry />} />
-            <Route path="/contact-us-and-support/pricing-information" element={<PricingInformation />} />
             <Route path="/contact-us-and-support/contact-support" element={<ContactSupport />} />
             <Route path="/contact-us-and-support/faqs" element={<FAQs />} />
-            <Route path="/contact-us-and-support/troubleshooting" element={<Troubleshooting />} />
             
           </Routes>
         </Suspense>

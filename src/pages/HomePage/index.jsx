@@ -14,14 +14,9 @@ import platfrom4 from '../../assets/Images/trusted-Intelligence.png'
 import { FaRegLightbulb, FaFileInvoiceDollar, FaPiggyBank } from "react-icons/fa";
 
 import HeroBannerSection from '../../components/Home/HeroBannerSection';
-import CompaniesSlider from '../../components/About Us Components/CompaniesSlider';
 import CalculatorSection from '../../components/Home/CalculatorSection';
 import TestimoninalCarousel from '../../components/Home/TestimoninalCarousel';
-import BlogSection from '../../components/Home/BlogSection';
 import HomeCarousel from '../../components/Home/HomeCarousel';
-
-// import EnergyDashboard from './EnergyDashboard';
-
 
 
 
@@ -41,7 +36,7 @@ const stats = [
     value: "10%+",
     description: "Annual energy savings for majority of customers.",
   },
-];
+];  
 
 const solutions = [
   {
@@ -202,7 +197,7 @@ const homepageContent = {
 const calculatorContent = {
   heading1: "Effortlessly manage your energy resources with intelligent control",
   heading2: "SPT AI Energy Lab",
-  btn: "Contact Sales",
+  btn: "Contact us!",
 };
 
 const blogContent = {

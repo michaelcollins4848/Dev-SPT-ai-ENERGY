@@ -247,7 +247,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement/overview');
+                                                navigate('/product-and-solutions/energy-mangement-system/overview');
                                             }}
                                         >
                                             Overview
@@ -256,7 +256,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement/feature');
+                                                navigate('/product-and-solutions/energy-mangement-system/features');
                                             }}
                                         >
                                             Features
@@ -282,7 +282,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-exchange/overview');
+                                                navigate('/product-and-solutions/market-intelligence/overview');
                                             }}
                                         >
                                             Overview
@@ -291,7 +291,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-exchange/feature');
+                                                navigate('/product-and-solutions/market-intelligence/features');
                                             }}
                                         >
                                             Features
@@ -317,7 +317,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-ai/overview');
+                                                navigate('/product-and-solutions/hydrogen-management-system/overview');
                                             }}
                                         >
                                             Overview
@@ -326,19 +326,10 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-ai/feature');
+                                                navigate('/product-and-solutions/hydrogen-management-system/features');
                                             }}
                                         >
                                             Features
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-ai/bill-capture');
-                                            }}
-                                        >
-                                            Bill CAPture Services
                                         </div>
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
@@ -519,25 +510,7 @@ const Header = () => {
                                             }}
                                         >
                                             Contact Sales
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/contact-us-and-support/general-inquiry');
-                                            }}
-                                        >
-                                            General Inquiry
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/contact-us-and-support/pricing-information');
-                                            }}
-                                        >
-                                            Pricing Information
-                                        </div>
+                                        </div>  
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
@@ -546,15 +519,6 @@ const Header = () => {
                                             }}
                                         >
                                             FAQs
-                                        </div>
-                                        <div
-                                            className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                navigate('/contact-us-and-support/troubleshooting');
-                                            }}
-                                        >
-                                            Troubleshooting
                                         </div>
                                         <div
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
@@ -577,7 +541,7 @@ const Header = () => {
                     <div
                         className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                         onClick={() => {
-                            navigate('/request-demo');
+                            navigate('/contact-us-and-support/general-inquiry');
                             closeAllDropdowns();
                         }}
                     >
@@ -632,7 +596,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/product-and-solutions/energy-mangement/overview');
+                                                        navigate('/product-and-solutions/energy-management-system/overview');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >

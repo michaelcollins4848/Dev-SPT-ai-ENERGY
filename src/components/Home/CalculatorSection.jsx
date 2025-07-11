@@ -3,6 +3,7 @@ import { MdEnergySavingsLeaf } from "react-icons/md";
 import { MdElectricMeter } from "react-icons/md";
 import { IoIosCalculator } from "react-icons/io";
 import icons from "../../assets/Images/iconss.png"
+import { Link } from 'react-router-dom';
 
 const CalculatorSection = ({ calculatorContent }) => {
     return (
@@ -22,9 +23,11 @@ const CalculatorSection = ({ calculatorContent }) => {
             </h2>
 
             {/* Button */}
-            <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
-                {calculatorContent.btn}
-            </button>
+            <Link to="/contact-us-and-support/general-inquiry">
+                <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white text-2xl font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
+                    {calculatorContent.btn}
+                </button>
+            </Link>
         </section>
     );
 };

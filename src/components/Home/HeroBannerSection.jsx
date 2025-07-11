@@ -5,6 +5,7 @@ import { FaPlay } from 'react-icons/fa';
 import img from '../../assets/Images/solution.webp'
 import { useNavigate } from 'react-router-dom';
 import {  VideoModal } from '../Modals/Modal';
+import { Link } from 'react-router-dom';
 
 
 const HeroBannerSection = ({ homepageContent }) => {
@@ -38,17 +39,11 @@ const HeroBannerSection = ({ homepageContent }) => {
                             </p>
 
                             <div className="mt-8 flex flex-row sm:flex-row items-start sm:items-center gap-4">
-                                <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
-                                    {homepageContent.btn}
-                                </button>
-                                {homepageContent.showplay &&
-                                    <button
-                                        onClick={() => setModalOpen(true)}
-                                        className="flex items-center gap-2 text-[#0f172a] hover:underline font-semibold">
-                                        <FaPlay className="text-white bg-[#0f172a] rounded-full p-2 cursor-pointer w-9 h-9" />
-                                        {homepageContent?.playbtn}
+                                <Link to="/contact-us-and-support/general-inquiry">
+                                    <button className="bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] text-white font-semibold px-6 py-2 rounded-md shadow-md cursor-pointer hover:shadow-xl transition duration-300">
+                                        {homepageContent.btn}
                                     </button>
-                                }
+                                </Link>
                             </div>
                         </div>
 

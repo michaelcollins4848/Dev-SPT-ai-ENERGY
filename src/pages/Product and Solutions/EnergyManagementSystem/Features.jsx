@@ -1,370 +1,88 @@
-import React from 'react'
-import WebsiteLayout from '../../../components/Layout'
-import HeroBannerSection from '../../../components/Home/HeroBannerSection';
-import CompaniesSlider from '../../../components/Home/CompaniesSlider';
-import GoodbyeSpreadsheets from '../../../components/Solution Components/GoodbyeSpreadsheets';
-import UtilityBillDataExcellence from '../../../components/Solution Components/UtilityBillDataExcellence';
-import ManageUtilityData from '../../../components/Solution Components/ManageUtilityData';
-import CalculatorSection from '../../../components/Home/CalculatorSection';
-import CompanyReviewsSlider from '../../../components/Solution Components/CompanyReviewsSlider';
-
-import img from '../../../assets/Images/heroimg2.webp'
-
-
-import img1 from '../../../assets/Images/icon1.svg'
-import img2 from '../../../assets/Images/icon2.svg'
-import img3 from '../../../assets/Images/icon3.svg'
-import img4 from '../../../assets/Images/icon4.svg'
-import img5 from '../../../assets/Images/icon5.svg'
-import img6 from '../../../assets/Images/icon6.svg'
-import img7 from '../../../assets/Images/icon7.svg'
-import img8 from '../../../assets/Images/icon8.svg'
-import img9 from '../../../assets/Images/icon9.svg'
-
-import platfrom1 from '../../../assets/Images/platform1.webp'
-import platfrom2 from '../../../assets/Images/platform4.webp'
-import platfrom3 from '../../../assets/Images/platform5.webp'
-import platfrom4 from '../../../assets/Images/platform6.webp'
-
-import companylogo from '../../../assets/Images/logo3.webp'
-import BlogSection from '../../../components/Home/BlogSection';
-
-import blog1 from '../../../assets/Images/blog1.png'
-import TestimoninalCarousel from '../../../components/Home/TestimoninalCarousel';
-
-
-const homepageContent = {
-  heading1: "Achieve utility bill",
-  heading2: "management excellence",
-  subheding: "Elevate your energy and utility management with EnergyCAP's 40+ years of expertise. Our platform streamlines data, cuts costs, and saves time, backed by proven success and advanced analytics.",
-  img: img,
-  btn: "Request a demo",
-  showplay: false,
-  showtop: true,
-  navigation: 'UtilityManagement / UtilityManagement Features',
-};
-
-const showtop = false
-
-const calculatorContent = {
-  heading1: "The single source of truth for your",
-  heading2: "energy and sustainability data.",
-  btn: "Request a Demo",
-};
-
-
+import React from 'react';
+import WebsiteLayout from '../../../components/Layout';
+import emsIcon from '../../../assets/Images/ems.png';
+import CalculatorSection
+ from '../../../components/Home/CalculatorSection';
 const features = [
   {
-    icon: img6,
-    title: "Utility bill management",
+    title: 'Real-Time Optimization',
     description:
-      "Advanced workflows for bill entry, approval, and payment. EnergyCAP automatically checks to validate your usage and flags any errors or anomalies.",
+      'Our EMS continuously monitors energy usage, pricing signals, and environmental conditions to make instantaneous decisions that reduce costs and enhance energy efficiency. It ensures your energy sources—whether solar, grid, or battery—are always working in harmony for peak performance.',
+    icon: emsIcon,
   },
   {
-    icon: img5,
-    title: "Facility benchmarking",
+    title: 'Weather-Adaptive Control',
     description:
-      "Normalize use and compare relative performance of similar buildings and spot energy hogs.",
+      'The system leverages real-time weather data to anticipate solar generation dips or spikes and proactively adjust operations. This ensures optimal battery charging/discharging and grid interaction, especially during extreme weather events.',
+    icon: emsIcon,
   },
   {
-    icon: img4,
-    title: "Chargebacks and tenant billing",
+    title: 'Dynamic Market Response',
     description:
-      "Quickly allocate consumption and recoup energy costs from tenants and departments based on submeter use, splits, or formulas.",
+      'By tracking time-of-use electricity rates and real-time pricing, the EMS shifts energy loads to off-peak periods or maximizes usage when renewables are most affordable. This directly leads to utility bill savings without user intervention.',
+    icon: emsIcon,
   },
   {
-    icon: img3,
-    title: "ENERGY STAR integration",
+    title: 'Automated Load Scheduling',
     description:
-      "Eliminate the burden to meet state and local mandates by automatically integrating with ENERGY STAR Portfolio Manager. View ratings & metrics directly in EnergyCAP.",
+      'Intelligent load scheduling automates energy-intensive operations—like EV charging or HVAC pre-cooling—during periods of lowest cost or highest renewable availability, reducing grid stress and emissions.',
+    icon: emsIcon,
   },
   {
-    icon: img2,
-    title: "Measurement and verification",
+    title: '24/7 Power Resilience',
     description:
-      "Monitor the success of your energy conservation measures instantly. EnergyCAP calculates continuous savings by comparing your data with a normalized baseline period.",
+      'The EMS prioritizes continuous power delivery to critical systems like hospitals or data centers. In the event of outages or instability, it intelligently reroutes power and activates backup systems seamlessly.',
+    icon: emsIcon,
   },
   {
-    icon: img1,
-    title: "Account and meter tracking",
+    title: 'Seamless Integration with Existing Infrastructure',
     description:
-      "Efficiently track and audit energy and non-energy commodities, and gain actionable insights through intuitive hierarchical views, hyperlinks, and detailed analytics.",
-  },
-
-  {
-    icon: img6,
-    title: "Dashboards",
-    description:
-      "You can create and customize different dashboards that display performance charts and graphs most relevant you. Dashboards can be shared within your organization or the public. It’s easy to share a public dashboard link or embed a dashboard in a webpage.",
-  },
-  {
-    icon: img5,
-    title: "Bill accruals",
-    description: "Create estimated utility bill amounts based on historical billing data to help you fill in the gaps. The accrued bills can then be exported to the General Ledger, and when the actual bill is received, a simple process reverses the accrued transactions.",
-  },
-  {
-    icon: img4,
-    title: "Bill CAPture℠ Utility Bill Processing and Management",
-    description:
-      "Need help ensuring your utility data is accurate and timely? Let us do the work for you with Bill CAPture, our specialized utility bill processing services.",
-  },
-  {
-    icon: img3,
-    title: "Data hierarchy",
-    description:
-      "Our tree-view navigation provides an intuitive hierarchical structure for utility data with separate TreeViews for meters, buildings, organizational divisions, accounts, cost centers, vendors, and rate schedules.",
-  },
-  {
-    icon: img2,
-    title: "Bill lists",
-    description:
-      "Bill Lists provide a quick and convenient way to view and take actions on bills. Apply filters and arrange your columns to create a bill list to answer a specific question. You can copy or share your bill list with others and export the bill list results to Excel.",
-  },
-  {
-    icon: img1,
-    title: "Account and meter tracking",
-    description:
-      "Efficiently track and audit energy and non-energy commodities, and gain actionable insights through intuitive hierarchical views, hyperlinks, and detailed analytics.",
-  },
-  {
-    icon: img6,
-    title: "Utility bill management",
-    description:
-      "Advanced workflows for bill entry, approval, and payment. EnergyCAP automatically checks to validate your usage and flags any errors or anomalies.",
-  },
-  {
-    icon: img5,
-    title: "Facility benchmarking",
-    description:
-      "Normalize use and compare relative performance of similar buildings and spot energy hogs.",
-  },
-  {
-    icon: img4,
-    title: "Chargebacks and tenant billing",
-    description:
-      "Quickly allocate consumption and recoup energy costs from tenants and departments based on submeter use, splits, or formulas.",
-  },
-  {
-    icon: img3,
-    title: "ENERGY STAR integration",
-    description:
-      "Eliminate the burden to meet state and local mandates by automatically integrating with ENERGY STAR Portfolio Manager. View ratings & metrics directly in EnergyCAP.",
-  },
-  {
-    icon: img2,
-    title: "Measurement and verification",
-    description:
-      "Monitor the success of your energy conservation measures instantly. EnergyCAP calculates continuous savings by comparing your data with a normalized baseline period.",
-  },
-  {
-    icon: img1,
-    title: "Account and meter tracking",
-    description:
-      "Efficiently track and audit energy and non-energy commodities, and gain actionable insights through intuitive hierarchical views, hyperlinks, and detailed analytics.",
+      'Our system is built to plug into your current setup—whether it’s a smart meter, solar array, or building management system—allowing rapid deployment without expensive retrofitting.',
+    icon: emsIcon,
   },
 ];
 
-const data = [
-  {
-    heading: "Capture",
-    subheading: "Gain timely access to accurate and reliable energy and sustainability information. From utility bill management to time-series data, to the sustainability data that matters to you, get a better understanding of your entire footprint.",
-    feature: [
-      {
-        label: 'Utility bill entry and import',
-        link: '#', // Replace with actual link
-      },
-      {
-        label: 'BillCapture managed services',
-        link: '#',
-      },
-      {
-        label: 'API integrations',
-        link: null,
-      },
-      {
-        label: 'Data formats: paper, PDF, XLS, CSV, TST, XML, EDI, and more',
-        link: null,
-      }
-    ],
-    img: platfrom1
-  },
-  {
-    heading: "Allocate",
-    subheading: "Recoup energy costs from tenants, departments, or energy districts by allocating costs using sub-meter data, formulas, and split calculations with EnergyCAP’s Chargeback feature. Target and track usage, cost, and carbon from measurable or calculated points. Get as granular as you need with the way you allocate costs and consumption.",
-    img: platfrom2
-  },
-  {
-    heading: "Analyze",
-    subheading: "Stop searching for a needle in the haystack. Our utility management software automatically identifies outliers in your data and points to the exact place you need to look, so you can save time and focus on more meaningful projects.",
-    feature: [
-      {
-        label: 'Utility bill auditing',
-        link: '#', // Replace with actual link
-      },
-      {
-        label: 'Energy benchmarking',
-        link: '#',
-      },
-      {
-        label: 'Measurement and verification',
-        link: null,
-      },
-      {
-        label: 'Energy use intensity (EUI)',
-        link: null,
-      },
-      {
-        label: 'Integrated charts and graphs',
-        link: null,
-      },
-      {
-        label: 'PowerViews',
-        link: null,
-      }
-    ],
-    img: platfrom3
-  },
-  {
-    heading: "Report",
-    subheading: "Distribute meaningful information to your team members and stakeholders in a streamlined and automated way. With accurate and reliable reports and dashboards, you have proof that your programs are performing like a well-oiled machine.",
-    feature: [
-      {
-        label: 'Library of standard reports',
-        link: '#', // Replace with actual link
-      },
-      {
-        label: 'Configurable reports and dashboards',
-        link: '#',
-      },
-      {
-        label: 'Automated ENERGY STAR submission',
-        link: null,
-      },
-      {
-        label: 'Business intelligence integration',
-        link: null,
-      },
-      {
-        label: 'Bill accruals and forecasting',
-        link: null,
-      },
-    ],
-    img: platfrom4
-  },
-];
-
-
-
-const dataCompany = [
-  {
-    quote:
-      "Our organization has taken piles of bills, endless spreadsheets, and countless amounts of time and utilized EnergyCAP to become extremely efficient with all our utility management needs.",
-    name: "Tony W.",
-    companyLogo: companylogo,
-  },
-  {
-    quote:
-      "Our organization has taken piles of bills, endless spreadsheets, and countless amounts of time and utilized EnergyCAP to become extremely efficient with all our utility management needs.",
-    name: "Tony W.",
-    companyLogo: companylogo,
-  },
-  {
-    quote:
-      "Our organization has taken piles of bills, endless spreadsheets, and countless amounts of time and utilized EnergyCAP to become extremely efficient with all our utility management needs.",
-    name: "Tony W.",
-    companyLogo: companylogo,
-  },
-];
-
-const UtilityBillDataExcellenceContent = {
-  heading1: "Utility bill data excellence",
-  btn: " See all features",
-  showsubheading: false,
-  showtop: false,
-  showbtn: false,
+const calculatorContent = {
+  heading1: "Ready to unlock the full potential of your energy infrastructure?",
+  btn: "Contact us today!",
 };
 
-const UtilityBillDataExcellenceContent1 = {
-  heading1: "A tradition of service & success",
-  subheding: "For more than 40 years, EnergyCAP has made it our mission to simplify energy & sustainability data management. Combining your strengths and ours, we'll partner to build a more sustainable world through responsible management of finite resources.",
-  btn: "Learn more about services",
-  showsubheading: true,
-  showtop: true,
-  showbtn: false,
-};
-
-const blogContent = {
-  btn: "Recommended resources for you",
-  showprogress: false,
-  showbttombtn: false,
-};
-
-const tabs = [
-  {
-    id: 0,
-    title: "Don't Count ENERGY STAR Out Just Yet",
-    label: "Don’t Count ENERGY STAR Out Just Yet",
-  },
-  {
-    id: 1,
-    title: "Strategic Energy Management: A Practical Guide for Modern Organizations",
-    label: "Strategic: Energy Management: A Practical Guide for Modern Organizations",
-  },
-  {
-    id: 2,
-    title: "How Miami-Dade County is Turning Small Energy Tweaks into Big Wins",
-    label: "How Miami-Dade County is Turning Small Energy Tweaks into Big Wins",
-  }
-];
-
-const blogs = [
-  {
-    id: 0,
-    title: "If ENERGY STAR® Goes Dark, What’s Your Plan B?",
-    img: blog1,
-  },
-  {
-    id: 1,
-    title: "If ENERGY STAR® Goes Dark, What’s Your Plan B?",
-    img: blog1,
-  },
-  {
-    id: 2,
-    title: "If ENERGY STAR® Goes Dark, What’s Your Plan B?",
-    img: blog1,
-  }
-];
-
-const features1 = [
-  {
-    icon: img9,
-    title: "Capture services",
-    description:
-      "Accurate, timely, and dependable data is key to your success. Make manual data entry a thing of the past and let us do the work for you. We capture utility bill data in any format and also capture smart meter interval data from available sources.",
-  },
-  {
-    icon: img7,
-    title: "Professional services",
-    description:
-      "Our team of industry experts are here to guide you through your data journey from expert implementation to advanced consultation, to becoming an extension of your team. We’re here to help you do your best work and achieve your goals.",
-  },
-  {
-    icon: img8,
-    title: "Expert training",
-    description:
-      "Whether you are new to EnergyCAP or if you just need a refresher course, we are committed to helping you and your team maximize the value from the software. We offer online or in person customized training to meet your specific needs.",
-  },
-];
-
-const UtilityMangementFeature = () => {
+const EMSFeatures = () => {
   return (
     <WebsiteLayout>
-      <HeroBannerSection homepageContent={homepageContent} />
-      <UtilityBillDataExcellence features={features} UtilityBillDataExcellenceContent={UtilityBillDataExcellenceContent} />
-      <TestimoninalCarousel testimonials={dataCompany} />
+      {/*Header*/}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-5">
+        <div className="text-center mb-6 mt-20">
+          <h1 className="text-6xl sm:text-7xl font-bold mb-4">EMS Feature Overview</h1>
+          <h2 className="text-2xl sm:text-3xl text-[#1e3a8a] mb-6">
+            Intelligent Tools for Smarter Energy Decisions
+          </h2>
+          <p className="text-gray-700 text-xl max-w-3xl mx-auto">
+            Discover how SPT's AI-powered Energy Management System delivers unmatched visibility, control, and efficiency for homes, commercial buildings, and grid operators alike. Every feature is built with purpose—to help you reduce costs, improve reliability, and decarbonize operations.
+          </p>
+        </div>
+      </section>
+
+      {/*Features*/}
+      <div className="bg-[#001f3f] py-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-3">
+          {features.map((feature, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-lg shadow-md border border-gray-200 p-6 flex flex-col items-center text-center"
+            >
+              <img src={feature.icon} alt={feature.title} className="h-20 w-20 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-[#0f172a]">{feature.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Call to action*/}
       <CalculatorSection calculatorContent={calculatorContent} />
     </WebsiteLayout>
-  )
-}
+  );
+};
 
-export default UtilityMangementFeature
+export default EMSFeatures;

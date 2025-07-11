@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 
 import img from '../../assets/Images/icon16.webp'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const PartnerWithUsSection = ({ PartnerSectionContent }) => {
@@ -20,7 +20,13 @@ const PartnerWithUsSection = ({ PartnerSectionContent }) => {
                     <p className="mt-6 lg:text-lg text-white mb-5">
                         {PartnerSectionContent.subheding}
                     </p>
-                    <span className='text-white underline cursor-pointer text-md font-bold hover:text-[#6e8cd1]'>{PartnerSectionContent.link}</span>
+                    <Link
+                        to="/contact-us-and-support/general-inquiry"
+                        className="text-white underline cursor-pointer text-md font-bold hover:text-[#6e8cd1]"
+                        >
+                        {PartnerSectionContent.link}
+                    </Link>
+
                 </div>
 
                 {/* Right Image Content */}
