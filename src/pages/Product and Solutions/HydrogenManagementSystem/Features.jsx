@@ -51,7 +51,7 @@ const HydrogenFeatures = () => {
   return (
     <WebsiteLayout>
       {/*Header*/}
-      <section className="max-w-7xl mx-auto px-6 pt-20 pb-5">
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-5 bgbackgroundimg">
         <div className="text-center mb-6 mt-20">
           <h1 className="text-6xl sm:text-7xl font-bold mb-4">Hydrogen Station Features</h1>
           <h2 className="text-2xl sm:text-3xl text-[#1e3a8a] mb-6">

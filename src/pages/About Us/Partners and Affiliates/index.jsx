@@ -20,7 +20,7 @@ const Partners = () => {
     return (
         <WebsiteLayout>
 
-            <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+            <section className="px-4 py-20 text-center bgbackgroundimg">
                 <br /> <br />
                 <h2 className="text-3xl sm:text-6xl font-bold text-[#0f172a] mb-4">
                     Partnering for a Smarter Energy Future
@@ -29,7 +29,7 @@ const Partners = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-[#0f172a] mb-3">
                     Together, We Power Possibility
                 </h3>
-                <p className="text-base sm:text-xl text-[#0f172a] leading-relaxed">
+                <p className="text-base sm:text-xl text-[#0f172a] leading-relaxed max-w-5xl mx-auto ">
                     At SPT, collaboration is the core of innovation. We proudly work alongside a growing network of industry leaders, research institutions, and technology pioneers who share our mission: building a more efficient, secure, and intelligent energy ecosystem.
                     These trusted partners amplify our impact, helping us bring next-generation energy storage and AI-driven management systems to communities and industries worldwide.
                 </p>

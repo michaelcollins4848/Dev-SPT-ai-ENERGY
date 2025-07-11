@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import emsHero from '../../../assets/Images/ems.png';
-import decisionIcon from '../../../assets/Images/ems.png';
-import weatherIcon from '../../../assets/Images/ems.png';
-import priceIcon from '../../../assets/Images/ems.png';
-import adaptabilityIcon from '../../../assets/Images/ems.png';
+import decisionIcon from '../../../assets/Images/decision_icon.png';
+import weatherIcon from '../../../assets/Images/weather_icon.png';
+import priceIcon from '../../../assets/Images/price_icon.png';
+import adaptabilityIcon from '../../../assets/Images/adaptability_icon.png';
 import WebsiteLayout from '../../../components/Layout';
 
 const EMSOverview = () => {
@@ -14,7 +14,7 @@ const EMSOverview = () => {
     <WebsiteLayout>
         <section>
         {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10 bgbackgroundimg">
             <div className="md:w-1/2">
             <h1 className="text-5xl sm:text-5xl font-bold leading-tight mb-6">
                 AI Energy <br className="hidden sm:inline" /> Management System
@@ -51,7 +51,7 @@ const EMSOverview = () => {
                 </p>
             </div>
             <div>
-                <img src={priceIcon} alt="Market-Aware" className="h-20 mx-auto mb-4" />
+                <img src={priceIcon} alt="Market-Aware" className="h-23 mx-auto mb-1" />
                 <h3 className="font-semibold text-xl mb-2">Price-Responsive</h3>
                 <p className="text-gray-600 text-sm">
                 Analyzes real-time utility prices and adjusts consumption to take advantage of the lowest rates.

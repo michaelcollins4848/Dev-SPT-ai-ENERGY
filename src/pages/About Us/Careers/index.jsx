@@ -124,7 +124,6 @@ const Careers = () => {
             <HeroContent careersContent={careersContent} />
             <ImageGallery />
             <EmpowerUsSection values={values} EmpowerUsSectionContent={EmpowerUsSectionContent} />
-            <CompanyReviewsSlider dataCompany={dataCompany} />
             <section className="px-6 py-12 max-w-7xl mx-auto">
                 <div>
                     <div className="w-full px-2 mt-20 mb-10">

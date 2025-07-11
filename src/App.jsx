@@ -10,6 +10,7 @@
   import CompanyOverview from './pages/About Us/CompanyOverview';
   import Careers from './pages/About Us/Careers';
   import Partners from './pages/About Us/Partners and Affiliates';
+  import MeetOurTeam from './pages/About Us/MeetOurTeam';
   import Milestones from './pages/Research and Resources/Milestones';
   import ContactSales from './pages/Contact Us and Support/ContactSales';
   import GeneralInquiry from './pages/Contact Us and Support/GeneralInquiry';
@@ -62,6 +63,7 @@
             {/* About Us */}
             <Route path="/about-us/company-overview" element={<CompanyOverview />} />
             <Route path="/about-us/partners-and-affiliates" element={<Partners />} />
+            <Route path="/about-us/meet-our-team" element={<MeetOurTeam />} />
             <Route path="/about-us/careers" element={<Careers />} />
 
             {/* Contact Us */}

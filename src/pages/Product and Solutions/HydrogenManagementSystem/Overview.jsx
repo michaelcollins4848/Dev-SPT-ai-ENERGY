@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import stationHero from '../../../assets/Images/hydrogen_icon.png';
-import dispatchIcon from '../../../assets/Images/hydrogen_icon.png';
-import refuelingIcon from '../../../assets/Images/hydrogen_icon.png';
-import safetyIcon from '../../../assets/Images/hydrogen_icon.png';
-import schedulerIcon from '../../../assets/Images/hydrogen_icon.png';
+import dispatchIcon from '../../../assets/Images/dispatch_icon.png';
+import refuelingIcon from '../../../assets/Images/refuel_icon.png';
+import safetyIcon from '../../../assets/Images/safety_icon.png';
+import schedulerIcon from '../../../assets/Images/scheduler_icon.png';
 import WebsiteLayout from '../../../components/Layout';
 
 const HydrogenStationOverview = () => {
@@ -14,7 +14,7 @@ const HydrogenStationOverview = () => {
     <WebsiteLayout>
       <section>
         {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center bgbackgroundimg gap-10">
           <div className="md:w-1/2">
             <h1 className="text-5xl font-bold leading-tight mb-6">
               Hydrogen Refueling <br className="hidden sm:inline" /> Station Management

@@ -1,31 +1,18 @@
 import React from 'react'
 import WebsiteLayout from '../../../components/Layout'
-import HeroBannerSection from '../../../components/Home/HeroBannerSection';
 import CompaniesSlider from '../../../components/About Us Components/CompaniesSlider';
-import ManageUtilityData from '../../../components/Product and Solutions Components/ManageUtilityData';
 import CalculatorSection from '../../../components/Home/CalculatorSection';
 
-import img from '../../../assets/Images/heroimg1.webp'
-
-
-import img1 from '../../../assets/Images/icon10.webp'
-import img2 from '../../../assets/Images/icon11.webp'
-import img3 from '../../../assets/Images/icon12.png'
-import img4 from '../../../assets/Images/icon13.svg'
-import img5 from '../../../assets/Images/icon14.webp'
-import img6 from '../../../assets/Images/icon15.webp'
-
-import platfrom1 from '../../../assets/Images/platform11.webp'
-import UtilitymanagementLevelUP from '../../../components/Product and Solutions Components/UtilitymanagementLevelUP';
-import UtilityManagementBuildSave from '../../../components/Product and Solutions Components/UtilityManagementBuildSave';
-
-import platfrom2 from '../../../assets/Images/platform12.webp'
+import pricingHeader from '../../../assets/Images/pricingHeader.png'
+import packageIcon from '../../../assets/Images/package_icon.png'
+import lifecycleIcon from '../../../assets/Images/lifecycle_icon.png'
+import scalingIcon from '../../../assets/Images/scaling_icon.png'
 
 const homepageContent = {
     heading1: "Your energy, your way:",
     heading2: "Tailored solutions for maximum savings",
     subheding: "Whether you're managing a handful of meters or thousands, we provide the energy and utility management tools and flexibility to take control of your energy costs.",
-    img: img,
+    img: pricingHeader,
     btn: "Talk to sales",
     showplay: false,
     showtop: true,
@@ -46,7 +33,7 @@ const UtilityMangementPricing = () => {
         <WebsiteLayout>
             <section>
                     {/* Hero Section */}
-                    <div className="max-w-7xl mx-auto px-4 pt-30 pb-15 flex flex-col md:flex-row items-center gap-10">
+                    <div className="bgbackgroundimg max-w-7xl mx-auto px-4 pt-30 pb-15 flex flex-col md:flex-row items-center gap-10">
                       <div className="md:w-1/2">
                         <h1 className="text-5xl font-bold leading-tight mb-6">
                           Flexible Pricing, <br className="hidden sm:inline" />Tailored to You
@@ -66,7 +53,7 @@ const UtilityMangementPricing = () => {
                         </button>
                       </div>
                       <div className="md:w-1/2">
-                        <img src={img1} alt="Hydrogen Station Preview" className="w-full h-auto rounded-lg shadow-md" />
+                        <img src={pricingHeader} alt="Hydrogen Station Preview" className="w-full h-auto rounded-lg" />
                       </div>
                     </div>
             </section>
@@ -82,7 +69,7 @@ const UtilityMangementPricing = () => {
                         Each deployment is evaluated for scale, hardware compatibility, and data infrastructure to create a unique quote.
                         </p>
                         <img
-                            src={img1}
+                            src={packageIcon}
                             alt="description"
                             className="h-20 w-auto mt-2 mx-auto"
                         />
@@ -93,9 +80,9 @@ const UtilityMangementPricing = () => {
                         From onboarding to system updates, our pricing includes long-term partnership — not just software access.
                         </p>
                         <img
-                            src={img1}
+                            src={lifecycleIcon}
                             alt="description"
-                            className="h-20 w-auto mt-2 mx-auto"
+                            className="h-25 w-auto mt-2 mx-auto"
                         />
                     </div>
                     <div className="bg-white border rounded-lg p-6 shadow-md mx-auto max-w-sm">
@@ -104,7 +91,7 @@ const UtilityMangementPricing = () => {
                         Our systems grow with your operation — pricing adjusts based on your evolving energy needs and expansion.
                         </p>
                         <img
-                            src={img1}
+                            src={scalingIcon}
                             alt="description"
                             className="h-20 w-auto mt-2 mx-auto"
                         />

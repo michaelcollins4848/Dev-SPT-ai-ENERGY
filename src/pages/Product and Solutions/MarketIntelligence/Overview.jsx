@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import marketHero from '../../../assets/Images/globe.png';
-import demandIcon from '../../../assets/Images/globe.png';
-import policyIcon from '../../../assets/Images/globe.png';
-import insightsIcon from '../../../assets/Images/globe.png';
-import visualizeIcon from '../../../assets/Images/globe.png';
+import demandIcon from '../../../assets/Images/demand_icon.png';
+import policyIcon from '../../../assets/Images/policy_icon.png';
+import insightsIcon from '../../../assets/Images/insight_icon.png';
+import visualizeIcon from '../../../assets/Images/visualize_icon.png';
 import WebsiteLayout from '../../../components/Layout';
 
 const MarketIntelOverview = () => {
@@ -14,7 +14,7 @@ const MarketIntelOverview = () => {
     <WebsiteLayout>
       <section>
         {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
+        <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10 bgbackgroundimg">
           <div className="md:w-1/2">
             <h1 className="text-5xl sm:text-5xl font-bold leading-tight mb-6">
               Market <br className="hidden sm:inline" /> Intelligence System
@@ -44,7 +44,7 @@ const MarketIntelOverview = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto text-center">
             <div>
-              <img src={demandIcon} alt="Demand Forecasting" className="h-20 mx-auto mb-4" />
+              <img src={demandIcon} alt="Demand Forecasting" className="h-24 mx-auto mb-0" />
               <h3 className="font-semibold text-xl mb-2">Energy Demand Forecasting</h3>
               <p className="text-gray-600 text-sm">
                 Anticipate peak usage and generation trends with high-accuracy demand predictions.
