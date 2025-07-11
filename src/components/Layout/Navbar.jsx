@@ -238,7 +238,7 @@ const Header = () => {
                                 className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-3 gap-4 border border-[#0f172a] z-50"
                             >
                                 {/** Card 1 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement-system')}>
                                     <img src={EMSicon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>AI Energy Management System</p>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -265,7 +265,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement/pricing');
+                                                navigate('/product-and-solutions/pricing');
                                             }}
                                         >
                                             Pricing
@@ -273,7 +273,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 2 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-exchange')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/market-intelligence')}>
                                     <img src={marketIcon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>AI Market Intelligence System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -300,7 +300,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-exchange/pricing');
+                                                navigate('/product-and-solutions/pricing');
                                             }}
                                         >
                                             Pricing
@@ -308,7 +308,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 {/** Card 3 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-ai')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/hydrogen-management-system')}>
                                     <img src={hydrogenStation} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>Hydrogen Station Smart Management System</p>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -335,7 +335,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-ai/pricing');
+                                                navigate('/product-and-solutions/pricing');
                                             }}
                                         >
                                             Pricing

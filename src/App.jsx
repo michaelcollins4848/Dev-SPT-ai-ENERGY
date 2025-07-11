@@ -6,7 +6,7 @@
   import EMSFeatures from './pages/Product and Solutions/EnergyManagementSystem/Features';
   import MarketIntelFeatures from './pages/Product and Solutions/MarketIntelligence/Features';
   import HydrogenStationFeatures from './pages/Product and Solutions/HydrogenManagementSystem/Features';
-  import UtilityMangementPricing from './pages/Product and Solutions/HydrogenManagementSystem/Pricing';
+  import Pricing from './pages/Product and Solutions/HydrogenManagementSystem/Pricing';
   import CompanyOverview from './pages/About Us/CompanyOverview';
   import Careers from './pages/About Us/Careers';
   import Partners from './pages/About Us/Partners and Affiliates';
@@ -42,19 +42,19 @@
             <Route path="/product-and-solutions/energy-mangement-system" element={<EMSOverview />} />
             <Route path="/product-and-solutions/energy-mangement-system/overview" element={<EMSOverview />} />
             <Route path="/product-and-solutions/energy-mangement-system/features" element={<EMSFeatures />} />
-            <Route path="/product-and-solutions/energy-mangement/pricing" element={<UtilityMangementPricing />} />
+            <Route path="/product-and-solutions/pricing" element={<Pricing />} />
 
             {/*Market Intelligence AI*/}
             <Route path="/product-and-solutions/market-intelligence" element={<MarketIntelOverview />} />
             <Route path="/product-and-solutions/market-intelligence/overview" element={<MarketIntelOverview />} />
             <Route path="/product-and-solutions/market-intelligence/features" element={<MarketIntelFeatures />} />
-            <Route path="/product-and-solutions/energy-exchange/pricing" element={<UtilityMangementPricing />} />
+            <Route path="/product-and-solutions/pricing" element={<Pricing />} />
 
             {/*Hydrogen Station Management*/}
             <Route path="/product-and-solutions/hydrogen-management-system" element={<HydrogenStationOverview />} />
             <Route path="/product-and-solutions/hydrogen-management-system/overview" element={<HydrogenStationOverview />} />
             <Route path="/product-and-solutions/hydrogen-management-system/features" element={<HydrogenStationFeatures />} />
-            <Route path="/product-and-solutions/energy-ai/pricing" element={<UtilityMangementPricing />} />
+            <Route path="/product-and-solutions/pricing" element={<Pricing />} />
 
             {/* Research and Resources */}
             <Route path="/research-and-resources/milestones" element={<Milestones />} />
