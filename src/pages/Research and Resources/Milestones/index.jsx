@@ -77,7 +77,6 @@ const Milestones = () => {
     return (
         <WebsiteLayout>
             <HistorySection />
-            <Awards awards={awards} AwardsContent={AwardsContent} />
         </WebsiteLayout>
     )
 }

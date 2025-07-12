@@ -1,9 +1,9 @@
 import React from 'react'
 import WebsiteLayout from '../../../components/Layout'
 import CalculatorSection from '../../../components/Home/CalculatorSection';
-import PartnerWithUsSection from '../../../components/About Us Components/ParterWithUs';
+import PartnerWithUsSection from '../../../components/About Us Components/PartnerWithUs';
 import CompaniesSlider from '../../../components/About Us Components/CompaniesSlider';
-import img from '../../../assets/Images/aboutusimg.webp'
+import img from '../../../assets/Images/partnerWithUs.png'
 import globeIcon from '../../../assets/Images/globe.png'
 import handshakeIcon from '../../../assets/Images/handshake.png'
 import aiIcon from '../../../assets/Images/aiIcon.png'

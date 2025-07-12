@@ -5,13 +5,13 @@ import CalculatorSection from '../../../components/Home/CalculatorSection';
 import video from '../../../assets/Videos/aboutus.MP4'
 
 
-import img1 from '../../../assets/Images/icon14.svg'
-import img2 from '../../../assets/Images/icon15.svg'
-import img3 from '../../../assets/Images/icon16.svg'
-import img4 from '../../../assets/Images/icon17.svg'
-import img5 from '../../../assets/Images/icon18.svg'
+import teamworkIcon from '../../../assets/Images/teamwork_icon.png'
+import impactIcon from '../../../assets/Images/impact_icon.png'
+import accountabilityIcon from '../../../assets/Images/accountability_icon.png'
+import integrityIcon from '../../../assets/Images/handshake_icon.png'
+import innovationIcon from '../../../assets/Images/innovation_icon.png'
 
-import img from '../../../assets/Images/aboutusimg.webp'
+import futureImage from '../../../assets/Images/futureWithUs.png'
 
 
 import awarding from '../../../assets/Images/award2.webp'
@@ -42,31 +42,31 @@ const calculatorContent = {
 
 const values = [
     {
-        icon: img1,
+        icon: teamworkIcon,
         title: "Teamwork",
         description:
             "We create a collaborative environment through establishing a foundation of trust and valuing differences in optimizing outcomes towards a common goal.",
     },
     {
-        icon: img2,
+        icon: impactIcon,
         title: "Impact",
         description:
             "We focus on effecting change, having the greatest level of positive influence on those around us, and improving the overall future for us and our customers.",
     },
     {
-        icon: img3,
+        icon: accountabilityIcon,
         title: "Accountability",
         description:
             "We take ownership and strive for excellence in delivering on our commitments.",
     },
     {
-        icon: img4,
+        icon: integrityIcon,
         title: "Integrity",
         description:
             "We value honesty, transparency & respect in guiding what we do, regardless of the situation.",
     },
     {
-        icon: img5,
+        icon: innovationIcon,
         title: "Innovation",
         description:
             "We consistently pursue new and creative ways to solve problems—always challenging the status quo.",
@@ -87,7 +87,7 @@ const SustainableFutureSectionContent = {
     heading2: "sustainable future with us!",
     subheding:"We believe that data is critical to the fight against climate change. Our team is passionate about helping organizations make smarter, data-driven decisions about how they consume finite resources. If you’re looking for a role that enables you to do what you do best with a company mission you can get behind, we want to hear from you. ​​",
     link: "See all open positions",
-    img:img
+    img:futureImage
 };
 
 const awards = [

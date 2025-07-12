@@ -309,7 +309,6 @@ const HomePage = () => {
       </section>
 
       {/* Testimoninal  section  */}
-      <TestimoninalCarousel testimonials={testimonials} />
 
       {/* calculator  section  */}
       <CalculatorSection calculatorContent={calculatorContent} />

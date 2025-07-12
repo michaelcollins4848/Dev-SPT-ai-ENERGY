@@ -6,11 +6,11 @@ import video from '../../../assets/Videos/aboutus.MP4'
 
 import { FaPlay } from 'react-icons/fa';
 
-import img1 from '../../../assets/Images/icon14.svg'
-import img2 from '../../../assets/Images/icon15.svg'
-import img3 from '../../../assets/Images/icon16.svg'
-import img4 from '../../../assets/Images/icon17.svg'
-import img5 from '../../../assets/Images/icon18.svg'
+import img1 from '../../../assets/Images/teamwork_icon.png'
+import img2 from '../../../assets/Images/impact_icon.png'
+import img3 from '../../../assets/Images/accountability_icon.png'
+import img4 from '../../../assets/Images/handshake_icon.png'
+import img5 from '../../../assets/Images/innovation_icon.png'
 import img6 from '../../../assets/Images/Careers.webp'
 
 import img from '../../../assets/Images/aboutusimg.webp'

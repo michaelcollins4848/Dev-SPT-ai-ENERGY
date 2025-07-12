@@ -28,7 +28,7 @@ const SustainableFutureSection = ({ SustainableFutureSectionContent }) => {
                     <img
                         src={SustainableFutureSectionContent.img}
                         alt="Energy Dashboard Preview"
-                        className="w-full h-96 object-contain"
+                        className="w-full h-96 object-cover rounded-lg"
                     />
                 </div>
             </div>

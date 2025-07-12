@@ -9,13 +9,13 @@ import marketBackground from "../../assets/Images/market_icon.png";
 import hydrogenBackground from "../../assets/Images/hydrogen_icon.png"; 
 
 const slides = [
-  {
+  /*{
     type: "slogan",
     bg: sloganBackground,
     headline: "Smarter Energy. Simpler Future.",
     subtext: "SPT is redefining the way the world powers its future.",
     button: null,
-  },
+  },*/
   {
     type: "product",
     image: EMSbackground,

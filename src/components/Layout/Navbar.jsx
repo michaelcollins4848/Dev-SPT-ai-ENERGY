@@ -416,9 +416,7 @@ const Header = () => {
                                             >
                                                 Milestones
                                             </div>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Newsroom</a>
-                                            <a href="#" className="text-[#3686fd] font-semibold text-sm underline hover:text-[#0f172a] transition duration-300">Events and Engagement</a>
-                                        </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
