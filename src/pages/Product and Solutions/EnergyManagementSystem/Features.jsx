@@ -1,6 +1,11 @@
 import React from 'react';
 import WebsiteLayout from '../../../components/Layout';
-import emsIcon from '../../../assets/Images/ems.png';
+import clockIcon from '../../../assets/Images/scheduler_icon.png';
+import weatherIcon from '../../../assets/Images/weather_icon.png';
+import dynamicMarketIcon from '../../../assets/Images/dynamic_market_icon.png';
+import integrateIcon from '../../../assets/Images/integrate_icon.png';
+import resIcon from '../../../assets/Images/resilience_icon.png';
+import loadIcon from '../../../assets/Images/load_icon.png';
 import CalculatorSection
  from '../../../components/Home/CalculatorSection';
 const features = [
@@ -8,37 +13,37 @@ const features = [
     title: 'Real-Time Optimization',
     description:
       'Our EMS continuously monitors energy usage, pricing signals, and environmental conditions to make instantaneous decisions that reduce costs and enhance energy efficiency. It ensures your energy sources—whether solar, grid, or battery—are always working in harmony for peak performance.',
-    icon: emsIcon,
+    icon: clockIcon,
   },
   {
     title: 'Weather-Adaptive Control',
     description:
       'The system leverages real-time weather data to anticipate solar generation dips or spikes and proactively adjust operations. This ensures optimal battery charging/discharging and grid interaction, especially during extreme weather events.',
-    icon: emsIcon,
+    icon: weatherIcon,
   },
   {
     title: 'Dynamic Market Response',
     description:
       'By tracking time-of-use electricity rates and real-time pricing, the EMS shifts energy loads to off-peak periods or maximizes usage when renewables are most affordable. This directly leads to utility bill savings without user intervention.',
-    icon: emsIcon,
+    icon: dynamicMarketIcon,
   },
   {
     title: 'Automated Load Scheduling',
     description:
       'Intelligent load scheduling automates energy-intensive operations—like EV charging or HVAC pre-cooling—during periods of lowest cost or highest renewable availability, reducing grid stress and emissions.',
-    icon: emsIcon,
+    icon: loadIcon,
   },
   {
     title: '24/7 Power Resilience',
     description:
       'The EMS prioritizes continuous power delivery to critical systems like hospitals or data centers. In the event of outages or instability, it intelligently reroutes power and activates backup systems seamlessly.',
-    icon: emsIcon,
+    icon: resIcon,
   },
   {
     title: 'Seamless Integration with Existing Infrastructure',
     description:
       'Our system is built to plug into your current setup—whether it’s a smart meter, solar array, or building management system—allowing rapid deployment without expensive retrofitting.',
-    icon: emsIcon,
+    icon: integrateIcon,
   },
 ];
 

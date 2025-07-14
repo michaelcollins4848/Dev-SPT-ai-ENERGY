@@ -6,19 +6,19 @@ import img3 from '../../../assets/images/teamimage3.JPG'
 import img4 from '../../../assets/images/teamimage4.JPG'
 
 const topRowImages = [
-    img,
-    img2,
     img3,
-    img4,
-    img,
+    img3,
+    img3,
+    img3,
+    img3,
 ];
 
 const bottomRowImages = [
-    img,
-    img,
-    img,
-    img,
-    img,
+    img3,
+    img3,
+    img3,
+    img3,
+    img3,
 ];
 
 const ImageGallery = () => {
@@ -26,7 +26,7 @@ const ImageGallery = () => {
         <div className="p-4 space-y-4">
             {/* Top Row - Scrolls Left to Right */}
             <div className="overflow-hidden">
-                <div className="flex scroll-left animate-slide space-x-4">
+                <div className="flex flex-nowrap animate-slide space-x-4 w-max">
                     {[...topRowImages, ...topRowImages].map((src, index) => (
                         <img
                             key={`top-${index}`}
@@ -40,7 +40,7 @@ const ImageGallery = () => {
 
             {/* Bottom Row - Scrolls Right to Left */}
             <div className="overflow-hidden">
-                <div className="flex scroll-right animate-slide space-x-4">
+                <div className="flex flex-nowrap animate-slide space-x-4 w-max">
                     {[...bottomRowImages, ...bottomRowImages].map((src, index) => (
                         <img
                             key={`bottom-${index}`}

@@ -1,6 +1,11 @@
 import React from 'react';
 import WebsiteLayout from '../../../components/Layout';
-import emsIcon from '../../../assets/Images/ems.png';
+import predictIcon from '../../../assets/Images/predict_icon.png';
+import policyIcon from '../../../assets/Images/policy_icon.png';
+import energyIcon from '../../../assets/Images/energy_icon.png';
+import sectionIcon from '../../../assets/Images/section_icon.png';
+import dashboardIcon from '../../../assets/Images/dashboard_icon.png';
+import MLicon from '../../../assets/Images/ML_icon.png';
 import CalculatorSection from '../../../components/Home/CalculatorSection';
 
 const features = [
@@ -8,37 +13,37 @@ const features = [
     title: 'Energy Demand Forecasting',
     description:
       'Predicts energy demand from hours to weeks in advance using advanced ML algorithms trained on real-time grid activity, consumption trends, and regional patterns. This allows utilities and large consumers to proactively plan load dispatch and procurement strategies.',
-    icon: emsIcon,
+    icon: energyIcon,
   },
   {
     title: 'Policy and Regulation Tracking',
     description:
       'Monitors local, state, and federal energy policy changes, incentive programs, and emissions targets in real time to help stakeholders align strategies and investments with upcoming compliance or opportunity windows.',
-    icon: emsIcon,
+    icon: policyIcon,
   },
   {
     title: 'Price Forecasting and Market Shifts',
     description:
       'Projects short- and medium-term price fluctuations based on variables such as fuel costs, weather events, and grid congestion. The model retrains regularly to adapt to macroeconomic and geopolitical shifts affecting the market.',
-    icon: emsIcon,
+    icon: predictIcon,
   },
   {
     title: 'Sector-Specific Intelligence',
     description:
       'Provides customized analytics for key sectors—like EV infrastructure, manufacturing, and renewables—identifying unique consumption signals, investment opportunities, and market gaps based on recent historical and projected behavior.',
-    icon: emsIcon,
+    icon: sectionIcon,
   },
   {
     title: 'Interactive Data Visualizations',
     description:
       'Translates complex datasets into accessible charts and maps with filters for time, location, and energy source. Enables intuitive insight discovery and scenario testing without needing coding or data science expertise.',
-    icon: emsIcon,
+    icon: dashboardIcon,
   },
   {
     title: 'Machine Learning-Driven Adaptability',
     description:
       'Learns from market anomalies, extreme events, and user feedback to fine-tune models and maintain accuracy over time—even as policies shift, demand patterns evolve, or new energy technologies emerge.',
-    icon: emsIcon,
+    icon: MLicon,
   },
 ];
 

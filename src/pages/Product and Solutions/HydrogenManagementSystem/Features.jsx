@@ -1,6 +1,11 @@
 import React from 'react';
 import WebsiteLayout from '../../../components/Layout';
-import emsIcon from '../../../assets/Images/ems.png';
+import dispatchIcon from '../../../assets/Images/dispatch_icon.png';
+import refuelIcon from '../../../assets/Images/refuel_icon.png';
+import alarmIcon from '../../../assets/Images/alarm_icon.png';
+import clockIcon from '../../../assets/Images/scheduler_icon.png';
+import fleetIcon from '../../../assets/Images/fleet_icon.png';
+import monitoringIcon from '../../../assets/Images/monitoring_icon.png';
 import CalculatorSection from '../../../components/Home/CalculatorSection';
 
 const features = [
@@ -8,37 +13,37 @@ const features = [
     title: 'Energy Dispatch Optimization',
     description:
       'Our system dynamically allocates energy resources across the hydrogen station, ensuring fuel is produced and delivered efficiently. It intelligently balances on-site storage, power availability, and station demand in real-time.',
-    icon: emsIcon,
+    icon: dispatchIcon,
   },
   {
     title: 'Smart Refueling Management',
     description:
       'Manages and schedules refueling for multiple vehicle types—buses, trucks, cars—ensuring low wait times and balanced hydrogen flow. AI coordination enables demand prediction and smooth queue handling even during peak usage.',
-    icon: emsIcon,
+    icon: refuelIcon,
   },
   {
     title: 'Safety Monitoring & Alerts',
     description:
       'Constantly tracks critical parameters like pressure, temperature, and hydrogen leaks. The system automatically alerts operators of anomalies and can trigger safety shutdowns to prevent accidents.',
-    icon: emsIcon,
+    icon: alarmIcon,
   },
   {
     title: 'AI-Powered Scheduling Engine',
     description:
       'An advanced AI engine predicts vehicle arrival times and energy usage trends, scheduling hydrogen production and dispatch to align with peak refueling windows and minimize downtime.',
-    icon: emsIcon,
+    icon: clockIcon,
   },
   {
     title: 'Fleet Integration Capabilities',
     description:
       'Integrates with municipal or commercial fleet systems to plan hydrogen usage across large operations. Enables centralized control and reporting for multi-vehicle operations from a single dashboard.',
-    icon: emsIcon,
+    icon: fleetIcon,
   },
   {
     title: 'Remote Monitoring & Control',
     description:
       'Operators can monitor station status and control key systems from anywhere using a secure web portal. Provides real-time diagnostics, performance stats, and remote override for safety and efficiency.',
-    icon: emsIcon,
+    icon: monitoringIcon,
   },
 ];
 
