@@ -1,12 +1,15 @@
 import React from "react";
 
-import img from '../../../assets/gallery/img.webp'
+import img from '../../../assets/images/teamimage1.JPG'
+import img2 from '../../../assets/images/teamimage2.JPG'
+import img3 from '../../../assets/images/teamimage3.JPG'
+import img4 from '../../../assets/images/teamimage4.JPG'
 
 const topRowImages = [
     img,
-    img,
-    img,
-    img,
+    img2,
+    img3,
+    img4,
     img,
 ];
 

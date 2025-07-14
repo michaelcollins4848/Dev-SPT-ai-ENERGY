@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import marketHero from '../../../assets/Images/globe.png';
+import marketHero from '../../../assets/Images/market_icon.png';
 import demandIcon from '../../../assets/Images/demand_icon.png';
 import policyIcon from '../../../assets/Images/policy_icon.png';
 import insightsIcon from '../../../assets/Images/insight_icon.png';

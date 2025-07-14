@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import emsHero from '../../../assets/Images/ems.png';
+import emsHero from '../../../assets/Images/ems_icon.png';
 import decisionIcon from '../../../assets/Images/decision_icon.png';
 import weatherIcon from '../../../assets/Images/weather_icon.png';
 import priceIcon from '../../../assets/Images/price_icon.png';
