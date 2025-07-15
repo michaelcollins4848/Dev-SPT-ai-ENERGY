@@ -20,22 +20,29 @@ const slides = [
     type: "product",
     image: EMSbackground,
     title: "SPT Energy Management System",
-    description: "Intelligent AI for controlling energy flow in real time.",
-    link: "/products/home-battery",
+    description: <p>
+                  Intelligent AI for controlling energy flow in real time.
+                  <br /> <br />
+                  Our system dynamically monitors and optimizes electricity usage across your entire operation—reducing waste, lowering costs, and maximizing reliability. Whether you’re managing a microgrid, a campus, or industrial infrastructure, our platform adapts in real time to changing loads and grid conditions. Gain full visibility and control with data-driven automation designed to help you make smarter, faster energy decisions.
+                </p>,
+    link: "/product-and-solutions/energy-mangement-system/overview",
   },
   {
     type: "product",
     image: marketBackground,
     title: "SPT Energy Market Prediction",
-    description: "Market predictions created by AI for better energy decision making.",
-    link: "/products/ems",
+    description: <p>Market predictions created by AI for better energy decision making. <br /> <br /> Stay ahead of volatile electricity prices with cutting-edge forecasts powered by machine learning. Our AI analyzes historical trends and real-time market data to deliver actionable insights—so you can optimize operations, reduce costs, and make smarter energy decisions. </p>,
+    link: "/product-and-solutions/market-intelligence/overview",
   },
   {
     type: "product",
     image: hydrogenBackground,
     title: "SPT Hydrogen Station Smart Management System",
-    description: "Advanced AI management system to control and manage SPT Hydrogen Stations across California.",
-    link: "/products/ems",
+    description: <p>
+                  Intelligent AI for controlling energy flow in real time.
+                  <br /> <br />
+                  Our platform provides real-time monitoring, predictive maintenance, and intelligent energy flow optimization for hydrogen fueling infrastructure. From production to storage to dispensing, the system ensures efficiency, safety, and scalability. Whether for public transit, municipal fleets, or commercial hubs, our solution empowers operators with the tools needed to lead in the clean hydrogen revolution.                </p>,
+    link: "/product-and-solutions/hydrogen-management-system/overview",
   },
 ];
 
