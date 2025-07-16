@@ -25,7 +25,7 @@ const slides = [
                   <br /> <br />
                   Our system dynamically monitors and optimizes electricity usage across your entire operation—reducing waste, lowering costs, and maximizing reliability. Whether you’re managing a microgrid, a campus, or industrial infrastructure, our platform adapts in real time to changing loads and grid conditions. Gain full visibility and control with data-driven automation designed to help you make smarter, faster energy decisions.
                 </p>,
-    link: "/product-and-solutions/energy-mangement-system/overview",
+    link: "/product-and-solutions/energy-management-system/overview",
   },
   {
     type: "product",

@@ -7,6 +7,7 @@ import Logo from "../../assets/Images/SPT_logo.png";
 import Ai from "../../assets/Images/ai-management.png";
 import solution1 from "../../assets/Images/solution.webp"
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "./Navbar";
 
 const WebsiteLayout = ({ children }) => {
@@ -41,9 +42,11 @@ const WebsiteLayout = ({ children }) => {
     return (
         <div className="flex flex-col min-h-screen">
             <div className="fixed top-0 left-0 w-full z-50">
-                <div className="bg-[#0f172a] text-white text-sm py-2 text-right px-20 font-semibold cursor-pointer hover:underline hover:text-[#6e8cd1] transition duration-200">
-                    Help Center
-                </div>
+                <Link to="/contact-us-and-support/contact-support">
+                    <div className="bg-[#0f172a] text-white text-sm py-2 text-right px-20 font-semibold cursor-pointer hover:underline hover:text-[#6e8cd1] transition duration-200">
+                        Help Center
+                    </div>
+                </Link>
                 {/* Navbar */}
 
                 <Header />
@@ -104,11 +107,17 @@ const WebsiteLayout = ({ children }) => {
                     </div>
 
                     {/* Solutions */}
-                    <div className="text-sm space-y-3">
+                    <div className="text-sm flex flex-col space-y-3">
                         <h4 className="font-semibold">Solutions Overview</h4>
-                        <p className=" cursor-pointer hover:underline">Energy Management System</p>
-                        <p className=" cursor-pointer hover:underline">Market Intelligence</p>
-                        <p className=" cursor-pointer hover:underline">Hydrogen Station Management System</p>
+                        <Link to="/product-and-solutions/energy-management-system" className=" cursor-pointer hover:underline">
+                            <p>Energy Management System</p>
+                        </Link>
+                        <Link to="/product-and-solutions/market-intelligence" className=" cursor-pointer hover:underline">
+                            <p>Market Intelligence</p>
+                        </Link>
+                        <Link to="/product-and-solutions/hydrogen-management-system">
+                            <p className=" cursor-pointer hover:underline">Hydrogen Station Management System</p>
+                        </Link>
                     </div>
 
                     {/* Company */}

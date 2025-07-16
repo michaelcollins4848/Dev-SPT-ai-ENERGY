@@ -238,7 +238,7 @@ const Header = () => {
                                 className="max-w-screen-xl mx-auto absolute top-full left-0 right-0 shadow-xl bg-white grid grid-cols-3 gap-4 border border-[#0f172a] z-50"
                             >
                                 {/** Card 1 */}
-                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-mangement-system')}>
+                                <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-management-system')}>
                                     <img src={EMSicon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
                                     <p>AI Energy Management System</p>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
@@ -247,7 +247,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement-system/overview');
+                                                navigate('/product-and-solutions/energy-management-system/overview');
                                             }}
                                         >
                                             Overview
@@ -256,7 +256,7 @@ const Header = () => {
                                             className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate('/product-and-solutions/energy-mangement-system/features');
+                                                navigate('/product-and-solutions/energy-management-system/features');
                                             }}
                                         >
                                             Features
@@ -583,7 +583,7 @@ const Header = () => {
                                             <div
                                                 className="font-semibold mb-2 text-[18px] cursor-pointer"
                                                 onClick={() => {
-                                                    navigate('/product-and-solutions/energy-mangement');
+                                                    navigate('/product-and-solutions/energy-management');
                                                     setIsMobileMenuOpen(false);
                                                 }}
                                             >
@@ -604,7 +604,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/product-and-solutions/energy-mangement/feature');
+                                                        navigate('/product-and-solutions/energy-management/feature');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -614,7 +614,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/product-and-solutions/energy-mangement/bill-capture');
+                                                        navigate('/product-and-solutions/energy-management/bill-capture');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >
@@ -624,7 +624,7 @@ const Header = () => {
                                                     className="text-[#0f172a] underline cursor-pointer"
                                                     onClick={(e) => {
                                                         e.stopPropagation();
-                                                        navigate('/product-and-solutions/energy-mangement/pricing');
+                                                        navigate('/product-and-solutions/energy-management/pricing');
                                                         setIsMobileMenuOpen(false);
                                                     }}
                                                 >

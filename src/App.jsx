@@ -40,9 +40,9 @@
           <Routes>
             <Route path="/" element={<HomePage />} />
             {/* Energy Management */}
-            <Route path="/product-and-solutions/energy-mangement-system" element={<EMSOverview />} />
-            <Route path="/product-and-solutions/energy-mangement-system/overview" element={<EMSOverview />} />
-            <Route path="/product-and-solutions/energy-mangement-system/features" element={<EMSFeatures />} />
+            <Route path="/product-and-solutions/energy-management-system" element={<EMSOverview />} />
+            <Route path="/product-and-solutions/energy-management-system/overview" element={<EMSOverview />} />
+            <Route path="/product-and-solutions/energy-management-system/features" element={<EMSFeatures />} />
             <Route path="/product-and-solutions/pricing" element={<Pricing />} />
 
             {/*Market Intelligence AI*/}
