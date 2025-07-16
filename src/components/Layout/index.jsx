@@ -89,28 +89,26 @@ const WebsiteLayout = ({ children }) => {
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Who we serve</h4>
                         <p className=" cursor-pointer hover:underline">Energy Managers</p>
-                        <p className=" cursor-pointer hover:underline">Sustainability Leaders</p>
-                        <p className=" cursor-pointer hover:underline">Finance Leaders</p>
-                        <h4 className="mt-4 font-semibold">Industries</h4>
-                        <p className=" cursor-pointer hover:underline">Higher Education</p>
-                        <p className=" cursor-pointer hover:underline">Commercial Campuses</p>
-                        <p className=" cursor-pointer hover:underline">Government</p>
+                        <p className=" cursor-pointer hover:underline">Finance Experts</p>
+                        <p className=" cursor-pointer hover:underline">Utility Customers</p>
+                    </div>
+                    <div className="text-sm space-y-3">
+                        <h4 className="font-semibold">Industries</h4>
+                        <p className=" cursor-pointer hover:underline">Utility Services</p>
+                        <p className=" cursor-pointer hover:underline">Municipalities</p>
+                        <p className=" cursor-pointer hover:underline">Colleges Campuses</p>
+                        <p className=" cursor-pointer hover:underline">Local Government</p>
                         <p className=" cursor-pointer hover:underline">K-12</p>
-                        <p className=" cursor-pointer hover:underline">Utility Vendors</p>
-                        <p className=" cursor-pointer hover:underline">Food & Beverage</p>
-                        <p className=" cursor-pointer hover:underline">Automotive</p>
-                        <p className=" cursor-pointer hover:underline">Retail</p>
+                        <p className=" cursor-pointer hover:underline">Local Restaurants</p>
+                        <p className=" cursor-pointer hover:underline">Retail Stores</p>
                     </div>
 
                     {/* Solutions */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Solutions Overview</h4>
-                        <p className=" cursor-pointer hover:underline">Utility Management</p>
-                        <p className=" cursor-pointer hover:underline">SmartAnalytics</p>
-                        <p className=" cursor-pointer hover:underline">CarbonHub</p>
-                        <p className=" cursor-pointer hover:underline">Utility Company Platform</p>
-                        <p className=" cursor-pointer hover:underline">Bill CAPture</p>
-                        <h4 className="mt-4 font-semibold">Success Stories</h4>
+                        <p className=" cursor-pointer hover:underline">Energy Management System</p>
+                        <p className=" cursor-pointer hover:underline">Market Intelligence</p>
+                        <p className=" cursor-pointer hover:underline">Hydrogen Station Management System</p>
                     </div>
 
                     {/* Company */}
@@ -119,18 +117,16 @@ const WebsiteLayout = ({ children }) => {
                         <p className=" cursor-pointer hover:underline">Careers</p>
                         <p className=" cursor-pointer hover:underline">Contact Sales</p>
                         <p className=" cursor-pointer hover:underline">Pricing</p>
-                        <p className=" cursor-pointer hover:underline">Services</p>
                     </div>
 
                     {/* Resources */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Resources</h4>
-                        <p className=" cursor-pointer hover:underline">eBooks</p>
+                        <p className=" cursor-pointer hover:underline">Milestones</p>
                         <p className=" cursor-pointer hover:underline">Blogs</p>
                         <p className=" cursor-pointer hover:underline">Webinars</p>
                         <p className=" cursor-pointer hover:underline">Press</p>
-                        <p className=" cursor-pointer hover:underline">Product features</p>
-                        <p className=" cursor-pointer hover:underline">Downloads</p>
+                        <p className=" cursor-pointer hover:underline">Product Features</p>
                         <p className=" cursor-pointer hover:underline">Sitemap</p>
                     </div>
                 </div>
