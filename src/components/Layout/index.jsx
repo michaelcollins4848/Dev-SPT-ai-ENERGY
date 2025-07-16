@@ -59,12 +59,12 @@ const WebsiteLayout = ({ children }) => {
             </main>
 
             {/* Footer */}
-            <footer className="bg-gradient-to-br from-[#0f172a] to-[#1a3546] text-white py-12 px-6">
+            <footer className="bg-gradient-to-br from-[#4e7ba5] to-[#4e7ba5] text-white py-12 px-6">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:px-10">
                     {/* Logo + Contact */}
                     <div className="col-span-1 md:col-span-1">
                         <img className="w-30 h-15 mb-4" src={Logo} alt="SPT_logo" />
-                        <div className="flex space-x-3 mb-6 text-[#7498ed] text-xl">
+                        <div className="flex space-x-3 mb-6 text-[#ffffff] text-xl">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookSquare  /></a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
@@ -75,7 +75,7 @@ const WebsiteLayout = ({ children }) => {
                         <div className="text-sm space-y-4">
                             <div>
                                 <h4 className="font-semibold">Address</h4>
-                                <p>SPT AI Energy Lab / Stored Power Technology Inc.<br />2990 Myers St, Riverside, CA 92503</p>
+                                <p>SPT Energy AI Lab <br />2990 Myers St, Riverside, CA 92503</p>
                             </div>
                             <div>
                                 <h4 className="font-semibold">Phone Number</h4>
@@ -92,32 +92,36 @@ const WebsiteLayout = ({ children }) => {
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Who we serve</h4>
                         <p className=" cursor-pointer hover:underline">Energy Managers</p>
-                        <p className=" cursor-pointer hover:underline">Finance Experts</p>
-                        <p className=" cursor-pointer hover:underline">Utility Customers</p>
+                        <p className=" cursor-pointer hover:underline">Finance Managers</p>
+                        <p className=" cursor-pointer hover:underline">Community Leaders</p>
                     </div>
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Industries</h4>
-                        <p className=" cursor-pointer hover:underline">Utility Services</p>
-                        <p className=" cursor-pointer hover:underline">Municipalities</p>
-                        <p className=" cursor-pointer hover:underline">Colleges Campuses</p>
-                        <p className=" cursor-pointer hover:underline">Local Government</p>
-                        <p className=" cursor-pointer hover:underline">K-12</p>
-                        <p className=" cursor-pointer hover:underline">Local Restaurants</p>
-                        <p className=" cursor-pointer hover:underline">Retail Stores</p>
+                        <p className=" cursor-pointer hover:underline">Education</p>
+                        <p className=" cursor-pointer hover:underline">Government</p>
+                        <p className=" cursor-pointer hover:underline">Food and Beverage</p>
+                        <p className=" cursor-pointer hover:underline">Real Estate</p>
+                        <p className=" cursor-pointer hover:underline">Automotive</p>
+                        <p className=" cursor-pointer hover:underline">Utility</p>
                     </div>
 
                     {/* Solutions */}
                     <div className="text-sm flex flex-col space-y-3">
-                        <h4 className="font-semibold">Solutions Overview</h4>
+                        <h4 className="font-semibold">Solutions</h4>
+                        <p className=" cursor-pointer hover:underline">Prediction Engine</p>
                         <Link to="/product-and-solutions/energy-management-system" className=" cursor-pointer hover:underline">
-                            <p>Energy Management System</p>
+                            <p>EMS Energy Management System</p>
                         </Link>
+                        <p className=" cursor-pointer hover:underline">Smart Analytics</p>
                         <Link to="/product-and-solutions/market-intelligence" className=" cursor-pointer hover:underline">
-                            <p>Market Intelligence</p>
+                            <p>Smart Analytics</p>
                         </Link>
+                        <p className=" cursor-pointer hover:underline">Carbon Intelligence Hub</p>
                         <Link to="/product-and-solutions/hydrogen-management-system">
                             <p className=" cursor-pointer hover:underline">Hydrogen Station Management System</p>
                         </Link>
+                        <p className=" cursor-pointer hover:underline">ESG Reporting Helper</p>
+                        <p className=" cursor-pointer hover:underline">Bill Analyics</p>
                     </div>
 
                     {/* Company */}
@@ -131,11 +135,12 @@ const WebsiteLayout = ({ children }) => {
                     {/* Resources */}
                     <div className="text-sm space-y-3">
                         <h4 className="font-semibold">Resources</h4>
-                        <p className=" cursor-pointer hover:underline">Milestones</p>
+                        <p className=" cursor-pointer hover:underline">eBooks and Reports</p>
                         <p className=" cursor-pointer hover:underline">Blogs</p>
-                        <p className=" cursor-pointer hover:underline">Webinars</p>
+                        <p className=" cursor-pointer hover:underline">Recorded Events</p>
                         <p className=" cursor-pointer hover:underline">Press</p>
-                        <p className=" cursor-pointer hover:underline">Product Features</p>
+                        <p className=" cursor-pointer hover:underline">Product Handbooks</p>
+                        <p className=" cursor-pointer hover:underline">Downloads</p>
                         <p className=" cursor-pointer hover:underline">Sitemap</p>
                     </div>
                 </div>
@@ -144,8 +149,8 @@ const WebsiteLayout = ({ children }) => {
                 <div className="border-t border-gray-500 mt-10 mb-6 mx-10" />
 
                 {/* Bottom */}
-                <div className="max-w-screen-xl mx-auto px-6 md:px-10 text-sm flex flex-col md:flex-row justify-between items-center gap-4 text-gray-300">
-                    <p>&copy; 2025 SPT AI Energy Lab. All rights reserved.</p>
+                <div className="max-w-screen-xl mx-auto px-6 md:px-10 text-sm flex flex-col md:flex-row justify-between items-center gap-4 text-white">
+                    <p>&copy; 2025 SPT Energy AI Lab. All rights reserved.</p>
                     <div className="flex space-x-5">
                         <a href="#" className="hover:text-white cursor-pointer hover:underline">Privacy Policy</a>
                         <a href="#" className="hover:text-white cursor-pointer hover:underline">Terms of Service</a>

@@ -23,18 +23,18 @@ import HomeCarousel from '../../components/Home/HomeCarousel';
 const stats = [
   {
     icon: <FaRegLightbulb size={50} className="text-secondary" />,
-    value: "10K+",
-    description: "Energy and sustainability leaders.",
+    value: "20K+",
+    description: "Energy and sustainability professionals.",
   },
   {
     icon: <FaFileInvoiceDollar size={50} className="text-secondary" />,
-    value: "$47B+",
-    description: "Worth of vendor bills tracked annually.",
+    value: "$30B+",
+    description: "Worth of customer bills analyzed.",
   },
   {
     icon: <FaPiggyBank size={50} className="text-secondary" />,
-    value: "10%+",
-    description: "Annual energy savings for majority of customers.",
+    value: "20%+",
+    description: "Annual energy savings for customers and partners.",
   },
 ];  
 
@@ -186,7 +186,7 @@ const tabData = [
 
 
 const homepageContent = {
-  heading1: "SPT AI Energy Lab:",
+  heading1: "SPT Energy AI Lab:",
   heading2: "Revolutionizing Energy Management with AI",
   subheding: "Experience unparalleled efficiency, savings, and reliability for your home, business, or power grids.",
   img: heroImg,
@@ -196,7 +196,7 @@ const homepageContent = {
 
 const calculatorContent = {
   heading1: "Effortlessly manage your energy resources with intelligent control",
-  heading2: "SPT AI Energy Lab",
+  heading2: "SPT Energy AI Lab",
   btn: "Contact us!",
 };
 
@@ -246,7 +246,7 @@ const HomePage = () => {
       {/* <Single platform /> */}
       <section className="px-6 pt-16">
         <h2 className="text-xl md:text-4xl font-bold max-w-3xl m-auto leading-tight text-center">
-          Unified energy tools for every role
+          Unified energy platform for all stakeholders
         </h2>
         <p className="mt-4 max-w-4xl text-lg mx-auto text-gray-700 text-center">
           SPT’s intelligent EMS brings together cross-functional teams on a single platform, enabling seamless collaboration to maximize efficiency, control costs, and drive sustainable energy outcomes.
