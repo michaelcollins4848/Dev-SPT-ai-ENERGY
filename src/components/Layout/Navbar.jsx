@@ -409,14 +409,30 @@ const Header = () => {
                                         <div className="flex flex-col gap-2 mt-5">
                                             <div
                                                 className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    navigate('/research-and-resources/milestones');
-                                                }}
                                             >
-                                                Milestones
+                                                Whitepapers
                                             </div>
+                                            <div
+                                                className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            >
+                                                Research and Articles
                                             </div>
+                                            <div
+                                                className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            >
+                                                Data Center
+                                            </div>
+                                            <div
+                                                className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            >
+                                                Algorithms and Models
+                                            </div>
+                                            <div
+                                                className="text-[#3686fd] font-semibold text-sm hover:underline hover:text-[#0f172a] transition duration-300 cursor-pointer"
+                                            >
+                                                Research Partner Login
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

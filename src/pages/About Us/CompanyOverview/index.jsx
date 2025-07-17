@@ -161,7 +161,7 @@ const Aboutus = () => {
             <HeroSection aboutusContent={aboutusContent} />
             <EmpowerUsSection values={values} EmpowerUsSectionContent={EmpowerUsSectionContent} />
             <SustainableFutureSection values={values} SustainableFutureSectionContent={SustainableFutureSectionContent} />
-            <Offices  />
+            <HistorySection  />
             <CalculatorSection calculatorContent={calculatorContent} />
         </WebsiteLayout>
     )

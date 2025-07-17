@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaYoutube, FaInstagram, FaXTwitter } from "react-icons/fa6"; 
 import { FaFacebookSquare } from "react-icons/fa";
 
-import Logo from "../../assets/Images/SPT_logo.png";
+import Logo from "../../assets/Images/spt_white_logo.png";
 import Ai from "../../assets/Images/ai-management.png";
 import solution1 from "../../assets/Images/solution.webp"
 import { useNavigate } from "react-router-dom";
@@ -63,7 +63,7 @@ const WebsiteLayout = ({ children }) => {
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 md:px-10">
                     {/* Logo + Contact */}
                     <div className="col-span-1 md:col-span-1">
-                        <img className="w-30 h-15 mb-4" src={Logo} alt="SPT_logo" />
+                        <img className="w-45 h-15 mb-4" src={Logo} alt="spt_white_logo" />
                         <div className="flex space-x-3 mb-6 text-[#ffffff] text-xl">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookSquare  /></a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -90,13 +90,13 @@ const WebsiteLayout = ({ children }) => {
 
                     {/* Who we serve */}
                     <div className="text-sm space-y-3">
-                        <h4 className="font-semibold">Who we serve</h4>
+                        <h4 className="font-semibold text-lg">Who we serve</h4>
                         <p className=" cursor-pointer hover:underline">Energy Managers</p>
                         <p className=" cursor-pointer hover:underline">Finance Managers</p>
                         <p className=" cursor-pointer hover:underline">Community Leaders</p>
                     </div>
                     <div className="text-sm space-y-3">
-                        <h4 className="font-semibold">Industries</h4>
+                        <h4 className="font-semibold text-lg">Industries</h4>
                         <p className=" cursor-pointer hover:underline">Education</p>
                         <p className=" cursor-pointer hover:underline">Government</p>
                         <p className=" cursor-pointer hover:underline">Food and Beverage</p>
@@ -107,12 +107,11 @@ const WebsiteLayout = ({ children }) => {
 
                     {/* Solutions */}
                     <div className="text-sm flex flex-col space-y-3">
-                        <h4 className="font-semibold">Solutions</h4>
+                        <h4 className="font-semibold text-lg">Solutions</h4>
                         <p className=" cursor-pointer hover:underline">Prediction Engine</p>
                         <Link to="/product-and-solutions/energy-management-system" className=" cursor-pointer hover:underline">
                             <p>EMS Energy Management System</p>
                         </Link>
-                        <p className=" cursor-pointer hover:underline">Smart Analytics</p>
                         <Link to="/product-and-solutions/market-intelligence" className=" cursor-pointer hover:underline">
                             <p>Smart Analytics</p>
                         </Link>
@@ -126,7 +125,7 @@ const WebsiteLayout = ({ children }) => {
 
                     {/* Company */}
                     <div className="text-sm space-y-3">
-                        <h4 className="font-semibold">Company</h4>
+                        <h4 className="font-semibold text-lg">Company</h4>
                         <p className=" cursor-pointer hover:underline">Careers</p>
                         <p className=" cursor-pointer hover:underline">Contact Sales</p>
                         <p className=" cursor-pointer hover:underline">Pricing</p>
@@ -134,7 +133,7 @@ const WebsiteLayout = ({ children }) => {
 
                     {/* Resources */}
                     <div className="text-sm space-y-3">
-                        <h4 className="font-semibold">Resources</h4>
+                        <h4 className="font-semibold text-lg">Resources</h4>
                         <p className=" cursor-pointer hover:underline">eBooks and Reports</p>
                         <p className=" cursor-pointer hover:underline">Blogs</p>
                         <p className=" cursor-pointer hover:underline">Recorded Events</p>
