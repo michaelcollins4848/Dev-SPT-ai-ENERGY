@@ -1,7 +1,8 @@
 import React from 'react';
 import WebsiteLayout from '../../../components/Layout';
 import { useNavigate } from 'react-router-dom';
-import drLiuPhoto from '../../../assets/Images/Alex-Liu.png'; // Replace with your actual image path
+import drLiuPhoto from '../../../assets/Images/Alex-Liu.png'; 
+import EmployeeCarousel from '../../../components/About Us Components/EmployeeCarousel';
 
 const MeetTheTeam = () => {
   const navigate = useNavigate();
@@ -38,6 +39,8 @@ const MeetTheTeam = () => {
         </div>
         </div>
       </section>
+
+      <EmployeeCarousel />
 
       <section className="bg-[#001f3f] py-20 px-6">
         <h2 className="text-5xl font-bold text-center text-white mb-7">Our Departments</h2>
