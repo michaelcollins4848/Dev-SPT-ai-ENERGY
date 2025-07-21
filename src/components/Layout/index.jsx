@@ -66,7 +66,7 @@ const WebsiteLayout = ({ children }) => {
                         <img className="w-45 h-15 mb-4" src={Logo} alt="spt_white_logo" />
                         <div className="flex space-x-3 mb-6 text-[#ffffff] text-xl">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookSquare  /></a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/company/spt-ai-lab/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
