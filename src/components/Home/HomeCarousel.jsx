@@ -19,8 +19,10 @@ const slides = [
   {
     type: "product",
     image: EMSbackground,
-    title: "SPT Energy Management System",
+    title: "EnergiAI™ Core",
+    subtitle: "SPT Energy Management System",
     description: <p>
+                  <br />
                   Intelligent AI for controlling energy flow in real time.
                   <br /> <br />
                   Our system dynamically monitors and optimizes electricity usage across your entire operation—reducing waste, lowering costs, and maximizing reliability. Whether you’re managing a microgrid, a campus, or industrial infrastructure, our platform adapts in real time to changing loads and grid conditions. Gain full visibility and control with data-driven automation designed to help you make smarter, faster energy decisions.
@@ -30,15 +32,18 @@ const slides = [
   {
     type: "product",
     image: marketBackground,
-    title: "SPT Energy Market Prediction",
-    description: <p>Market predictions created by AI for better energy decision making. <br /> <br /> Stay ahead of volatile electricity prices with cutting-edge forecasts powered by machine learning. Our AI analyzes historical trends and real-time market data to deliver actionable insights—so you can optimize operations, reduce costs, and make smarter energy decisions. </p>,
+    title: "EnergiAI™ Predict",
+    subtitle: "SPT Energy Prediction",
+    description: <p><br />Market predictions created by AI for better energy decision making. <br /> <br /> Stay ahead of volatile electricity prices with cutting-edge forecasts powered by machine learning. Our AI analyzes historical trends and real-time market data to deliver actionable insights—so you can optimize operations, reduce costs, and make smarter energy decisions. </p>,
     link: "/product-and-solutions/market-intelligence/overview",
   },
   {
     type: "product",
     image: hydrogenBackground,
-    title: "SPT Hydrogen Station Smart Management System",
+    title: "EnergiAI™ Hydrogen",
+    subtitle: "SPT Hydrogen Management",
     description: <p>
+                  <br />
                   Intelligent AI for controlling energy flow in real time.
                   <br /> <br />
                   Our platform provides real-time monitoring, predictive maintenance, and intelligent energy flow optimization for hydrogen fueling infrastructure. From production to storage to dispensing, the system ensures efficiency, safety, and scalability. Whether for public transit, municipal fleets, or commercial hubs, our solution empowers operators with the tools needed to lead in the clean hydrogen revolution.                </p>,
@@ -81,7 +86,10 @@ const HomeCarousel = () => {
             <div className="w-full h-full flex flex-col md:flex-row items-center justify-center bg-white">
               <img src={slide.image} alt={slide.title} className="w-full md:w-1/2 h-full object-contain" />
               <div className="p-10 md:w-1/2 text-center md:text-left">
-                <h2 className="text-3xl sm:text-4xl font-semibold text-[#0f172a] mb-4">{slide.title}</h2>
+                <h2 className="text-4xl sm:text-5xl font-bold text-[#0f172a] mb-2">{slide.title}</h2>
+                {slide.subtitle && (
+                  <h3 className="text-3xl sm:text-2xl text-[#334155] mb-4">{slide.subtitle}</h3>
+                )}
                 <p className="text-lg text-gray-700 mb-6">{slide.description}</p>
                 <button
                   onClick={() => navigate(slide.link)}

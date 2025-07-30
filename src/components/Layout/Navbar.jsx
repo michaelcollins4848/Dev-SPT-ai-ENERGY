@@ -240,7 +240,10 @@ const Header = () => {
                                 {/** Card 1 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/energy-management-system')}>
                                     <img src={EMSicon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
-                                    <p>AI Energy Management System</p>
+                                    <div className="flex flex-col leading-tight">
+                                        <span className="text-lg font-bold text-[#1e3a8a]">EnergiAI™ Core</span>
+                                        <span className="text-sm text-[#0f172a]">SPT Energy Management System</span>
+                                    </div>
                                     <p className="font-[400] text-sm text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2">
                                         <div
@@ -275,7 +278,10 @@ const Header = () => {
                                 {/** Card 2 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/market-intelligence')}>
                                     <img src={marketIcon} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
-                                    <p>AI Market Intelligence System</p>
+                                    <div className="flex flex-col leading-tight">
+                                        <span className="text-lg font-bold text-[#1e3a8a]">EnergiAI™ Predict</span>
+                                        <span className="text-sm text-[#0f172a]">SPT Energy Prediction</span>
+                                    </div>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div
@@ -310,7 +316,10 @@ const Header = () => {
                                 {/** Card 3 */}
                                 <div className="border-r px-4 py-6 flex flex-col justify-between" onClick={() => navigate('/product-and-solutions/hydrogen-management-system')}>
                                     <img src={hydrogenStation} alt="Utility" className="mb-2 w-50 h-40 object-contain" />
-                                    <p>Hydrogen Station Smart Management System</p>
+                                    <div className="flex flex-col leading-tight">
+                                        <span className="text-lg font-bold text-[#1e3a8a]">EnergiAI™ Hydrogen</span>
+                                        <span className="text-sm text-[#0f172a]">SPT Hydrogen Management</span>
+                                    </div>
                                     <p className="font-[400] text-sm mb-2 text-gray-700">Best-in-class portfolio-level energy and utility bill data management and reporting.</p>
                                     <div className="flex flex-col gap-2 mt-5">
                                         <div

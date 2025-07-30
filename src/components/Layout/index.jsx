@@ -74,7 +74,7 @@ const WebsiteLayout = ({ children }) => {
 
                         <div className="text-sm space-y-4">
                             <div>
-                                <h4 className="font-semibold">Address</h4>
+                                <h4 className="font-semibold">A ddress</h4>
                                 <p>SPT Energy AI Lab <br />2990 Myers St, Riverside, CA 92503</p>
                             </div>
                             <div>
