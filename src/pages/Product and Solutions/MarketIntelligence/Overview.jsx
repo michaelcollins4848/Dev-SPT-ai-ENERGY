@@ -16,9 +16,10 @@ const MarketIntelOverview = () => {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10 bgbackgroundimg">
           <div className="md:w-1/2">
-            <h1 className="text-5xl sm:text-5xl font-bold leading-tight mb-6">
-              Market <br className="hidden sm:inline" /> Intelligence System
-            </h1>
+            <div className="pt-10 pb-4">
+                <h1 className="text-6xl font-bold text-[#1e3a8a]">EnergiAI™ Predict</h1>
+                <p className="text-3xl text-black mt-2">SPT Energy Prediction</p>
+            </div>
             <h2 className="text-xl sm:text-2xl font-semibold text-[#1e3a8a] mb-6">
               See What’s Next in Energy Markets.
             </h2>

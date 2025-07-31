@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 // Import your images here
 import michael from "../../assets/Images/michaelPhoto.png"; 
 import ankit from "../../assets/Images/ankitPhoto.png";
-import victoria from "../../assets/Images/victoriaPhoto.png";
+import silu from "../../assets/Images/LuPhoto.jpg";
 import jenny from "../../assets/Images/jennyPhoto.png"; 
 import sky from "../../assets/Images/skyPhoto.png";
 
@@ -41,12 +41,12 @@ const slides = [
   },
   {
     type: "person",
-    image: victoria,
-    title: "Victoria Xiang",
+    image: silu,
+    title: "Silu Ma",
     description: <p>
-                  Design Manager
+                  Data Analyst Intern
                   <br /> <br />
-                  Victoria Xiang is the Design Manager at SPT AI Energy Lab, leading the creative direction and user experience across all digital platforms. She ensures that every product interface is both intuitive and visually aligned with the company’s mission of innovation in energy technology.
+                  Silu Ma is a Data Analyst Intern at SPT AI Energy Lab, where she contributes to data-driven research and analytics to support innovative energy solutions. With a background in Math-CS from UCSD, Silu focuses on data preprocessing, visualization, and statistical modeling to uncover actionable insights from complex datasets.
                   </p>,
     link: "/product-and-solutions/hydrogen-management-system/overview",
   },

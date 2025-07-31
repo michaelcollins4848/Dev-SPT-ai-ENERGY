@@ -16,9 +16,10 @@ const HydrogenStationOverview = () => {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center bgbackgroundimg gap-10">
           <div className="md:w-1/2">
-            <h1 className="text-5xl font-bold leading-tight mb-6">
-              Hydrogen Refueling <br className="hidden sm:inline" /> Station Management
-            </h1>
+            <div className="pt-10 pb-4">
+                <h1 className="text-6xl font-bold text-[#1e3a8a]">EnergiAI™ Hydrogen</h1>
+                <p className="text-3xl text-black mt-2">SPT Hydrogen Management</p>
+            </div>
             <h2 className="text-xl sm:text-2xl font-semibold text-[#1e3a8a] mb-6">
               Intelligent Fueling. Safer Roads.
             </h2>
